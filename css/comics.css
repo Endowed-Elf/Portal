@@ -4,12 +4,11 @@
 }
 
 header {
-    background-image: url("../images/Headers/meme_comics_header.jpg");
+    background-image: url("../Images/Headers/meme_comics_header.jpg");
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
     position: relative;
-
     width: 100%;
     height: 23vh;
     display:flex;
@@ -21,7 +20,6 @@ body, ul, html {
     overflow-x: hidden;
     font-size: 7vw;
 }
-
 
 .wrapper {
     display: flex;
