@@ -9,6 +9,7 @@ header {
 }
 body {
     overflow-x: hidden;
+    background: lightgreen; 
 }
 
 .flexcontainer {
