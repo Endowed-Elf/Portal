@@ -166,7 +166,6 @@ svg .back-button:active {
     transform: scale(1);
     overflow: hidden;
     z-index: 1;
-    border: 1px solid blue;
 }
 
 .svg-bestowal-button {
