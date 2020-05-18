@@ -188,7 +188,6 @@ p {
     transform: scale(1);
     overflow: hidden;
     z-index: 1;
-    border: 1px solid blue;
     /* bottom: ~.5em , this moves button up and down */
 }
 
