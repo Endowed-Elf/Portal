@@ -1,0 +1,4246 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+}
+
+header {
+    height: 0vh;
+    background: lightgreen;
+}
+body {
+    overflow-x: hidden;
+}
+
+.flexcontainer {
+    background: lightgreen;
+    position: relative;
+    min-height: 100vh;
+    min-width: 100%;
+    padding-top: 0px;      
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    border:none;
+}
+
+.container_01, container_02, container_03 {
+    position:relative;
+    background-repeat: no-repeat;
+    overflow: hidden;
+}
+
+.button-aligner {
+    position: fixed;    
+    margin: 0 auto;
+    transform: translate(0px, 0px);
+    transform: scale(1);
+    overflow: hidden;
+    border: 1px solid blue;
+}
+
+.svg-back-button {
+    position: fixed;
+    transform: translate(0px, 0px);    
+}
+
+.border {           
+    width: 320px;
+    height: 180px;
+    border: 6px solid black;       
+}
+
+svg .button {
+    fill: white;
+    z-index: 1;
+    overflow-x: hidden;
+}
+
+svg .button:hover {
+    fill: lightgreen;
+}
+
+svg .button:active {
+    fill: lime;
+}
+
+.bubble_font_Sedgwick_02 {
+    font-family: 'Sedgwick Ave', cursive;
+    font-size: 100px;
+    stroke: blue;
+    stroke-width:1;
+    fill: black;
+    z-index: 1;
+    font-weight: 300;
+    letter-spacing: 0px;
+}
+    
+.bubble_font_Sedgwick_02-b {
+    font-family: 'Sedgwick Ave', cursive;
+    font-size: 120px;
+    stroke: blue;
+    stroke-width:2;
+    fill: black;
+    z-index: 1;
+    font-weight: 300;
+    letter-spacing: 0px;
+}
+
+.bubble_font_Sedgwick_03 {
+    font-family: 'Sedgwick Ave', cursive;
+    font-size: 143px;
+    stroke: blue;
+    stroke-width:2;
+    fill: black;
+    z-index: 1;
+    font-weight: 400;
+    letter-spacing: 0px;
+}
+
+svg .bubbles {
+    fill: ghostwhite;
+}
+svg .bubbles:hover {
+    fill:rgba(53, 255, 140, 0.192);
+}
+
+
+
+
+
+
+/* un-used; just add to <a> tag in .html file 
+.back-button {
+    position: fixed;
+    background: url("../Images/Emblems/back_arrow.png") no-repeat;
+    border: 1px solid black;   
+    width: 1080px;
+    height: 400px;
+    transform: scale(.1);   
+    bottom: -166px;
+    opacity: .5;
+    z-index: 1;   
+}   */
+
+
+
+
+
+
+
+
+
+/* Base Image Sizes -(time saver)-
+16:9 - 8074x4575 => 1920x1080
+4:3  - 5583x4417 => 1382x1038
+3:2  - 9074x6075 => 2160x1440
+*/
+
+
+
+
+
+
+
+
+
+/*Initial Adjustment transforms*/
+/*9:16   180x320*/
+@media screen and (min-width: 1px) and (min-height: 180px) {
+
+    .button-aligner {   
+        height: 20px;
+        width: 45px;
+        bottom: .3em;
+}
+
+    .svg-back-button {
+        height: 180px;
+        width: 320px;
+        transform: scale(.13);
+        top: -81px;
+        right: -140px;
+}
+
+    .container_01 {       
+        background-image: url("../css_comics/new_decade_images/01_1920x1080.jpg");    
+        background-size: 320px 180px;
+        width: 320px;
+        height: 180px;
+        margin-bottom: 20px;
+        box-shadow: 3px 3px 11px 6px forestgreen, 2px 2px 10px 2px lightgreen inset;
+        overflow-x: hidden;
+    }
+
+    .container_02 {
+        background-image: url("../css_comics/new_decade_images/02_1920x1080.jpg");
+        background-size: 320px 180px;
+        width: 320px;
+        height:180px;
+        margin-bottom: 20px;
+        box-shadow: 3px 3px 11px 6px forestgreen, 2px 2px 10px 2px lightgreen inset;
+        overflow-x: hidden;
+    }
+
+    .container_03 {
+        background-image: url("../css_comics/new_decade_images/03_1920x1080.jpg");
+        background-size: 320px 180px;
+        width: 320px;
+        height: 180px;
+        margin-bottom: 28px;
+        box-shadow: 3px 3px 11px 6px forestgreen, 2px 2px 10px 2px lightgreen inset;
+        overflow-x: hidden;
+    }
+
+    .border {           
+        width: 320px;
+        height: 180px;
+        border: 6px solid black;
+        box-shadow: 2px 2px 10px 5px forestgreen, 2px 2px 10px 2px lightgreen inset;
+    }
+
+    .bubble_font_Sedgwick_01 {
+        font-family: 'Sedgwick Ave', cursive;
+        font-size: 90px;
+        stroke: red;
+        stroke-width:1;
+        fill: black;
+        z-index: 1; 
+        transform: rotateZ(-3deg);
+        font-weight: 700;
+        letter-spacing: 0px;
+    }
+
+    #transform-01a {
+        transform: translate(0em, 1em);
+}
+
+    #transform-01b {
+        transform: translate(35em, 28em);
+}
+    
+    #transform-02a {
+        transform: translate(0, 0);
+    }
+    
+    #transform-03a{
+        transform: translate(0em, 1em);
+    }
+
+    #transform-03b {
+        transform: translate(85em, 20em); 
+    }
+  
+    .message {
+        position: fixed;
+        background-image: url("../Images/Emblems/rotate_825x1409.png");
+        background-color: red;
+        background-repeat: no-repeat;
+        background-size: 180px 320px;
+        height: 100vh;
+        width: 100vw;
+        margin: 0 auto;
+        opacity: 1;
+        animation-name: blinking;
+        animation-duration: 1s;
+        animation-iteration-count: infinite; 
+    }
+    
+    @keyframes blinking {
+        from {opacity: .33; border: 6px solid red;}
+        to {opacity: 1; border: none;}
+}
+}
+
+
+/*10:16   200x320*/
+@media screen and (min-width: 200px) and (min-height: 320px) {
+
+    .button-aligner {   
+        height: 20px;
+        width: 47px;
+        bottom: .3em;
+}
+
+    .svg-back-button {
+        height: 200px;
+        width: 320px;
+        transform: scale(.13);
+        top: -91px;
+        right: -138px;
+}
+
+    .container_01 {       
+        background-image: url("../css_comics/new_decade_images/01_1920x1080.jpg");   
+        background-size: 320px 200px;
+        width: 320px;
+        height: 200px;
+        margin-bottom: 20px;
+        box-shadow: 3px 3px 11px 6px forestgreen, 2px 2px 10px 2px lightgreen inset;
+        overflow: hidden;
+    }
+
+    .container_02 {
+        background-image: url("../css_comics/new_decade_images/02_1920x1080.jpg");
+        background-size: 320px 200px;
+        width: 320px;
+        height: 200px;
+        margin-bottom: 20px;
+        box-shadow: 3px 3px 11px 6px forestgreen, 2px 2px 10px 2px lightgreen inset;
+        overflow: hidden;
+    }
+
+    .container_03 {
+        background-image: url("../css_comics/new_decade_images/03_1920x1080.jpg");
+        background-size: 320px 200px;
+        width: 320px;
+        height: 200px;
+        margin-bottom: 28px;
+        box-shadow: 3px 3px 11px 6px forestgreen, 2px 2px 10px 2px lightgreen inset;
+        overflow: hidden;
+    }
+
+    .border {           
+        width: 320px;
+        height: 200px;
+        border: 6px solid black;
+        box-shadow: 2px 2px 10px 5px forestgreen, 2px 2px 10px 2px lightgreen inset;
+    }
+
+    .bubble_font_Sedgwick_01 {
+        font-family: 'Sedgwick Ave', cursive;
+        font-size: 90px;
+        stroke: red;
+        stroke-width:1;
+        fill: black;
+        z-index: 1; 
+        transform: rotateZ(-3deg);
+        font-weight: 700;
+        letter-spacing: 0px;
+    }
+
+    #transform-01a {
+        transform: translate(-0em, 1em);
+}
+
+    #transform-01b {
+        transform: translate(35em, 28em);
+}
+    
+    #transform-02a {
+        transform: translate(0, 0);
+    }
+    
+    #transform-03a{
+        transform: translate(6em, 1em);
+    }
+
+    #transform-03b {
+        transform: translate(85em, 20em); 
+    }
+  
+    .message {
+        background-size: 200px 320px;
+    }
+}
+
+
+/*9:16   211x375*/   
+@media screen and (min-width: 211px) and (max-height: 375px) {
+ 
+    .button-aligner {   
+        height: 23px;
+        width: 49px;
+        bottom: .3em;
+}
+
+    .svg-back-button {
+        height: 180px;
+        width: 320px;
+        transform: scale(.15);
+        top: -80px;
+        right: -138px;
+}
+    
+    .message {
+        background-size: 211px 375px;        
+    }
+}
+
+/*2:3   213x320 - don't know, but there is always the flipped 320x213*/
+
+/*9:16   239x425*/   
+@media screen and (min-width: 239px) and (max-height: 425px) {
+ 
+    .button-aligner {   
+        height: 24px;
+        width: 54px;
+        bottom: .3em;
+}
+
+    .svg-back-button {
+        height: 180px;
+        width: 320px;
+        transform: scale(.17);
+        top: -79px;
+        right: -136px;
+}
+    
+    .message {
+        background-size: 239px 425px;        
+}
+}
+  
+
+/*9:16   270x480*/   
+@media screen and (min-width: 270px) and (max-height: 480px) {
+ 
+    .button-aligner {   
+        height: 30px;
+        width: 64px;
+        bottom: .3em;
+}
+
+    .svg-back-button {
+        height: 180px;
+        width: 320px;
+        transform: scale(.2);
+        top: -76px;
+        right: -131px;
+}
+    
+    .message {
+        background-size: 270px 480px;        
+    }
+}
+   
+
+/*16:9   320x180*/
+@media screen and (min-width: 320px) and (min-height: 180px) {
+
+    .message {
+        display: none;
+        animation-duration: 0;
+        animation-iteration-count: 0;
+    }
+    
+    
+    .button-aligner {   
+        height: 25px;
+        width: 64px;
+        bottom: .33em;
+}
+
+    .svg-back-button {
+        height: 180px;
+        width: 320px;
+        transform: scale(.187);
+        top: -79px;
+        right: -131px;
+}
+
+    .flexcontainer {
+        border: none;
+        padding:0px;
+    }
+
+    .container_01 {
+        background-image: url("../css_comics/new_decade_images/01_1920x1080.jpg");
+        background-size: 320px 180px;
+        width: 320px;
+        height: 180px;
+        margin-bottom: 23px;
+        overflow: hidden;
+    }
+
+    .container_02 {
+        background-image: url("../css_comics/new_decade_images/02_1920x1080.jpg");
+        background-size: 320px 180px;
+        width: 320px;
+        height: 180px;
+        margin-bottom: 23px;
+        overflow: hidden;
+    }
+
+    .container_03 {
+        background-image: url("../css_comics/new_decade_images/03_1920x1080.jpg");
+        background-size: 320px 180px;
+        width: 320px;
+        height: 180px;
+        margin-bottom: 39px;
+        overflow: hidden;
+    }
+
+    .border {           
+        width: 320px;
+        height: 180px;
+        border: 6px solid black;
+        box-shadow: 3px 3px 11px 6px forestgreen, 2px 2px 10px 2px lightgreen inset;
+    }
+    
+        #transform-01a {
+            transform: translate(-0em, 1em);
+}
+
+        #transform-01b {
+            transform: translate(35em, 28em);
+}
+
+        #transform-02a {
+            transform: translate(0, 0);
+}
+
+        #transform-03a{
+            transform: translate(0em, 1em);
+}
+
+        #transform-03b {
+            transform: translate(90em, 19em); 
+}
+}
+
+
+/*3:2   320x213.33*/
+@media screen and (min-width: 320px) and (min-height: 213px) {
+
+    .message {
+        display: none;
+        animation-duration: 0;
+        animation-iteration-count: 0;
+    }
+      
+    .button-aligner {   
+        height: 30px;
+        width: 64px;
+        bottom: .3em;
+}
+
+    .svg-back-button {
+        height: 180px;
+        width: 320px;
+        transform: scale(.2);
+        top: -76px;
+        right: -131px;
+}
+
+    .flexcontainer {
+        border: none;
+        padding:0px;
+    }
+
+    .container_01 {
+        background-image: url("../css_comics/new_decade_images/01_3-2aspect_2160x1440.jpg");
+        background-size: 320px 213px;
+        width: 320px;
+        height: 213px;
+        margin-bottom: 33px;
+        overflow: hidden;
+    }
+
+    .container_02 {
+        background-image: url("../css_comics/new_decade_images/02_3-2apsect_2160x1440.jpg");
+        background-size: 320px 213px;
+        width: 320px;
+        height: 213px;
+        margin-bottom: 33px;
+        overflow: hidden;
+    }
+
+    .container_03 {
+        background-image: url("../css_comics/new_decade_images/03_3-2apsect_2160x1440.jpg");
+        background-size: 320px 213px;
+        width: 320px;
+        height: 213px;
+        margin-bottom: 40px;
+        overflow: hidden;
+    }
+
+    .border {           
+        width: 320px;
+        height: 213px;
+        border: 6px solid black;
+        box-shadow: 3px 3px 11px 6px forestgreen, 2px 2px 10px 2px lightgreen inset;
+    }
+    
+    #transform-01a {
+        transform: translate(-5.5em, 3em);
+}
+
+    #transform-01b {
+        transform: translate(34em, 30em);
+}
+
+    #transform-02a {
+        transform: translate(-4.5em, -2em);
+}
+
+    #transform-03a{
+        transform: translate(9em, -2em);
+}
+
+    #transform-03b {
+        transform: translate(82em, 17em); 
+}
+}
+
+
+/*4:3   320x240*/
+@media screen and (min-width: 320px) and (min-height: 240px) {
+
+    .message {
+        display: none;
+        animation-duration: 0;
+        animation-iteration-count: 0;
+    }
+    
+    
+    .button-aligner {   
+        height: 30px;
+        width: 64px;
+        bottom: .33em;
+}
+
+    .svg-back-button {
+        height: 180px;
+        width: 320px;
+        transform: scale(.2);
+        top: -76px;
+        right: -131px;
+}
+
+    .flexcontainer {
+        border: none;
+        padding:0px;
+}
+
+    .container_01 {
+        background-image: url("../css_comics/new_decade_images/01_4-3aspect_1382x1038.jpg");
+        background-size: 320px 240px;
+        width: 320px;
+        height: 240px;
+        margin-bottom: 33px;
+        overflow: hidden;
+}
+
+    .container_02 {
+        background-image: url("../css_comics/new_decade_images/02_4-3aspect_1382x1038.jpg");
+        background-size: 320px 240px;
+        width: 320px;
+        height: 240px;
+        margin-bottom: 33px;
+        overflow: hidden;
+}
+
+    .container_03 {
+        background-image: url("../css_comics/new_decade_images/03_4-3aspect_1382x1038.jpg");
+        background-size: 320px 240px;
+        width: 320px;
+        height: 240px;
+        margin-bottom: 40px;
+        overflow: hidden;
+}
+
+    .border {           
+        width: 320px;
+        height: 240px;
+        border: 6px solid black;
+        box-shadow: 3px 3px 11px 6px forestgreen, 2px 2px 10px 2px lightgreen inset;
+}
+    
+    #transform-01a {
+        transform: translate(-1.3em, -1em);
+}
+
+    
+    #transform-01b {
+        transform: translate(30em, 26.5em);
+}
+
+    #transform-02a {
+        transform: translate(-1.5em, -2em);
+}
+
+    #transform-03a{
+        transform: translate(17em, -2em);
+}
+
+    #transform-03b {
+        transform: translate(79.5em, 17em); 
+}
+}
+
+
+/*2:3   320x480*/
+@media screen and (min-width: 320px) and (min-height: 480px) {
+
+    .message {
+        display: none;
+        animation-duration: 0;
+        animation-iteration-count: 0;
+    }
+    
+    
+    .button-aligner {   
+        height: 30px;
+        width: 64px;
+        bottom: .3em;
+}
+
+    .svg-back-button {
+        height: 180px;
+        width: 320px;
+        transform: scale(.2);
+        top: -76px;
+        right: -131px;
+}
+
+    .flexcontainer {
+        border: none;
+        padding:0px;
+}
+
+    .container_01 {
+        background-image: url("../css_comics/new_decade_images/01_3-2aspect_2160x1440.jpg");
+        background-size: 320px 213px;
+        width: 320px;
+        height: 213px;
+        margin-bottom: 33px;
+        overflow: hidden;
+}
+
+    .container_02 {
+        background-image: url("../css_comics/new_decade_images/02_3-2apsect_2160x1440.jpg");
+        background-size: 320px 213px;
+        width: 320px;
+        height: 213px;
+        margin-bottom: 33px;
+        overflow: hidden;
+}
+
+    .container_03 {
+        background-image: url("../css_comics/new_decade_images/03_3-2apsect_2160x1440.jpg");
+        background-size: 320px 213px;
+        width: 320px;
+        height: 213px;
+        margin-bottom: 40px;
+        overflow: hidden;
+}
+
+    .border {           
+        width: 320px;
+        height: 213px;
+        border: 6px solid black;
+        box-shadow: 3px 3px 11px 6px forestgreen, 2px 2px 10px 2px lightgreen inset;
+}
+    
+#transform-01a {
+    transform: translate(-5.5em, 3em);
+}
+
+
+#transform-01b {
+    transform: translate(35em, 30em);
+}
+
+#transform-02a {
+    transform: translate(-4em, -2em);
+}
+
+#transform-03a{
+    transform: translate(8em, -2em);
+}
+
+#transform-03b {
+    transform: translate(82em, 17em); 
+}
+}
+
+
+/*9:16   320x568*/
+@media screen and (min-width: 320px) and (min-height: 568px) {
+
+    .message {
+        display: none;
+        animation-duration: 0;
+        animation-iteration-count: 0;
+    }
+    
+    
+    .button-aligner {   
+        height: 30px;
+        width: 71px;
+        bottom: .3em;
+}
+
+    .svg-back-button {
+        height: 180px;
+        width: 320px;
+        transform: scale(.23);
+        top: -76px;
+        right: -127px;
+}
+
+    .flexcontainer {
+        border: none;
+        padding:0px;
+    }
+
+    .container_01 {
+        background-image: url("../css_comics/new_decade_images/01_1920x1080.jpg");
+        background-size: 320px 180px;
+        width: 320px;
+        height: 180px;
+        margin-bottom: 37px;
+        overflow: hidden;
+    }
+
+    .container_02 {
+        background-image: url("../css_comics/new_decade_images/02_1920x1080.jpg");
+        background-size: 320px 180px;
+        width: 320px;
+        height: 180px;
+        margin-bottom: 37px;
+        overflow: hidden;
+    }
+
+    .container_03 {
+        background-image: url("../css_comics/new_decade_images/03_1920x1080.jpg");
+        background-size: 320px 180px;
+        width: 320px;
+        height: 180px;
+        margin-bottom: 43px;
+        overflow: hidden;
+    }
+
+    .border {           
+        width: 320px;
+        height: 180px;
+        border: 6px solid black;
+        box-shadow: 3px 3px 11px 6px forestgreen, 2px 2px 10px 2px lightgreen inset;
+    }
+    
+        #transform-01a {
+            transform: translate(-0em, 1em);
+}
+
+        #transform-01b {
+            transform: translate(35em, 28em);
+}
+
+        #transform-02a {
+            transform: translate(0em, 1em);
+}
+
+        #transform-03a{
+            transform: translate(-1em, 2em);
+}
+
+        #transform-03b {
+            transform: translate(89em, 19em); 
+}
+}
+
+
+/*9:16   337.5x600*/
+@media screen and (min-width: 337px) {
+    
+    .button-aligner {   
+        height: 30px;
+        width: 71px;
+        bottom: .33em;
+}
+
+    .svg-back-button {
+        height: 180px;
+        width: 320px;
+        transform: scale(.23);
+        top: -76px;
+        right: -127px;
+}
+
+    .container_01 {
+        background-image: url("../css_comics/new_decade_images/01_1920x1080.jpg");
+        background-size: 337px 190px;
+        width: 337px;
+        height: 190px;
+        margin-bottom: 33px;
+        overflow: hidden;
+    }
+
+    .container_02 {
+        background-image: url("../css_comics/new_decade_images/02_1920x1080.jpg");
+        background-size: 337px 190px;
+        width: 337px;
+        height: 190px;
+        margin-bottom: 33px;
+        overflow: hidden;
+    }
+
+    .container_03 {
+        background-image: url("../css_comics/new_decade_images/03_1920x1080.jpg");
+        background-size: 337px 190px;
+        width: 337px;
+        height: 190px;
+        margin-bottom: 40px;
+        overflow: hidden;
+    }
+
+    .border {           
+        width: 337px;
+        height: 190px;
+        border: 6px solid black;
+        box-shadow: 3px 3px 11px 6px forestgreen, 2px 2px 10px 2px lightgreen inset;
+    }
+
+    #transform-01a {
+        transform: translate(-0em, 1em);
+}
+
+    #transform-01b {
+        transform: translate(35em, 28em);
+}
+
+    #transform-02a {
+        transform: translate(0em, 1em);
+}
+
+    #transform-03a{
+        transform: translate(-1em, 2em);
+}
+
+    #transform-03b {
+        transform: translate(89em, 19em); 
+}
+}
+
+
+/*2:3   342x512*/
+@media screen and (min-width: 342px) {
+
+    .message {
+        display: none;
+        animation-duration: 0;
+        animation-iteration-count: 0;
+    }
+    
+    
+    .button-aligner {   
+        height: 30px;
+        width: 64px;
+        bottom: .3em;
+}
+
+    .svg-back-button {
+        height: 180px;
+        width: 320px;
+        transform: scale(.2);
+        top: -76px;
+        right: -131px;
+}
+
+    .flexcontainer {
+        border: none;
+        padding:0px;
+        height: 100%;
+        width: 342px;             
+        box-shadow:2px 2px 10px 2px lightgreen inset;
+}
+
+    .container_01 {
+        background-image: url("../css_comics/new_decade_images/01_3-2aspect_2160x1440.jpg");
+        background-size: 342px 228px;
+        width: 342px;
+        height: 228px;
+        margin-bottom: 33px;
+        overflow: hidden;
+}
+
+    .container_02 {
+        background-image: url("../css_comics/new_decade_images/02_3-2apsect_2160x1440.jpg");
+        background-size: 342px 228px;
+        width: 342px;
+        height: 228px;
+        margin-bottom: 33px;
+        overflow: hidden;
+}
+
+    .container_03 {
+        background-image: url("../css_comics/new_decade_images/03_3-2apsect_2160x1440.jpg");
+        background-size: 342px 228px;
+        width: 342px;
+        height: 228px;
+        margin-bottom: 40px;
+        overflow: hidden;
+}
+
+    .border {           
+        width: 342px;
+        height: 228px;
+        border: 6px solid black;
+        box-shadow: 3px 3px 11px 6px forestgreen, 2px 2px 10px 2px lightgreen inset;
+}
+    
+#transform-01a {
+    transform: translate(-5.5em, 3em);
+}
+
+
+#transform-01b {
+    transform: translate(35em, 30em);
+}
+
+#transform-02a {
+    transform: translate(-4em, -2em);
+}
+
+#transform-03a{
+    transform: translate(8em, -2em);
+}
+
+#transform-03b {
+    transform: translate(82em, 17em); 
+}
+}
+
+
+/*3:4   360x480*/
+@media screen and (min-width: 360px) and (min-height: 480px) {
+
+    .message {
+        display: none;
+        animation-duration: 0;
+        animation-iteration-count: 0;
+    }
+    
+    .button-aligner {   
+        height: 30px;
+        width: 64px;
+        bottom: .33em;
+}
+
+    .svg-back-button {
+        height: 180px;
+        width: 320px;
+        transform: scale(.2);
+        top: -76px;
+        right: -131px;
+}
+
+    .container_01 {
+        background-image: url("../css_comics/new_decade_images/01_4-3aspect_1382x1038.jpg");
+        background-size: 360px 270px;
+        width: 360px;
+        height: 270px;
+        margin-bottom: 33px;
+        overflow: hidden;
+}
+
+    .container_02 {
+        background-image: url("../css_comics/new_decade_images/02_4-3aspect_1382x1038.jpg");
+        background-size: 360px 270px;
+        width: 360px;
+        height: 270px;
+        margin-bottom: 33px;
+        overflow: hidden;
+}
+
+    .container_03 {
+        background-image: url("../css_comics/new_decade_images/03_4-3aspect_1382x1038.jpg");
+        background-size: 360px 270px;
+        width: 360px;
+        height: 270px;
+        margin-bottom: 40px;
+        overflow: hidden;
+}
+
+    .border {           
+        width: 360px;
+        height: 270px;
+        border: 6px solid black;
+        box-shadow: 3px 3px 11px 6px forestgreen, 2px 2px 10px 2px lightgreen inset;
+}
+    
+    #transform-01a {
+        transform: translate(-1em, -1em);
+}
+   
+    #transform-01b {
+        transform: translate(30em, 26.5em);
+}
+}
+
+
+/*9:16   360x640*/
+@media screen and (min-width: 360px) and (min-height: 640px) {
+    
+    .button-aligner {   
+        height: 37px;
+        width: 87px;
+        bottom: .6em;
+
+}
+
+    .svg-back-button {
+        height: 180px;
+        width: 320px;
+        transform: scale(.27);
+        top: -73px;
+        right: -120px;
+}   
+    
+    .flexcontainer {           
+        box-shadow: 2px 2px 10px 5px forestgreen, 2px 2px 10px 2px lightgreen inset; 
+        
+}
+    .container_03 {
+        margin-bottom: 60px;
+    }
+
+    #transform-01a {
+        transform: translate(-0em, 1em);
+}
+
+    #transform-01b {
+        transform: translate(35em, 28em);
+}
+
+    #transform-02a {
+        transform: translate(0em, 1em);
+}
+
+    #transform-03a{
+        transform: translate(-1em, 2em);
+}
+
+    #transform-03b {
+        transform: translate(89em, 19em); 
+}
+}
+
+
+/*16:9   375x211*/
+@media screen and (min-width: 375px) and (min-height: 211px) {
+    
+    .button-aligner {   
+        height: 28px;
+        width: 71px;
+        bottom: .29em;
+}
+
+    .svg-back-button {
+        height: 180px;
+        width: 320px;
+        transform: scale(.2);
+        top: -77px;
+        right: -127px;
+} 
+    
+    .flexcontainer { 
+        height: 100%;
+        width: 337px;             
+        box-shadow:2px 2px 10px 2px lightgreen inset;
+        border: none;
+    }
+    
+    .container_01 {       
+        background-image: url("../css_comics/new_decade_images/01_1920x1080.jpg"); background-size: 375px 211px;
+        width: 375px;
+        height: 211px;
+        margin-bottom: 20px;
+        box-shadow: 3px 3px 11px 6px forestgreen, 2px 2px 10px 2px lightgreen inset;
+        overflow-x: hidden;
+    }
+
+    .container_02 {
+        background-image: url("../css_comics/new_decade_images/02_1920x1080.jpg");
+        background-size: 375px 211px;
+        width: 375px;
+        height: 211px;
+        margin-bottom: 20px;
+        box-shadow: 3px 3px 11px 6px forestgreen, 2px 2px 10px 2px lightgreen inset;
+    }
+
+    .container_03 {
+        background-image: url("../css_comics/new_decade_images/03_1920x1080.jpg");
+        background-size: 375px 211px;
+        width: 375px;
+        height: 211px;
+        margin-bottom: 37px;
+        box-shadow: 3px 3px 11px 6px forestgreen, 2px 2px 10px 2px lightgreen inset;
+    }
+    
+    .border {           
+        width: 375px;
+        height: 211px;      
+}
+    
+    #transform-01a {
+        transform: translate(-0em, 1em);
+}
+
+    #transform-01b {
+        transform: translate(35em, 28em);
+}
+
+    #transform-02a {
+        transform: translate(0, 0);
+}
+
+    #transform-03a{
+        transform: translate(0em, 1em);
+}
+
+    #transform-03b {
+        transform: translate(90em, 19em); 
+}
+
+}
+
+
+/*9:16   375x667*/
+@media screen and (min-width: 375px) and (min-height: 667px) {
+    
+    .button-aligner {   
+        height: 28px;
+        width: 71px;
+        bottom: .6em;
+}
+
+    .svg-back-button {
+        height: 180px;
+        width: 320px;
+        transform: scale(.2);
+        top: -77px;
+        right: -127px;
+}   
+    
+    .flexcontainer {           
+        border: none;
+        box-shadow: 2px 2px 10px 5px forestgreen, 2px 2px 10px 2px lightgreen inset;
+    }
+    
+    .container_01 {       
+        background-image: url("../css_comics/new_decade_images/01_1920x1080.jpg"); background-size: 375px 211px;
+        width: 375px;
+        height: 211px;
+        margin-bottom: 20px;
+        box-shadow: 3px 3px 11px 6px forestgreen, 2px 2px 10px 2px lightgreen inset;
+    }
+
+    .container_02 {
+        background-image: url("../css_comics/new_decade_images/02_1920x1080.jpg");
+        background-size: 375px 211px;
+        width: 375px;
+        height: 211px;
+        margin-bottom: 20px;
+        box-shadow: 3px 3px 11px 6px forestgreen, 2px 2px 10px 2px lightgreen inset;
+    }
+
+    .container_03 {
+        background-image: url("../css_comics/new_decade_images/03_1920x1080.jpg");
+        background-size: 375px 211px;
+        width: 375px;
+        height: 211px;
+        margin-bottom: 47px;
+        box-shadow: 3px 3px 11px 6px forestgreen, 2px 2px 10px 2px lightgreen inset;
+    }
+
+    .border {           
+        width: 375px;
+        height: 211px;
+    }
+
+    #transform-01a {
+        transform: translate(-0em, 1em);
+}
+
+    #transform-01b {
+        transform: translate(35em, 28em);
+}
+
+    #transform-02a {
+        transform: translate(0em, 1em);
+}
+
+    #transform-03a{
+        transform: translate(-1em, 2em);
+}
+
+    #transform-03b {
+        transform: translate(89em, 19em); 
+}
+}
+
+
+/*2:3   400x600*/
+@media screen and (min-width: 400px) and (min-height: 600px) {
+    
+    .button-aligner {   
+        height: 28px;
+        width: 71px;
+        bottom: .55em;
+}
+
+    .svg-back-button {
+        height: 180px;
+        width: 320px;
+        transform: scale(.2);
+        top: -77px;
+        right: -127px;
+}   
+    
+    .container_01 {       
+        background-image: url("../css_comics/new_decade_images/01_3-2aspect_2160x1440.jpg"); 
+        background-size: 400px 267px;
+        width: 400px;
+        height: 267px;
+        margin-bottom: 20px;
+        box-shadow: 3px 3px 11px 6px forestgreen, 2px 2px 10px 2px lightgreen inset;
+    }
+
+    .container_02 {
+        background-image: url("../css_comics/new_decade_images/02_1920x1080.jpg");
+        background-size: 400px 267px;
+        width: 400px;
+        height: 267px;
+        margin-bottom: 20px;
+        box-shadow: 3px 3px 11px 6px forestgreen, 2px 2px 10px 2px lightgreen inset;
+    }
+
+    .container_03 {
+        background-image: url("../css_comics/new_decade_images/03_1920x1080.jpg");
+        background-size: 400px 267px;
+        width: 400px;
+        height: 267px;
+        margin-bottom: 47px;
+        box-shadow: 3px 3px 11px 6px forestgreen, 2px 2px 10px 2px lightgreen inset;
+    }
+
+    .border {           
+        width: 400px;
+        height: 267px;
+    }
+
+    #transform-01a {
+        transform: translate(-5.5em, 3em);
+    }
+    
+    #transform-01b {
+        transform: translate(35em, 30em);
+    }
+    
+    #transform-02a {
+        transform: translate(0em, 0em);
+    }
+    
+    #transform-03a{
+        transform: translate(11em, 0em);
+    }
+    
+    #transform-03b {
+        transform: translate(82em, 20em); 
+    }
+}
+
+
+/*10:16   400x640*/
+@media screen and (min-width: 400px) and (min-height: 640px) {
+    
+    .button-aligner {   
+        height: 28px;
+        width: 71px;
+        bottom: .55em;
+}
+
+    .svg-back-button {
+        height: 180px;
+        width: 320px;
+        transform: scale(.2);
+        top: -77px;
+        right: -127px;
+}   
+    
+    .container_01 {       
+        background-image: url("../css_comics/new_decade_images/01_16-10aspect_1920x1200.jpg"); 
+        background-size: 400px 250px;
+        width: 400px;
+        height: 250px;
+        margin-bottom: 20px;
+        box-shadow: 3px 3px 11px 6px forestgreen, 2px 2px 10px 2px lightgreen inset;
+    }
+
+    .container_02 {
+        background-image: url("../css_comics/new_decade_images/02_16-10aspect_1920x1200.jpg");
+        background-size: 400px 250px;
+        width: 400px;
+        height: 250px;
+        margin-bottom: 20px;
+        box-shadow: 3px 3px 11px 6px forestgreen, 2px 2px 10px 2px lightgreen inset;
+    }
+
+    .container_03 {
+        background-image: url("../css_comics/new_decade_images/03_16-10aspect_1920x1200.jpg");
+        background-size: 400px 250px;
+        width: 400px;
+        height: 250px;
+        margin-bottom: 47px;
+        box-shadow: 3px 3px 11px 6px forestgreen, 2px 2px 10px 2px lightgreen inset;
+    }
+
+    .border {           
+        width: 400px;
+        height: 250px;
+    }
+
+    #transform-01a {
+        transform: translate(.1em, -1em);
+    }
+    
+    #transform-01b {
+        transform: translate(33em, 26.5em);
+    }
+    
+    #transform-02a {
+        transform: translate(-0.5em, -2em);
+    }
+    
+    #transform-03a{
+        transform: translate(13em, -1em);
+    }
+    
+    #transform-03b {
+        transform: translate(86.5em, 17.5em); 
+    }
+}
+
+
+/*16:9   425x239*/
+@media screen and (min-width: 425px) {
+      
+    .button-aligner {   
+        height: 30px;
+        width: 71px;
+        bottom: .6em;
+}
+
+    .svg-back-button {
+        height: 180px;
+        width: 320px;
+        transform: scale(.23);
+        top: -76px;
+        right: -127px;
+}
+
+    .container_01 {
+        background-image: url("../css_comics/new_decade_images/01_1920x1080.jpg");
+        background-size: 425px 239px;
+        width: 425px;
+        height: 239px;
+        margin-bottom: 23px;   
+    }
+
+    .container_02 {
+        background-image: url("../css_comics/new_decade_images/02_1920x1080.jpg");
+        background-size: 425px 239px;
+        width: 425px;
+        height: 239px;
+        margin-bottom: 23px;
+    }
+
+    .container_03 {
+        background-image: url("../css_comics/new_decade_images/03_1920x1080.jpg");
+        background-size: 425px 239px;
+        width: 425px;
+        height: 239px;
+        margin-bottom: 49px;
+    }
+
+    .border {           
+        width: 425px;
+        height: 239px;
+        border: 6px solid black;
+        box-shadow: 2px 2px 10px 5px forestgreen, 2px 2px 10px 2px lightgreen inset;
+    }
+
+    #transform-01a {
+        transform: translate(-0em, 1em);
+}
+
+    #transform-01b {
+        transform: translate(35em, 28em);
+}
+
+    #transform-02a {
+        transform: translate(0, 0);
+}
+
+    #transform-03a{
+        transform: translate(0em, 1em);
+}
+
+    #transform-03b {
+        transform: translate(90em, 19em); 
+}
+}
+    
+
+/*9:16   432x768*/
+@media screen and (min-width: 432px) {
+    
+    .button-aligner {   
+        height: 43px;
+        width: 91px;
+        bottom: .1em;
+}
+
+    .svg-back-button {
+        height: 180px;
+        width: 320px;
+        transform: scale(.3);
+        top: -70px;
+        right: -118px;
+} 
+    
+    .flexcontainer {
+        box-shadow: 3px 3px 11px 6px forestgreen inset;
+    }
+    
+    .container_01 {
+        background-image: url("../css_comics/new_decade_images/01_1920x1080.jpg");
+        background-size: 432px 243px;
+        width: 432px;
+        height: 243px;
+        margin-bottom: 23px;   
+    }
+
+    .container_02 {
+        background-image: url("../css_comics/new_decade_images/02_1920x1080.jpg");
+        background-size: 432px 243px;
+        width: 432px;
+        height: 243px;
+        margin-bottom: 23px;
+    }
+
+    .container_03 {
+        background-image: url("../css_comics/new_decade_images/03_1920x1080.jpg");
+        background-size: 432px 243px;
+        width: 432px;
+        height: 243px;
+        margin-bottom: 49px;
+    }
+
+    .border {           
+        width: 432px;
+        height: 243px;
+        border: 6px solid black;
+        box-shadow: 2px 2px 10px 5px forestgreen, 2px 2px 10px 2px lightgreen inset;
+    }
+    
+    #transform-01a {
+        transform: translate(-0em, 1em);
+}
+
+    #transform-01b {
+        transform: translate(35em, 28em);
+}
+
+    #transform-02a {
+        transform: translate(0em, 1em);
+}
+
+    #transform-03a{
+        transform: translate(-1em, 2em);
+}
+
+    #transform-03b {
+        transform: translate(89em, 19em); 
+}
+}
+
+
+/*3:4   450x600*/
+@media screen and (min-width: 450px) {
+ 
+    .button-aligner {   
+        height: 30px;
+        width: 64px;
+        bottom: .33em;
+}
+
+    .svg-back-button {
+        height: 180px;
+        width: 320px;
+        transform: scale(.2);
+        top: -76px;
+        right: -131px;
+}
+
+    .flexcontainer {
+        border: none;
+        padding:0px;
+}
+
+    .container_01 {
+        background-image: url("../css_comics/new_decade_images/01_4-3aspect_1382x1038.jpg");
+        background-size: 450px 338px;
+        width: 450px;
+        height: 338px;
+        margin-bottom: 33px;
+}
+
+    .container_02 {
+        background-image: url("../css_comics/new_decade_images/02_4-3aspect_1382x1038.jpg");
+        background-size: 450px 338px;
+        width: 450px;
+        height: 338px;
+        margin-bottom: 33px;
+}
+
+    .container_03 {
+        background-image: url("../css_comics/new_decade_images/03_4-3aspect_1382x1038.jpg");
+        background-size: 450px 338px;
+        width: 450px;
+        height: 338px;
+        margin-bottom: 40px;
+}
+
+    .border {           
+        width: 450px;
+        height: 338px;
+        border: 7px solid black;
+        box-shadow: 3px 3px 11px 6px forestgreen, 2px 2px 10px 2px lightgreen inset;
+}
+    
+    #transform-01a {
+        transform: translate(-1em, -1em);
+}
+   
+    #transform-01b {
+        transform: translate(30em, 26.5em);
+}
+}
+
+
+/*16:9   480x270*/
+@media screen and (min-width: 480px) and (min-height: 270px) {
+      
+    .button-aligner {   
+        height: 30px;
+        width: 71px;
+        bottom: .6em;
+}
+
+    .svg-back-button {
+        height: 180px;
+        width: 320px;
+        transform: scale(.23);
+        top: -76px;
+        right: -127px;
+}
+
+    .container_01 {
+        background-image: url("../css_comics/new_decade_images/01_1920x1080.jpg");
+        background-size: 480px 270px;
+        width: 480px;
+        height: 270px;
+        margin-bottom: 33px; 
+        outline-style: none;
+    }
+
+    .container_02 {
+        background-image: url("../css_comics/new_decade_images/02_1920x1080.jpg");
+        background-size: 480px 270px;
+        width: 480px;
+        height: 270px;
+        margin-bottom: 33px;
+        outline-style: none;
+    }
+    
+    .container_03 {
+        background-image: url("../css_comics/new_decade_images/03_1920x1080.jpg");
+        background-size: 480px 270px;
+        width: 480px;
+        height: 270px;
+        margin-bottom: 49px;
+        outline-style: none;
+    }
+
+    .border {           
+        width: 480px;
+        height: 270px;
+        border: 7px solid black;
+        box-shadow: 2px 2px 10px 5px forestgreen, 2px 2px 10px 2px lightgreen inset;
+    }
+    
+    #transform-01a {
+        transform: translate(-0em, 1em);
+}
+
+    #transform-01b {
+        transform: translate(35em, 28em);
+}
+
+    #transform-02a {
+        transform: translate(0, 0);
+}
+
+    #transform-03a{
+        transform: translate(0em, 1em);
+}
+
+    #transform-03b {
+        transform: translate(90em, 19em); 
+}
+}
+
+/*3:2   480x320*/
+@media screen and (min-width: 480px) and (min-height: 320px) {
+
+    .message {
+        display: none;
+        animation-duration: 0;
+        animation-iteration-count: 0;
+    }
+      
+    .button-aligner {   
+        height: 30px;
+        width: 64px;
+        bottom: .3em;
+}
+
+    .svg-back-button {
+        height: 180px;
+        width: 320px;
+        transform: scale(.2);
+        top: -76px;
+        right: -131px;
+}
+
+    .container_01 {
+        background-image: url("../css_comics/new_decade_images/01_3-2aspect_2160x1440.jpg");
+        background-size: 480px 320px;
+        width: 480px;
+        height: 320px;
+        margin-bottom: 33px;
+        outline-style: none;
+    }
+
+    .container_02 {
+        background-image: url("../css_comics/new_decade_images/02_3-2apsect_2160x1440.jpg");
+        background-size: 480px 320px;
+        width: 480px;
+        height: 320px;
+        margin-bottom: 33px;
+        outline-style: none;
+    }
+
+    .container_03 {
+        background-image: url("../css_comics/new_decade_images/03_3-2apsect_2160x1440.jpg");
+        background-size: 480px 320px;
+        width: 480px;
+        height: 320px;
+        margin-bottom: 40px;
+        outline-style: none;
+    }
+
+    .border {           
+        width: 480px;
+        height: 320px;
+        border: 7px solid black;
+        box-shadow: 3px 3px 11px 6px forestgreen, 2px 2px 10px 2px lightgreen inset;
+    }
+
+    #transform-01a {
+        transform: translate(-5.5em, 3em);
+    }
+    
+    
+    #transform-01b {
+        transform: translate(35em, 30em);
+    }
+    
+    #transform-02a {
+        transform: translate(-4em, -2em);
+    }
+    
+    #transform-03a{
+        transform: translate(8em, -2em);
+    }
+    
+    #transform-03b {
+        transform: translate(82em, 17em); 
+    }
+}
+
+
+/*4:3   480x360*/
+@media screen and (min-width: 480px) and (min-height: 360px) {
+      
+    .button-aligner {   
+        height: 30px;
+        width: 64px;
+        bottom: .6em;
+}
+
+    .svg-back-button {
+        height: 180px;
+        width: 320px;
+        transform: scale(.2);
+        top: -76px;
+        right: -131px;
+}
+
+    .container_01 {
+        background-image: url("../css_comics/new_decade_images/01_4-3aspect_1382x1038.jpg");
+        background-size: 480px 360px;
+        width: 480px;
+        height: 360px;
+        margin-bottom: 33px;
+        outline-style: none;
+    }
+
+    .container_02 {
+        background-image: url("../css_comics/new_decade_images/02_4-3aspect_1382x1038.jpg");
+        background-size: 480px 360px;
+        width: 480px;
+        height: 360px;
+        margin-bottom: 33px;
+        outline-style: none;
+    }
+
+    .container_03 {
+        background-image: url("../css_comics/new_decade_images/03_4-3aspect_1382x1038.jpg");
+        background-size: 480px 360px;
+        width: 480px;
+        height: 360px;
+        margin-bottom: 49px;
+        outline-style: none;
+    }
+
+    .border {           
+        width: 480px;
+        height: 360px;
+        border: 7px solid black;
+        box-shadow: 3px 3px 11px 6px forestgreen, 2px 2px 10px 2px lightgreen inset;
+    }
+
+    #transform-01a {
+        transform: translate(-1.3em, -1em);
+}
+
+    
+    #transform-01b {
+        transform: translate(30em, 26.5em);
+}
+
+    #transform-02a {
+        transform: translate(-1.5em, -2em);
+}
+
+    #transform-03a{
+        transform: translate(17em, -2em);
+}
+
+    #transform-03b {
+        transform: translate(79.5em, 17em); 
+}
+}
+
+
+/*3:4   480x600*/
+@media screen and (min-width: 480px) and (min-height: 600px) {
+      
+    .button-aligner {   
+        height: 30px;
+        width: 64px;
+        bottom: .6em;
+}
+
+    .svg-back-button {
+        height: 180px;
+        width: 320px;
+        transform: scale(.2);
+        top: -76px;
+        right: -131px;
+}
+
+    .container_01 {
+        background-image: url("../css_comics/new_decade_images/01_4-3aspect_1382x1038.jpg");
+        background-size: 480px 360px;
+        width: 480px;
+        height: 360px;
+        margin-bottom: 33px;
+        outline-style: none;
+    }
+
+    .container_02 {
+        background-image: url("../css_comics/new_decade_images/01_4-3aspect_1382x1038.jpg");
+        background-size: 480px 360px;
+        width: 480px;
+        height: 360px;
+        margin-bottom: 33px;
+        outline-style: none;
+    }
+
+    .container_03 {
+        background-image: url("../css_comics/new_decade_images/01_4-3aspect_1382x1038.jpg");
+        background-size: 480px 360px;
+        width: 480px;
+        height: 360px;
+        margin-bottom: 49px;
+        outline-style: none;
+    }
+
+    .border {           
+        width: 480px;
+        height: 360px;
+        border: 7px solid black;
+        box-shadow: 3px 3px 11px 6px forestgreen, 2px 2px 10px 2px lightgreen inset;
+    }
+}
+
+
+/*3:2   512x342*/
+@media screen and (min-width: 512px) and (min-height: 342px) {
+      
+    .button-aligner {   
+        height: 30px;
+        width: 64px;
+        bottom: .3em;
+}
+
+    .svg-back-button {
+        height: 180px;
+        width: 320px;
+        transform: scale(.2);
+        top: -76px;
+        right: -131px;
+}
+
+    .container_01 {
+        background-image: url("../css_comics/new_decade_images/01_3-2aspect_2160x1440.jpg");
+        background-size: 512px 342px;
+        width: 512px;
+        height: 342px;
+        margin-bottom: 33px;
+        outline-style: none;
+    }
+
+    .container_02 {
+        background-image: url("../css_comics/new_decade_images/02_3-2apsect_2160x1440.jpg");
+        background-size: 512px 342px;
+        width: 512px;
+        height: 342px;
+        margin-bottom: 33px;
+        outline-style: none;
+    }
+
+    .container_03 {
+        background-image: url("../css_comics/new_decade_images/03_3-2apsect_2160x1440.jpg");
+        background-size: 512px 342px;
+        width: 512px;
+        height: 342px;
+        margin-bottom: 40px;
+        outline-style: none;
+    }
+
+    .border {           
+        width: 512px;
+        height: 342px;
+        border: 7px solid black;
+        box-shadow: 3px 3px 11px 6px forestgreen, 2px 2px 10px 2px lightgreen inset;
+    }
+
+    #transform-01a {
+        transform: translate(-5.5em, 3em);
+    }
+      
+    #transform-01b {
+        transform: translate(35em, 30em);
+    }
+    
+    #transform-02a {
+        transform: translate(-4em, -2em);
+    }
+    
+    #transform-03a{
+        transform: translate(8em, -2em);
+    }
+    
+    #transform-03b {
+        transform: translate(82em, 17em); 
+    }
+}
+
+
+/*2:3   512x768*/
+@media screen and (min-width: 512px) and (min-height: 768px) {
+      
+    .button-aligner {   
+        height: 48px;
+        width: 113px;
+        bottom: .63em;
+}
+
+    .svg-back-button {
+        height: 180px;
+        width: 320px;
+        transform: scale(.37);
+        top: -67px;
+        right: -107px;
+}
+    .container_01 {
+        background-image: url("../css_comics/new_decade_images/01_3-2aspect_2160x1440.jpg");
+        background-size: 512px 342px;
+        width: 512px;
+        height: 342px;
+        margin-bottom: 37px;
+        outline-style: none;
+    }
+
+    .container_02 {
+        background-image: url("../css_comics/new_decade_images/02_3-2apsect_2160x1440.jpg");
+        background-size: 512px 342px;
+        width: 512px;
+        height: 342px;
+        margin-bottom: 37px;
+        outline-style: none;
+    }
+
+    .container_03 {
+        background-image: url("../css_comics/new_decade_images/03_3-2apsect_2160x1440.jpg");
+        background-size: 512px 342px;
+        width: 512px;
+        height: 342px;
+        margin-bottom: 66px;
+        outline-style: none;
+    }
+
+    .border {           
+        width: 512px;
+        height: 342px;
+        border: 7px solid black;
+        box-shadow: 3px 3px 11px 6px forestgreen, 2px 2px 10px 2px lightgreen inset;
+    }
+
+    #transform-01a {
+        transform: translate(-5.5em, 3em);
+    }
+    
+    #transform-01b {
+        transform: translate(35em, 30em);
+    }
+    
+    #transform-02a {
+        transform: translate(-3.9em, -2em);
+    }
+    
+    #transform-03a{
+        transform: translate(9em, -1em);
+    }
+    
+    #transform-03b {
+        transform: translate(81.5em, 18em); 
+    }
+}
+
+
+/*16:9   568x320*/
+@media screen and (min-width: 568px) {
+    
+    .button-aligner {   
+        height: 30px;
+        width: 71px;
+        bottom: .69em;
+}
+
+    .svg-back-button {
+        height: 180px;
+        width: 320px;
+        transform: scale(.23);
+        top: -76px;
+        right: -127px;
+}
+    
+    .container_01 {
+        position:relative;
+        background-image: url("../css_comics/new_decade_images/01_1920x1080.jpg");
+        background-repeat: no-repeat;
+        background-size: 568px 320px;
+        width: 568px;
+        height: 320px;
+        margin-bottom: 33px;   
+    }
+
+    .container_02 {
+        position:relative;
+        background-image: url("../css_comics/new_decade_images/02_1920x1080.jpg");
+        background-repeat: no-repeat;
+        background-size: 568px 320px;
+        width: 568px;
+        height: 320px;
+        margin-bottom: 33px;
+    }
+
+    .container_03 {
+        position:relative;
+        background-image: url("../css_comics/new_decade_images/03_1920x1080.jpg");
+        background-repeat: no-repeat;
+        background-size: 568px 320px;
+        width: 568px;
+        height: 320px;
+        margin-bottom: 53px;
+    }
+
+    .border {           
+        width: 568px;
+        height: 320px;
+        border: 8px solid black;
+        box-shadow: 3px 3px 11px 6px forestgreen, 2px 2px 10px 2px lightgreen inset;
+    }
+
+    #transform-01a {
+        transform: translate(-0em, 1em);
+}
+
+    #transform-01b {
+        transform: translate(35em, 28em);
+}
+
+    #transform-02a {
+        transform: translate(0, 0);
+}
+
+    #transform-03a{
+        transform: translate(0em, 1em);
+}
+
+    #transform-03b {
+        transform: translate(90em, 19em); 
+}
+}
+
+
+/*3:4   576x768*/
+@media screen and (min-width: 576px) {
+      
+    .button-aligner {   
+        height: 48px;
+        width: 113px;
+        bottom: .69em;
+}
+
+    .svg-back-button {
+        height: 180px;
+        width: 320px;
+        transform: scale(.37);
+        top: -67px;
+        right: -107px;
+}
+
+    .container_01 {
+        background-image: url("../css_comics/new_decade_images/01_4-3aspect_1382x1038.jpg");
+        background-size: 576px 432px;
+        width: 576px;
+        height: 432px;
+        margin-bottom: 39px;
+    }
+
+    .container_02 {
+        background-image: url("../css_comics/new_decade_images/02_4-3aspect_1382x1038.jpg");
+        background-size: 576px 432px;
+        width: 576px;
+        height: 432px;
+        margin-bottom: 39px;
+    }
+
+    .container_03 {
+        background-image: url("../css_comics/new_decade_images/03_4-3aspect_1382x1038.jpg");
+        background-size: 576px 432px;
+        width: 576px;
+        height: 432px;
+        margin-bottom: 73px;
+    }
+
+    .border {           
+        width: 576px;
+        height: 432px;
+        border: 7px solid black;
+        box-shadow: 3px 3px 11px 6px forestgreen, 2px 2px 10px 2px lightgreen inset;
+    }
+}
+
+
+
+
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+/*16:9   600x337.5*/
+@media screen and (min-width: 600px) and (min-height: 337px) {
+    
+    .button-aligner {   
+        height: 30px;
+        width: 71px;
+        bottom: .66em;
+}
+
+    .svg-back-button {
+        height: 180px;
+        width: 320px;
+        transform: scale(.23);
+        top: -76px;
+        right: -127px;
+}
+    
+    .container_01 {
+        position:relative;
+        background-image: url("../css_comics/new_decade_images/01_1920x1080.jpg");
+        background-repeat: no-repeat;
+        background-size: 600px 337px;
+        width: 600px;
+        height: 337px;
+        margin-bottom: 33px;   
+    }
+
+    .container_02 {
+        position:relative;
+        background-image: url("../css_comics/new_decade_images/02_1920x1080.jpg");
+        background-repeat: no-repeat;
+        background-size: 600px 337px;
+        width: 600px;
+        height: 337px;
+        margin-bottom: 33px;
+    }
+
+    .container_03 {
+        position:relative;
+        background-image: url("../css_comics/new_decade_images/03_1920x1080.jpg");
+        background-repeat: no-repeat;
+        background-size: 600px 337px;
+        width: 600px;
+        height: 337px;
+        margin-bottom: 53px;
+    }
+
+    .border {           
+        width: 600px;
+        height: 337px;
+        border: 8px solid black;
+        box-shadow: 3px 3px 11px 6px forestgreen, 2px 2px 10px 2px lightgreen inset;
+    }
+
+    #transform-01a {
+        transform: translate(-0em, 1em);
+}
+
+    #transform-01b {
+        transform: translate(35em, 28em);
+}
+
+    #transform-02a {
+        transform: translate(0, 0);
+}
+
+    #transform-03a{
+        transform: translate(0em, 1em);
+}
+
+    #transform-03b {
+        transform: translate(90em, 19em); 
+}
+}
+
+
+/*3:2   600x400*/
+@media screen and (min-width: 600px) and (min-height: 400px) {
+
+    .button-aligner {   
+        height: 30px;
+        width: 71px;
+        bottom: .66em;
+}
+
+    .svg-back-button {
+        height: 180px;
+        width: 320px;
+        transform: scale(.23);
+        top: -76px;
+        right: -127px;
+}
+
+    .container_01 {
+        background-image: url("../css_comics/new_decade_images/01_3-2aspect_2160x1440.jpg");
+        background-size: 600px 400px;
+        width: 600px;
+        height: 400px;
+        margin-bottom: 39px;
+    }
+
+    .container_02 {
+        background-image: url("../css_comics/new_decade_images/02_3-2apsect_2160x1440.jpg");
+        background-size: 600px 400px;
+        width: 600px;
+        height: 400px;
+        margin-bottom: 39px;
+    }
+
+    .container_03 {
+        background-image: url("../css_comics/new_decade_images/03_3-2apsect_2160x1440.jpg");
+        background-size: 600px 400px;
+        width: 600px;
+        height: 400px;
+        margin-bottom: 50px;
+    }
+
+    .border {           
+        width: 600px;
+        height: 400px;
+        border: 7px solid black;
+        box-shadow: 3px 3px 11px 6px forestgreen, 2px 2px 10px 2px lightgreen inset;
+    }
+
+    #transform-01a {
+        transform: translate(-5.5em, 3em);
+    }
+       
+    #transform-01b {
+        transform: translate(35em, 30em);
+    }
+    
+    #transform-02a {
+        transform: translate(-4em, -2em);
+    }
+    
+    #transform-03a{
+        transform: translate(8em, -2em);
+    }
+    
+    #transform-03b {
+        transform: translate(82em, 17em); 
+    }
+}
+
+
+/*4:3   600x450*/
+@media screen and (min-width: 600px) and (min-height: 450px) {
+
+    .button-aligner {   
+        height: 30px;
+        width: 71px;
+        bottom: .66em;
+}
+
+    .svg-back-button {
+        height: 180px;
+        width: 320px;
+        transform: scale(.23);
+        top: -76px;
+        right: -127px;
+}
+
+    .container_01 {
+        background-image: url("../css_comics/new_decade_images/01_4-3aspect_1382x1038.jpg");
+        background-size: 600px 450px;
+        width: 600px;
+        height: 450px;
+        margin-bottom: 33px;
+        outline-style: none;
+    }
+
+    .container_02 {
+        background-image: url("../css_comics/new_decade_images/02_4-3aspect_1382x1038.jpg");
+        background-size: 600px 450px;
+        width: 600px;
+        height: 450px;
+        margin-bottom: 33px;
+        outline-style: none;
+    }
+
+    .container_03 {
+        background-image: url("../css_comics/new_decade_images/03_4-3aspect_1382x1038.jpg");
+        background-size: 600px 450px;
+        width: 600px;
+        height: 450px;
+        margin-bottom: 49px;
+        outline-style: none;
+    }
+
+    .border {           
+        width: 600px;
+        height: 450px;
+        border: 8px solid black;
+        box-shadow: 3px 3px 11px 6px forestgreen, 2px 2px 10px 2px lightgreen inset;
+    }
+
+    #transform-01a {
+        transform: translate(-1.3em, -1em);
+}
+
+    
+    #transform-01b {
+        transform: translate(30em, 26.5em);
+}
+
+    #transform-02a {
+        transform: translate(-1.5em, -2em);
+}
+
+    #transform-03a{
+        transform: translate(17em, -2em);
+}
+
+    #transform-03b {
+        transform: translate(79.5em, 17em); 
+}
+}
+
+
+/*16:9   640x360*/
+@media screen and (min-width: 640px) and (min-height: 360px) {
+
+    .button-aligner {   
+        height: 30px;
+        width: 71px;
+        bottom: .47em;
+}
+
+    .svg-back-button {
+        height: 180px;
+        width: 320px;
+        transform: scale(.23);
+        top: -76px;
+        right: -127px;
+}
+    
+    .container_01 {
+        background-image: url("../css_comics/new_decade_images/01_1920x1080.jpg");
+        background-size: 640px 360px;
+        width: 640px;
+        height: 360px;
+        margin-bottom: 33px;   
+    }
+
+    .container_02 {
+        background-image: url("../css_comics/new_decade_images/02_1920x1080.jpg");
+        background-size: 640px 360px;
+        width: 640px;
+        height: 360px;
+        margin-bottom: 33px;
+    }
+
+    .container_03 {
+        background-image: url("../css_comics/new_decade_images/03_1920x1080.jpg");
+        background-size: 640px 360px;
+        width: 640px;
+        height: 360px;
+        margin-bottom: 43px;
+    }
+
+    .border {           
+        width: 640px;
+        height: 360px;
+        border: 8px solid black;
+        box-shadow: 3px 3px 11px 6px forestgreen, 2px 2px 10px 2px lightgreen inset;
+    }
+
+    #transform-01a {
+        transform: translate(-0em, 1em);
+}
+
+    #transform-01b {
+        transform: translate(35em, 28em);
+}
+
+    #transform-02a {
+        transform: translate(0, 0);
+}
+
+    #transform-03a{
+        transform: translate(0em, 1em);
+}
+
+    #transform-03b {
+        transform: translate(90em, 19em); 
+}
+}
+
+
+/*16:10   640x400*/
+@media screen and (min-width: 640px) and (min-height: 400px) {
+ 
+    .button-aligner {   
+        height: 30px;
+        width: 71px;
+        bottom: .66em;
+}
+
+    .svg-back-button {
+        height: 180px;
+        width: 320px;
+        transform: scale(.23);
+        top: -76px;
+        right: -127px;
+}
+
+    .container_01 {
+        background-image: url("../css_comics/new_decade_images/01_16-10aspect_1920x1200.jpg");
+        background-size: 640px 400px;
+        width: 640px;
+        height: 400px;
+        margin-bottom: 39px;   
+    }
+
+    .container_02 {
+        background-image: url("../css_comics/new_decade_images/02_16-10aspect_1920x1200.jpg");
+        background-size: 640px 400px;
+        width: 640px;
+        height: 400px;
+        margin-bottom: 39px;
+    }
+
+    .container_03 {
+        background-image: url("../css_comics/new_decade_images/03_16-10aspect_1920x1200.jpg");
+        background-size: 640px 400px;
+        width: 640px;
+        height: 400px;
+        margin-bottom: 51px;
+    }
+
+    .border {           
+        width: 640px;
+        height: 400px;
+        border: 8px solid black;
+        box-shadow: 3px 3px 11px 6px forestgreen, 2px 2px 10px 2px lightgreen inset;
+    }
+
+    #transform-01a {
+        transform: translate(0em,-1em);
+}
+
+    #transform-01b {
+        transform: translate(33em, 26.5em);
+}
+
+    #transform-02a {
+        transform: translate(-1em, -2em);
+}
+
+    #transform-03a{
+        transform: translate(13em, -1em);
+}
+
+    #transform-03b {
+        transform: translate(86em, 18em); 
+}
+}
+
+
+/*4:3   640x480*/
+@media screen and (min-width: 640px) and (min-height: 480px) {
+ 
+    .button-aligner {   
+        height: 30px;
+        width: 71px;
+        bottom: .67em;
+}
+
+    .svg-back-button {
+        height: 180px;
+        width: 320px;
+        transform: scale(.23);
+        top: -76px;
+        right: -127px;
+}
+
+    .container_01 {
+        background-image: url("../css_comics/new_decade_images/01_4-3aspect_1382x1038.jpg");
+        background-size: 640px 480px;
+        width: 640px;
+        height: 480px;
+        margin-bottom: 39px;   
+    }
+
+    .container_02 {
+        background-image: url("../css_comics/new_decade_images/02_4-3aspect_1382x1038.jpg");
+        background-size: 640px 480px;
+        width: 640px;
+        height: 480px;
+        margin-bottom: 39px;
+    }
+
+    .container_03 {
+        background-image: url("../css_comics/new_decade_images/03_4-3aspect_1382x1038.jpg");
+        background-size: 640px 480px;
+        width: 640px;
+        height: 480px;
+        margin-bottom: 53px;
+    }
+
+    .border {           
+        width: 640px;
+        height: 480px;
+        border: 8px solid black;
+        box-shadow: 3px 3px 11px 6px forestgreen, 2px 2px 10px 2px lightgreen inset;
+    }
+
+    #transform-01a {
+        transform: translate(-1.3em, -1em);
+}
+
+    
+    #transform-01b {
+        transform: translate(30em, 26.5em);
+}
+
+    #transform-02a {
+        transform: translate(-1.5em, -2em);
+}
+
+    #transform-03a{
+        transform: translate(17em, -2em);
+}
+
+    #transform-03b {
+        transform: translate(79.5em, 17em); 
+}
+}
+
+
+/*16:9*   667x375*/
+@media screen and (min-width: 667px) {
+    
+    .button-aligner {   
+        height: 30px;
+        width: 71px;
+        bottom: .6em;
+}
+
+    .svg-back-button {
+        height: 180px;
+        width: 320px;
+        transform: scale(.23);
+        top: -76px;
+        right: -127px;
+}
+    
+    .container_01 {
+        background-image: url("../css_comics/new_decade_images/01_1920x1080.jpg");
+        background-size: 667px 375px;
+        width: 667px;
+        height: 375px;
+        margin-bottom: 33px;   
+    }
+
+    .container_02 {
+        background-image: url("../css_comics/new_decade_images/02_1920x1080.jpg");
+        background-size: 667px 375px;
+        width: 667px;
+        height: 375px;
+        margin-bottom: 33px;
+    }
+    
+    .container_03 {
+        background-image: url("../css_comics/new_decade_images/03_1920x1080.jpg");
+        background-size: 667px 375px;
+        width: 667px;
+        height: 375px;
+        margin-bottom: 49px;
+    }
+
+    .border {           
+        width: 667px;
+        height: 375px;
+        border: 8px solid black;
+        box-shadow: 3px 3px 11px 6px forestgreen, 2px 2px 10px 2px lightgreen inset;
+    }
+
+    #transform-01a {
+        transform: translate(-0em, 1em);
+}
+
+    #transform-01b {
+        transform: translate(35em, 28em);
+}
+
+    #transform-02a {
+        transform: translate(0, 0);
+}
+
+    #transform-03a{
+        transform: translate(0em, 1em);
+}
+
+    #transform-03b {
+        transform: translate(90em, 19em); 
+}
+}
+
+/*9:16   720x1280*/
+@media screen and (min-width: 720px) {
+    
+    .button-aligner {   
+        height: 30px;
+        width: 71px;
+        bottom: .6em;
+}
+
+    .svg-back-button {
+        height: 180px;
+        width: 320px;
+        transform: scale(.23);
+        top: -76px;
+        right: -127px;
+}
+    
+    .container_01 {
+        background-image: url("../css_comics/new_decade_images/01_1920x1080.jpg");
+        background-size: 720px 405px;
+        width: 720px;
+        height: 405px;
+        margin-bottom: 33px;   
+    }
+
+    .container_02 {
+        background-image: url("../css_comics/new_decade_images/02_1920x1080.jpg");
+        background-size: 720px 405px;
+        width: 720px;
+        height: 405px;
+        margin-bottom: 33px;
+    }
+    
+    .container_03 {
+        background-image: url("../css_comics/new_decade_images/03_1920x1080.jpg");
+        background-size: 720px 405px;
+        width: 720px;
+        height: 405px;
+        margin-bottom: 49px;
+    }
+
+    .border {           
+        width: 720px;
+        height: 405px;
+        border: 9px solid black;
+        box-shadow: 3px 3px 11px 6px forestgreen, 2px 2px 10px 2px lightgreen inset;
+    }
+
+    #transform-01a {
+        transform: translate(-0em, 1em);
+}
+
+    #transform-01b {
+        transform: translate(35em, 28em);
+}
+
+    #transform-02a {
+        transform: translate(0em, 1em);
+}
+
+    #transform-03a{
+        transform: translate(-1em, 2em);
+}
+
+    #transform-03b {
+        transform: translate(89em, 19em); 
+}
+}
+
+
+
+
+
+/* Medium devices (landscape tablets, 768px and up) */
+/*16:9   768x432*/
+@media screen and (min-width: 768px) and (min-height: 432px) {
+    
+    .button-aligner {   
+        height: 35px;
+        width: 77px;
+        bottom: .59em;
+}
+
+    .svg-back-button {
+        height: 180px;
+        width: 320px;
+        transform: scale(.25);
+        top: -73px;
+        right: -123px;
+}
+
+    .container_01 {
+        background-image: url("../css_comics/new_decade_images/01_1920x1080.jpg");
+        background-size: 768px 432px;
+        width: 768px;
+        height: 432px;
+        margin-bottom: 36px;   
+    }
+
+    .container_02 {
+        background-image: url("../css_comics/new_decade_images/02_1920x1080.jpg");
+        background-size: 768px 432px;
+        width: 768px;
+        height: 432px;
+        margin-bottom: 36px;
+    }
+
+    .container_03 {
+        background-image: url("../css_comics/new_decade_images/03_1920x1080.jpg");
+        background-size: 768px 432px;
+        width: 768px;
+        height: 432px;
+        margin-bottom: 54px;
+    }
+
+    .border {           
+        width: 768px;
+        height: 432px;
+        border: 8px solid black;
+        box-shadow: 3px 3px 11px 6px forestgreen, 2px 2px 10px 2px lightgreen inset;
+    }
+
+    #transform-01a {
+        transform: translate(-0em, 1em);
+}
+
+    #transform-01b {
+        transform: translate(35em, 28em);
+}
+
+    #transform-02a {
+        transform: translate(0, 0);
+}
+
+    #transform-03a{
+        transform: translate(0em, 1em);
+}
+
+    #transform-03b {
+        transform: translate(90em, 19em); 
+}
+}
+
+   
+/*3:2   768x512*/
+@media screen and (min-width: 768px) and (min-height: 512px) {
+      
+    .button-aligner {   
+        height: 37px;
+        width: 84px;
+        bottom: .59em;
+}
+
+    .svg-back-button {
+        height: 180px;
+        width: 320px;
+        transform: scale(.273);
+        top: -73px;
+        right: -121px;
+}
+
+    .container_01 {
+        background-image: url("../css_comics/new_decade_images/01_3-2aspect_2160x1440.jpg");
+        background-size: 768px 512px;
+        width: 768px;
+        height: 512px;
+        margin-bottom: 39px;
+    }
+
+    .container_02 {
+        background-image: url("../css_comics/new_decade_images/02_3-2apsect_2160x1440.jpg");
+        background-size: 768px 512px;
+        width: 768px;
+        height: 512px;
+        margin-bottom: 39px;
+    }
+
+    .container_03 {
+        background-image: url("../css_comics/new_decade_images/03_3-2apsect_2160x1440.jpg");
+        background-size: 768px 512px;
+        width: 768px;
+        height: 512px;
+        margin-bottom: 57px;
+    }
+
+    .border {           
+        width: 768px;
+        height: 512px;
+        border: 7px solid black;
+        box-shadow: 3px 3px 11px 6px forestgreen, 2px 2px 10px 2px lightgreen inset;
+    }
+
+    #transform-01a {
+        transform: translate(-5.5em, 3em);
+    }   
+    
+    #transform-01b {
+        transform: translate(35em, 30em);
+    }
+    
+    #transform-02a {
+        transform: translate(-4em, -2em);
+    }
+    
+    #transform-03a{
+        transform: translate(8em, -2em);
+    }
+    
+    #transform-03b {
+        transform: translate(82em, 17em); 
+    }
+}
+
+
+/*4:3   768x576*/
+@media screen and (min-width: 768px) and (min-height: 576px) {
+ 
+    .button-aligner {   
+        height: 37px;
+        width: 84px;
+        bottom: .59em;
+}
+
+    .svg-back-button {
+        height: 180px;
+        width: 320px;
+        transform: scale(.273);
+        top: -73px;
+        right: -121px;
+}
+
+    .container_01 {
+        background-image: url("../css_comics/new_decade_images/01_4-3aspect_1382x1038.jpg");
+        background-size: 768px 576px;
+        width: 768px;
+        height: 576px;
+        margin-bottom: 41px;   
+}
+
+    .container_02 {
+        background-image: url("../css_comics/new_decade_images/02_4-3aspect_1382x1038.jpg");
+        background-size: 768px 576px;
+        width: 768px;
+        height: 576px;
+        margin-bottom: 41px;
+    }
+
+    .container_03 {
+        background-image: url("../css_comics/new_decade_images/03_4-3aspect_1382x1038.jpg");
+        background-size: 768px 576px;
+        width: 768px;
+        height: 576px;
+        margin-bottom: 57px;
+    }
+
+    .border {           
+        width: 768px;
+        height: 576px;
+        border: 8px solid black;
+        box-shadow: 3px 3px 11px 6px forestgreen, 2px 2px 10px 2px lightgreen inset;
+    }
+
+    #transform-01a {
+        transform: translate(-1.3em, -1em);
+}
+
+    
+    #transform-01b {
+        transform: translate(30em, 26.5em);
+}
+
+    #transform-02a {
+        transform: translate(-1.5em, -2em);
+}
+
+    #transform-03a{
+        transform: translate(17em, -2em);
+}
+
+    #transform-03b {
+        transform: translate(79.5em, 17em); 
+}
+}
+  
+
+/*3:4   768x1024*/
+@media screen and (min-width: 768px) and (min-height: 1024px) {
+ 
+    .button-aligner {   
+        height: 37px;
+        width: 84px;
+        bottom: .59em;
+}
+
+    .svg-back-button {
+        height: 180px;
+        width: 320px;
+        transform: scale(.273);
+        top: -73px;
+        right: -121px;
+}
+
+    .container_01 {
+        background-image: url("../css_comics/new_decade_images/01_4-3aspect_1382x1038.jpg");
+        background-size: 768px 576px;
+        width: 768px;
+        height: 576px;
+        margin-bottom: 41px;   
+}
+
+    .container_02 {
+        background-image: url("../css_comics/new_decade_images/02_4-3aspect_1382x1038.jpg");
+        background-size: 768px 576px;
+        width: 768px;
+        height: 576px;
+        margin-bottom: 41px;
+    }
+
+    .container_03 {
+        background-image: url("../css_comics/new_decade_images/03_4-3aspect_1382x1038.jpg");
+        background-size: 768px 576px;
+        width: 768px;
+        height: 576px;
+        margin-bottom: 57px;
+    }
+
+    .border {           
+        width: 768px;
+        height: 576px;
+        border: 8px solid black;
+        box-shadow: 3px 3px 11px 6px forestgreen, 2px 2px 10px 2px lightgreen inset;
+    }
+
+    #transform-01a {
+        transform: translate(-1.3em, -1em);
+}
+
+    
+    #transform-01b {
+        transform: translate(30em, 26.5em);
+}
+
+    #transform-02a {
+        transform: translate(-1.5em, -2em);
+}
+
+    #transform-03a{
+        transform: translate(17em, -2em);
+}
+
+    #transform-03b {
+        transform: translate(79.5em, 17em); 
+}
+}
+
+
+/*10:16   800×1280*/
+@media screen and (min-width: 800px) {
+    
+    .button-aligner {   
+        height: 30px;
+        width: 71px;
+        bottom: .6em;
+}
+
+    .svg-back-button {
+        height: 180px;
+        width: 320px;
+        transform: scale(.23);
+        top: -76px;
+        right: -127px;
+}
+    
+    .container_01 {
+        background-image: url("../css_comics/new_decade_images/01_16-10aspect_1920x1200.jpg");
+        background-size: 800px 450px;
+        width: 800px;
+        height: 450px;
+        margin-bottom: 33px;   
+    }
+
+    .container_02 {
+        background-image: url("../css_comics/new_decade_images/02_16-10aspect_1920x1200.jpg");
+        background-size: 800px 450px;
+        width: 800px;
+        height: 450px;
+        margin-bottom: 33px;
+    }
+    
+    .container_03 {
+        background-image: url("../css_comics/new_decade_images/03_16-10aspect_1920x1200.jpg");
+        background-size: 800px 450px;
+        width: 800px;
+        height: 450px;
+        margin-bottom: 49px;
+    }
+
+    .border {           
+        width: 800px;
+        height: 450px;
+        border: 9px solid black;
+        box-shadow: 3px 3px 11px 6px forestgreen, 2px 2px 10px 2px lightgreen inset;
+    }
+
+    #transform-01a {
+        transform: translate(-0em, -1em);
+}
+
+    #transform-01b {
+        transform: translate(34em, 26.7em);
+}
+
+    #transform-02a {
+        transform: translate(0em, -2em);
+}
+
+    #transform-03a{
+        transform: translate(6em, -1em);
+}
+
+    #transform-03b {
+        transform: translate(89em, 18em); 
+}
+}
+
+
+/*10:16   900x1440*/
+@media screen and (min-width: 900px) {
+    
+    .button-aligner {   
+        height: 30px;
+        width: 71px;
+        bottom: .6em;
+}
+
+    .svg-back-button {
+        height: 180px;
+        width: 320px;
+        transform: scale(.23);
+        top: -76px;
+        right: -127px;
+}
+    
+    .container_01 {
+        background-image: url("../css_comics/new_decade_images/01_16-10aspect_1920x1200.jpg");
+        background-size: 900px 506px;
+        width: 900px;
+        height: 506px;
+        margin-bottom: 33px;   
+    }
+
+    .container_02 {
+        background-image: url("../css_comics/new_decade_images/02_16-10aspect_1920x1200.jpg");
+        background-size: 900px 506px;
+        width: 900px;
+        height: 506px;
+        margin-bottom: 33px;
+    }
+    
+    .container_03 {
+        background-image: url("../css_comics/new_decade_images/03_16-10aspect_1920x1200.jpg");
+        background-size: 900px 506px;
+        width: 900px;
+        height: 506px;
+        margin-bottom: 49px;
+    }
+
+    .border {           
+        width: 900px;
+        height: 506px;
+        border: 9px solid black;
+        box-shadow: 3px 3px 11px 6px forestgreen, 2px 2px 10px 2px lightgreen inset;
+    }
+
+    #transform-01a {
+        transform: translate(-0em, -1em);
+}
+
+    #transform-01b {
+        transform: translate(34em, 26.7em);
+}
+
+    #transform-02a {
+        transform: translate(0em, -2em);
+}
+
+    #transform-03a{
+        transform: translate(6em, -1em);
+}
+
+    #transform-03b {
+        transform: translate(89em, 18em); 
+}
+}
+
+
+
+
+
+/*laptops/desktops, large devices start here*/
+/*16:9   992x558*/
+@media screen and (min-width: 992px) and (min-height: 558px) {
+    
+    .button-aligner {   
+        height: 35px;
+        width: 77px;
+        bottom: .59em;
+}
+
+    .svg-back-button {
+        height: 180px;
+        width: 320px;
+        transform: scale(.25);
+        top: -73px;
+        right: -123px;
+}
+
+    .container_01 {
+        background-image: url("../css_comics/new_decade_images/01_1920x1080.jpg");
+        background-size: 768px 432px;
+        width: 768px;
+        height: 432px;
+        margin-bottom: 36px;   
+    }
+
+    .container_02 {
+        background-image: url("../css_comics/new_decade_images/02_1920x1080.jpg");
+        background-size: 768px 432px;
+        width: 768px;
+        height: 432px;
+        margin-bottom: 36px;
+    }
+
+    .container_03 {
+        background-image: url("../css_comics/new_decade_images/03_1920x1080.jpg");
+        background-size: 768px 432px;
+        width: 768px;
+        height: 432px;
+        margin-bottom: 54px;
+    }
+
+    .border {           
+        width: 768px;
+        height: 432px;
+        border: 8px solid black;
+        box-shadow: 3px 3px 11px 6px forestgreen, 2px 2px 10px 2px lightgreen inset;
+    }
+
+    #transform-01a {
+        transform: translate(-0em, 1em);
+}
+
+    #transform-01b {
+        transform: translate(35em, 28em);
+}
+
+    #transform-02a {
+        transform: translate(0, 0);
+}
+
+    #transform-03a{
+        transform: translate(0em, 1em);
+}
+
+    #transform-03b {
+        transform: translate(90em, 19em); 
+}
+}
+
+
+/*16:9   1024x576*/
+@media screen and (min-width: 1024px) and (min-height: 576px) {
+    
+    .button-aligner {   
+        height: 35px;
+        width: 77px;
+        bottom: .59em;
+}
+
+    .svg-back-button {
+        height: 180px;
+        width: 320px;
+        transform: scale(.25);
+        top: -73px;
+        right: -123px;
+}
+
+    .container_01 {
+        background-image: url("../css_comics/new_decade_images/01_1920x1080.jpg");
+        background-size: 768px 432px;
+        width: 768px;
+        height: 432px;
+        margin-bottom: 36px;   
+    }
+
+    .container_02 {
+        background-image: url("../css_comics/new_decade_images/02_1920x1080.jpg");
+        background-size: 768px 432px;
+        width: 768px;
+        height: 432px;
+        margin-bottom: 36px;
+    }
+
+    .container_03 {
+        background-image: url("../css_comics/new_decade_images/03_1920x1080.jpg");
+        background-size: 768px 432px;
+        width: 768px;
+        height: 432px;
+        margin-bottom: 54px;
+    }
+
+    .border {           
+        width: 768px;
+        height: 432px;
+        border: 8px solid black;
+        box-shadow: 3px 3px 11px 6px forestgreen, 2px 2px 10px 2px lightgreen inset;
+    }
+
+    #transform-01a {
+        transform: translate(-0em, 1em);
+}
+
+    #transform-01b {
+        transform: translate(35em, 28em);
+}
+
+    #transform-02a {
+        transform: translate(0, 0);
+}
+
+    #transform-03a{
+        transform: translate(0em, 1em);
+}
+
+    #transform-03b {
+        transform: translate(90em, 19em); 
+}
+}
+
+
+
+
+
+/*4:3   1024x768*/
+@media screen and (min-width: 1024px) and (min-height: 768px) {
+ 
+    .button-aligner {   
+        height: 37px;
+        width: 84px;
+        bottom: .59em;
+}
+
+    .svg-back-button {
+        height: 180px;
+        width: 320px;
+        transform: scale(.273);
+        top: -73px;
+        right: -121px;
+}
+
+    .container_01 {
+        background-image: url("../css_comics/new_decade_images/01_4-3aspect_1382x1038.jpg");
+        background-size: 768px 576px;
+        width: 768px;
+        height: 576px;
+        margin-bottom: 41px;   
+}
+
+    .container_02 {
+        background-image: url("../css_comics/new_decade_images/02_4-3aspect_1382x1038.jpg");
+        background-size: 768px 576px;
+        width: 768px;
+        height: 576px;
+        margin-bottom: 41px;
+    }
+
+    .container_03 {
+        background-image: url("../css_comics/new_decade_images/03_4-3aspect_1382x1038.jpg");
+        background-size: 768px 576px;
+        width: 768px;
+        height: 576px;
+        margin-bottom: 57px;
+    }
+
+    .border {           
+        width: 768px;
+        height: 576px;
+        border: 8px solid black;
+        box-shadow: 3px 3px 11px 6px forestgreen, 2px 2px 10px 2px lightgreen inset;
+    }
+
+    #transform-01a {
+        transform: translate(-1.3em, -1em);
+}
+
+    
+    #transform-01b {
+        transform: translate(30em, 26.5em);
+}
+
+    #transform-02a {
+        transform: translate(-1.5em, -2em);
+}
+
+    #transform-03a{
+        transform: translate(17em, -2em);
+}
+
+    #transform-03b {
+        transform: translate(79.5em, 17em); 
+}
+}
+
+
+/*3:4   1024×1366*/
+@media screen and (min-width: 1024px) and (min-height: 1366px) {
+ 
+    .button-aligner {   
+        height: 37px;
+        width: 84px;
+        bottom: .59em;
+}
+
+    .svg-back-button {
+        height: 180px;
+        width: 320px;
+        transform: scale(.273);
+        top: -73px;
+        right: -121px;
+}
+
+    .container_01 {
+        background-image: url("../css_comics/new_decade_images/01_4-3aspect_1382x1038.jpg");
+        background-size: 768px 576px;
+        width: 768px;
+        height: 576px;
+        margin-bottom: 41px;   
+}
+
+    .container_02 {
+        background-image: url("../css_comics/new_decade_images/02_4-3aspect_1382x1038.jpg");
+        background-size: 768px 576px;
+        width: 768px;
+        height: 576px;
+        margin-bottom: 41px;
+    }
+
+    .container_03 {
+        background-image: url("../css_comics/new_decade_images/03_4-3aspect_1382x1038.jpg");
+        background-size: 768px 576px;
+        width: 768px;
+        height: 576px;
+        margin-bottom: 57px;
+    }
+
+    .border {           
+        width: 768px;
+        height: 576px;
+        border: 8px solid black;
+        box-shadow: 3px 3px 11px 6px forestgreen, 2px 2px 10px 2px lightgreen inset;
+    }
+
+    #transform-01a {
+        transform: translate(-1.3em, -1em);
+}
+
+    
+    #transform-01b {
+        transform: translate(30em, 26.5em);
+}
+
+    #transform-02a {
+        transform: translate(-1.5em, -2em);
+}
+
+    #transform-03a{
+        transform: translate(17em, -2em);
+}
+
+    #transform-03b {
+        transform: translate(79.5em, 17em); 
+}
+}
+
+
+/*16:9   1200x675*/
+@media screen and (min-width: 1200px) {
+    
+    .button-aligner {   
+        height: 35px;
+        width: 77px;
+        bottom: .59em;
+}
+
+    .svg-back-button {
+        height: 180px;
+        width: 320px;
+        transform: scale(.25);
+        top: -73px;
+        right: -123px;
+}
+
+    .container_01 {
+        background-image: url("../css_comics/new_decade_images/01_1920x1080.jpg");
+        background-size: 768px 432px;
+        width: 768px;
+        height: 432px;
+        margin-bottom: 36px;   
+    }
+
+    .container_02 {
+        background-image: url("../css_comics/new_decade_images/02_1920x1080.jpg");
+        background-size: 768px 432px;
+        width: 768px;
+        height: 432px;
+        margin-bottom: 36px;
+    }
+
+    .container_03 {
+        background-image: url("../css_comics/new_decade_images/03_1920x1080.jpg");
+        background-size: 768px 432px;
+        width: 768px;
+        height: 432px;
+        margin-bottom: 54px;
+    }
+
+    .border {           
+        width: 768px;
+        height: 432px;
+        border: 8px solid black;
+        box-shadow: 3px 3px 11px 6px forestgreen, 2px 2px 10px 2px lightgreen inset;
+    }
+
+    #transform-01a {
+        transform: translate(-0em, 1em);
+}
+
+    #transform-01b {
+        transform: translate(35em, 28em);
+}
+
+    #transform-02a {
+        transform: translate(0, 0);
+}
+
+    #transform-03a{
+        transform: translate(0em, 1em);
+}
+
+    #transform-03b {
+        transform: translate(90em, 19em); 
+}
+}
+
+
+/*16:9   1280x720*/
+@media screen and (min-width: 1280px) and (min-height: 720px) {
+    
+    .button-aligner {   
+        height: 35px;
+        width: 77px;
+        bottom: .59em;
+}
+
+    .svg-back-button {
+        height: 180px;
+        width: 320px;
+        transform: scale(.25);
+        top: -73px;
+        right: -123px;
+}
+
+    .container_01 {
+        background-image: url("../css_comics/new_decade_images/01_1920x1080.jpg");
+        background-size: 768px 432px;
+        width: 768px;
+        height: 432px;
+        margin-bottom: 36px;   
+    }
+
+    .container_02 {
+        background-image: url("../css_comics/new_decade_images/02_1920x1080.jpg");
+        background-size: 768px 432px;
+        width: 768px;
+        height: 432px;
+        margin-bottom: 36px;
+    }
+
+    .container_03 {
+        background-image: url("../css_comics/new_decade_images/03_1920x1080.jpg");
+        background-size: 768px 432px;
+        width: 768px;
+        height: 432px;
+        margin-bottom: 54px;
+    }
+
+    .border {           
+        width: 768px;
+        height: 432px;
+        border: 8px solid black;
+        box-shadow: 3px 3px 11px 6px forestgreen, 2px 2px 10px 2px lightgreen inset;
+    }
+
+    #transform-01a {
+        transform: translate(-0em, 1em);
+}
+
+    #transform-01b {
+        transform: translate(35em, 28em);
+}
+
+    #transform-02a {
+        transform: translate(0, 0);
+}
+
+    #transform-03a{
+        transform: translate(0em, 1em);
+}
+
+    #transform-03b {
+        transform: translate(90em, 19em); 
+}
+}
+
+
+/*16:10  1280x800*/
+@media screen and (min-width: 1280px) and (min-height: 800px) {
+    
+    .button-aligner {   
+        height: 30px;
+        width: 71px;
+        bottom: .6em;
+}
+
+    .svg-back-button {
+        height: 180px;
+        width: 320px;
+        transform: scale(.23);
+        top: -76px;
+        right: -127px;
+}
+    
+    .container_01 {
+        background-image: url("../css_comics/new_decade_images/01_16-10aspect_1920x1200.jpg");
+        background-size: 900px 506px;
+        width: 900px;
+        height: 506px;
+        margin-bottom: 33px;   
+    }
+
+    .container_02 {
+        background-image: url("../css_comics/new_decade_images/02_16-10aspect_1920x1200.jpg");
+        background-size: 900px 506px;
+        width: 900px;
+        height: 506px;
+        margin-bottom: 33px;
+    }
+    
+    .container_03 {
+        background-image: url("../css_comics/new_decade_images/03_16-10aspect_1920x1200.jpg");
+        background-size: 900px 506px;
+        width: 900px;
+        height: 506px;
+        margin-bottom: 49px;
+    }
+
+    .border {           
+        width: 900px;
+        height: 506px;
+        border: 9px solid black;
+        box-shadow: 3px 3px 11px 6px forestgreen, 2px 2px 10px 2px lightgreen inset;
+    }
+
+    #transform-01a {
+        transform: translate(-0em, -1em);
+}
+
+    #transform-01b {
+        transform: translate(34em, 26.7em);
+}
+
+    #transform-02a {
+        transform: translate(0em, -2em);
+}
+
+    #transform-03a{
+        transform: translate(6em, -1em);
+}
+
+    #transform-03b {
+        transform: translate(89em, 18em); 
+}
+}
+
+
+/*16:9   1366x768*/
+@media screen and (min-width: 1366px) and (min-height: 768px) {
+    
+    .button-aligner {   
+        height: 35px;
+        width: 77px;
+        bottom: .59em;
+}
+
+    .svg-back-button {
+        height: 180px;
+        width: 320px;
+        transform: scale(.25);
+        top: -73px;
+        right: -123px;
+}
+
+    .container_01 {
+        background-image: url("../css_comics/new_decade_images/01_1920x1080.jpg");
+        background-size: 768px 432px;
+        width: 768px;
+        height: 432px;
+        margin-bottom: 36px;   
+    }
+
+    .container_02 {
+        background-image: url("../css_comics/new_decade_images/02_1920x1080.jpg");
+        background-size: 768px 432px;
+        width: 768px;
+        height: 432px;
+        margin-bottom: 36px;
+    }
+
+    .container_03 {
+        background-image: url("../css_comics/new_decade_images/03_1920x1080.jpg");
+        background-size: 768px 432px;
+        width: 768px;
+        height: 432px;
+        margin-bottom: 54px;
+    }
+
+    .border {           
+        width: 768px;
+        height: 432px;
+        border: 8px solid black;
+        box-shadow: 3px 3px 11px 6px forestgreen, 2px 2px 10px 2px lightgreen inset;
+    }
+
+    #transform-01a {
+        transform: translate(-0em, 1em);
+}
+
+    #transform-01b {
+        transform: translate(35em, 28em);
+}
+
+    #transform-02a {
+        transform: translate(0, 0);
+}
+
+    #transform-03a{
+        transform: translate(0em, 1em);
+}
+
+    #transform-03b {
+        transform: translate(90em, 19em); 
+}
+}
+
+
+/*4:3   1366x1024*/
+@media screen and (min-width: 1366px) and (min-height: 1024px) {
+ 
+    .button-aligner {   
+        height: 37px;
+        width: 84px;
+        bottom: .59em;
+}
+
+    .svg-back-button {
+        height: 180px;
+        width: 320px;
+        transform: scale(.273);
+        top: -73px;
+        right: -121px;
+}
+
+    .container_01 {
+        background-image: url("../css_comics/new_decade_images/01_4-3aspect_1382x1038.jpg");
+        background-size: 768px 576px;
+        width: 768px;
+        height: 576px;
+        margin-bottom: 41px;   
+}
+
+    .container_02 {
+        background-image: url("../css_comics/new_decade_images/02_4-3aspect_1382x1038.jpg");
+        background-size: 768px 576px;
+        width: 768px;
+        height: 576px;
+        margin-bottom: 41px;
+    }
+
+    .container_03 {
+        background-image: url("../css_comics/new_decade_images/03_4-3aspect_1382x1038.jpg");
+        background-size: 768px 576px;
+        width: 768px;
+        height: 576px;
+        margin-bottom: 57px;
+    }
+
+    .border {           
+        width: 768px;
+        height: 576px;
+        border: 8px solid black;
+        box-shadow: 3px 3px 11px 6px forestgreen, 2px 2px 10px 2px lightgreen inset;
+    }
+
+    #transform-01a {
+        transform: translate(-1.3em, -1em);
+}
+
+    
+    #transform-01b {
+        transform: translate(30em, 26.5em);
+}
+
+    #transform-02a {
+        transform: translate(-1.5em, -2em);
+}
+
+    #transform-03a{
+        transform: translate(17em, -2em);
+}
+
+    #transform-03b {
+        transform: translate(79.5em, 17em); 
+}
+}
+
+
+/*16:10   1440x900*/
+@media screen and (min-width: 1280px) {
+    
+    .button-aligner {   
+        height: 30px;
+        width: 71px;
+        bottom: .6em;
+}
+
+    .svg-back-button {
+        height: 180px;
+        width: 320px;
+        transform: scale(.23);
+        top: -76px;
+        right: -127px;
+}
+    
+    .container_01 {
+        background-image: url("../css_comics/new_decade_images/01_16-10aspect_1920x1200.jpg");
+        background-size: 900px 506px;
+        width: 900px;
+        height: 506px;
+        margin-bottom: 33px;   
+    }
+
+    .container_02 {
+        background-image: url("../css_comics/new_decade_images/02_16-10aspect_1920x1200.jpg");
+        background-size: 900px 506px;
+        width: 900px;
+        height: 506px;
+        margin-bottom: 33px;
+    }
+    
+    .container_03 {
+        background-image: url("../css_comics/new_decade_images/03_16-10aspect_1920x1200.jpg");
+        background-size: 900px 506px;
+        width: 900px;
+        height: 506px;
+        margin-bottom: 49px;
+    }
+
+    .border {           
+        width: 900px;
+        height: 506px;
+        border: 9px solid black;
+        box-shadow: 3px 3px 11px 6px forestgreen, 2px 2px 10px 2px lightgreen inset;
+    }
+
+    #transform-01a {
+        transform: translate(-0em, -1em);
+}
+
+    #transform-01b {
+        transform: translate(34em, 26.7em);
+}
+
+    #transform-02a {
+        transform: translate(0em, -2em);
+}
+
+    #transform-03a{
+        transform: translate(6em, -1em);
+}
+
+    #transform-03b {
+        transform: translate(89em, 18em); 
+}
+}
+
+
+/*16:9   1536x864*/
+@media screen and (min-width: 1536px) {
+    
+    .button-aligner {   
+        height: 73px;
+        width: 166px;
+        bottom: 1.13em;
+}
+
+    .svg-back-button {
+        height: 180px;
+        width: 320px;
+        transform: scale(.5);
+        top: -55px;
+        right: -83px;
+}
+
+    .container_01 {
+        background-image: url("../css_comics/new_decade_images/01_1920x1080.jpg");
+        background-size: 768px 432px;
+        width: 768px;
+        height: 432px;
+        margin: 1.3em;
+        margin-bottom: 36px;  
+    }
+
+    .container_02 {
+        background-image: url("../css_comics/new_decade_images/02_1920x1080.jpg");
+        background-size: 768px 432px;
+        width: 768px;
+        height: 432px;
+        margin: 1.3em;
+        margin-bottom: 36px;
+    }
+
+    .container_03 {
+        background-image: url("../css_comics/new_decade_images/03_1920x1080.jpg");
+        background-size: 768px 432px;
+        width: 768px;
+        height: 432px;
+        margin: 1.3em;
+        margin-bottom: 113px;
+    }
+
+    .border {           
+        width: 768px;
+        height: 432px;
+        border: 8px solid black;
+        box-shadow: 1px 6px 19px 9px forestgreen, 2px 2px 10px 2px lightgreen inset;
+    }
+
+    #transform-01a {
+        transform: translate(-0em, 1em);
+}
+
+    #transform-01b {
+        transform: translate(35em, 28em);
+}
+
+    #transform-02a {
+        transform: translate(0, 0);
+}
+
+    #transform-03a{
+        transform: translate(0em, 1em);
+}
+
+    #transform-03b {
+        transform: translate(90em, 19em); 
+}
+}
+
+
+
+
+/*laptops/desktops, extra-large devices start here*/
+/*16:9   1600x900*/
+@media screen and (min-width: 1600px) {
+    
+    .button-aligner {   
+        height: 73px;
+        width: 166px;
+        bottom: 1.13em;
+}
+
+    .svg-back-button {
+        height: 180px;
+        width: 320px;
+        transform: scale(.5);
+        top: -55px;
+        right: -83px;
+}
+
+    .container_01 {
+        background-image: url("../css_comics/new_decade_images/01_1920x1080.jpg");
+        background-size: 768px 432px;
+        width: 768px;
+        height: 432px;
+        margin: 1.3em;
+        margin-bottom: 36px;  
+    }
+
+    .container_02 {
+        background-image: url("../css_comics/new_decade_images/02_1920x1080.jpg");
+        background-size: 768px 432px;
+        width: 768px;
+        height: 432px;
+        margin: 1.3em;
+        margin-bottom: 36px;
+    }
+
+    .container_03 {
+        background-image: url("../css_comics/new_decade_images/03_1920x1080.jpg");
+        background-size: 768px 432px;
+        width: 768px;
+        height: 432px;
+        margin: 1.3em;
+        margin-bottom: 113px;
+    }
+
+    .border {           
+        width: 768px;
+        height: 432px;
+        border: 8px solid black;
+        box-shadow: 1px 6px 19px 9px forestgreen, 2px 2px 10px 2px lightgreen inset;
+    }
+
+    #transform-01a {
+        transform: translate(-0em, 1em);
+}
+
+    #transform-01b {
+        transform: translate(35em, 28em);
+}
+
+    #transform-02a {
+        transform: translate(0, 0);
+}
+
+    #transform-03a{
+        transform: translate(0em, 1em);
+}
+
+    #transform-03b {
+        transform: translate(90em, 19em); 
+}
+}
+
+/*16:9   1920x1080*/
+@media screen and (min-width: 1920px) {
+    
+    .button-aligner {   
+        height: 73px;
+        width: 166px;
+        bottom: 1.13em;
+}
+
+    .svg-back-button {
+        height: 180px;
+        width: 320px;
+        transform: scale(.5);
+        top: -55px;
+        right: -83px;
+}
+
+    .container_01 {
+        background-image: url("../css_comics/new_decade_images/01_1920x1080.jpg");
+        background-size: 768px 432px;
+        width: 768px;
+        height: 432px;
+        margin: 3em;
+        margin-bottom: 36px;  
+    }
+
+    .container_02 {
+        background-image: url("../css_comics/new_decade_images/02_1920x1080.jpg");
+        background-size: 768px 432px;
+        width: 768px;
+        height: 432px;
+        margin: 3em;
+        margin-bottom: 36px;
+    }
+
+    .container_03 {
+        background-image: url("../css_comics/new_decade_images/03_1920x1080.jpg");
+        background-size: 768px 432px;
+        width: 768px;
+        height: 432px;
+        margin: 3em;
+        margin-bottom: 113px;
+    }
+
+    .border {           
+        width: 768px;
+        height: 432px;
+        border: 8px solid black;
+        box-shadow: 1px 6px 19px 9px forestgreen, 2px 2px 10px 2px lightgreen inset;
+    }
+
+    #transform-01a {
+        transform: translate(-0em, 1em);
+}
+
+    #transform-01b {
+        transform: translate(35em, 28em);
+}
+
+    #transform-02a {
+        transform: translate(0, 0);
+}
+
+    #transform-03a{
+        transform: translate(0em, 1em);
+}
+
+    #transform-03b {
+        transform: translate(90em, 19em); 
+}
+}
+
+/*16:9   2560x1440*/
+@media screen and (min-width: 1920px) {
+    
+    .button-aligner {   
+        height: 73px;
+        width: 166px;
+        bottom: 1.13em;
+}
+
+    .svg-back-button {
+        height: 180px;
+        width: 320px;
+        transform: scale(.5);
+        top: -55px;
+        right: -83px;
+}
+
+    .container_01 {
+        background-image: url("../css_comics/new_decade_images/01_1920x1080.jpg");
+        background-size: 768px 432px;
+        width: 768px;
+        height: 432px;
+        margin: 3em;
+        margin-bottom: 36px;  
+    }
+
+    .container_02 {
+        background-image: url("../css_comics/new_decade_images/02_1920x1080.jpg");
+        background-size: 768px 432px;
+        width: 768px;
+        height: 432px;
+        margin: 3em;
+        margin-bottom: 36px;
+    }
+
+    .container_03 {
+        background-image: url("../css_comics/new_decade_images/03_1920x1080.jpg");
+        background-size: 768px 432px;
+        width: 768px;
+        height: 432px;
+        margin: 3em;
+        margin-bottom: 113px;
+    }
+
+    .border {           
+        width: 768px;
+        height: 432px;
+        border: 8px solid black;
+        box-shadow: 1px 6px 19px 9px forestgreen, 2px 2px 10px 2px lightgreen inset;
+    }
+
+    #transform-01a {
+        transform: translate(-0em, 1em);
+}
+
+    #transform-01b {
+        transform: translate(35em, 28em);
+}
+
+    #transform-02a {
+        transform: translate(0, 0);
+}
+
+    #transform-03a{
+        transform: translate(0em, 1em);
+}
+
+    #transform-03b {
+        transform: translate(90em, 19em); 
+}
+}
+
+/*16:9   3840x2160*/
+@media screen and (min-width: 1920px) {
+    
+    .button-aligner {   
+        height: 73px;
+        width: 166px;
+        bottom: 1.13em;
+}
+
+    .svg-back-button {
+        height: 180px;
+        width: 320px;
+        transform: scale(.5);
+        top: -55px;
+        right: -83px;
+}
+
+    .container_01 {
+        background-image: url("../css_comics/new_decade_images/01_1920x1080.jpg");
+        background-size: 768px 432px;
+        width: 768px;
+        height: 432px;
+        margin: 3em;
+        margin-bottom: 36px;  
+    }
+
+    .container_02 {
+        background-image: url("../css_comics/new_decade_images/02_1920x1080.jpg");
+        background-size: 768px 432px;
+        width: 768px;
+        height: 432px;
+        margin: 3em;
+        margin-bottom: 36px;
+    }
+
+    .container_03 {
+        background-image: url("../css_comics/new_decade_images/03_1920x1080.jpg");
+        background-size: 768px 432px;
+        width: 768px;
+        height: 432px;
+        margin: 3em;
+        margin-bottom: 113px;
+    }
+
+    .border {           
+        width: 768px;
+        height: 432px;
+        border: 8px solid black;
+        box-shadow: 1px 6px 19px 9px forestgreen, 2px 2px 10px 2px lightgreen inset;
+    }
+
+    #transform-01a {
+        transform: translate(-0em, 1em);
+}
+
+    #transform-01b {
+        transform: translate(35em, 28em);
+}
+
+    #transform-02a {
+        transform: translate(0, 0);
+}
+
+    #transform-03a{
+        transform: translate(0em, 1em);
+}
+
+    #transform-03b {
+        transform: translate(90em, 19em); 
+}
+}
