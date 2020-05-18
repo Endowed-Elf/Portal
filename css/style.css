@@ -1,0 +1,1618 @@
+* { box-sizing: border-box;}
+
+body, html {
+    margin: 0 auto;
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+    background: black;
+}
+
+.container {
+    background: url("../Images/Landing/Landing_Banner_4k.jpg") no-repeat
+    center;
+    background-size: cover;
+    display: flex;  
+    /*padding-top: em; - used to shift links vertically up and down*/
+}
+
+.row {
+    display:flex;
+    flex-direction: column;
+    position: relative;
+    width: 100vw;
+    height: 100vh;    
+}
+
+.col {
+    display:flex;
+    flex-direction: row;
+    position: relative;
+    width: 100vw;
+    height: 100vh; 
+    overflow: hidden;
+}
+
+img, a {
+    position: relative;
+    width: 120px;
+    height: 120px;
+    border-radius: 6px;  
+}
+
+a :hover {
+    background-color:darkgreen;
+    opacity: 20%;
+    border: 1px solid purple;
+}
+
+a :active {
+    background-color: greenyellow;
+}
+
+#l-01 {
+    margin-right: auto;
+    margin-left: 1em;   
+}
+
+#l-02 {
+    margin-left: auto;
+    margin-right: 1em;
+}
+
+#l-03 {
+    margin-right: auto;
+    margin-left: 1em;   
+}
+
+#l-04 {
+    margin-left: auto;
+    margin-right: 1em;
+}
+
+#l-05 {
+    margin-right: auto;
+    margin-left: 1em;
+}
+
+#l-06 {
+    margin-left: auto;
+    margin-right: 1em;
+}
+
+
+
+
+
+
+/*9:16   180x320*/
+@media only screen and (min-width: 1px) {
+    
+    .container {
+        padding-top: 1.66em;
+        
+    }
+    
+    img, a {
+        position: relative;
+        width: 53px;
+        height: 53px;
+        border-radius: 6px; 
+}
+    
+    #l-01, #l-03, #l-05 {
+        margin-right: auto;
+        margin-left: .33em;   
+}
+
+    #l-02, #l-04, #l-06 {
+        margin-left: auto;
+        margin-right: .33em;
+}
+}
+
+/*10:16   200x320*/
+@media only screen and (min-width: 200px) {
+    
+    .container {
+        padding-top: 1.69em;
+    }
+    
+    img, a {
+        position: relative;
+        width: 53px;
+        height: 53px;
+        border-radius: 6px; 
+}
+    
+    #l-01, #l-03, #l-05 {
+        margin-right: auto;
+        margin-left: .33em;   
+}
+
+    #l-02, #l-04, #l-06 {
+        margin-left: auto;
+        margin-right: .33em;
+}
+}
+
+/*9:16   211x375*/
+@media only screen and (min-width: 211px) {
+    
+    .container {
+        padding-top: 1.97em;       
+    }
+    
+    img, a {
+        position: relative;
+        width: 60px;
+        height: 60px;
+        border-radius: 6px;
+}
+    
+    #l-01, #l-03, #l-05 {
+        margin-right: auto;
+        margin-left: .33em;   
+}
+
+    #l-02, #l-04, #l-06 {
+        margin-left: auto;
+        margin-right: .33em;
+}
+}
+
+/*2:3   213x320 - don't know how to do it yet but it's fine here how it is*/
+
+/*9:16   239x425*/
+@media only screen and (min-width: 239px) {
+    
+    .container {
+        padding-top: 2.13em;       
+    }
+    
+    img, a {
+        position: relative;
+        width: 73px;
+        height: 73px;
+        border-radius: 6px;  
+}
+    
+    #l-01, #l-03, #l-05 {
+        margin-right: auto;
+        margin-left: .4em;   
+}
+
+    #l-02, #l-04, #l-06 {
+        margin-left: auto;
+        margin-right: .4em;
+}
+}
+
+/*9:16   270x480*/
+@media only screen and (min-width: 270px) {
+    
+    .container {
+        padding-top: 2.73em;       
+    }
+    
+    img, a {
+        position: relative;
+        width: 73px;
+        height: 73px;
+        border-radius: 6px;  
+}
+    
+    #l-01, #l-03, #l-05 {
+        margin-right: auto;
+        margin-left: .4em;   
+}
+
+    #l-02, #l-04, #l-06 {
+        margin-left: auto;
+        margin-right: .4em;
+}
+}
+
+/*16:9   320x180*/
+@media only screen and (min-width: 320px) and (min-height: 180px) {
+    
+    .container {
+        padding-top: .47em;       
+    }
+    
+    img, a {
+        position: relative;
+        width: 43px;
+        height: 43px;
+        border-radius: 6px;
+}
+    
+    #l-01, #l-03, #l-05 {
+        margin-right: auto;
+        margin-left: .66em;   
+}
+
+    #l-02, #l-04, #l-06 {
+        margin-left: auto;
+        margin-right: .66em;
+}
+}
+
+/*16:10   320x200*/
+@media only screen and (min-width: 320px) and (min-height: 200px) {
+    
+    .container {
+        padding-top: .43em;       
+    }
+    
+    img, a {
+        position: relative;
+        width: 43px;
+        height: 43px;
+        border-radius: 6px;
+}
+    
+    #l-01, #l-03, #l-05 {
+        margin-right: auto;
+        margin-left: .66em;   
+}
+
+    #l-02, #l-04, #l-06 {
+        margin-left: auto;
+        margin-right: .66em;
+}
+}
+
+/*3:2   320x213.33*/
+@media only screen and (min-width: 320px) and (min-height: 213px) {
+    
+    .container {
+        padding-top: .73em;       
+    }
+    
+    img, a {
+        position: relative;
+        width: 47px;
+        height: 47px;
+        border-radius: 6px;  
+}
+    
+    #l-01, #l-03, #l-05 {
+        margin-right: auto;
+        margin-left: .66em;   
+}
+
+    #l-02, #l-04, #l-06 {
+        margin-left: auto;
+        margin-right: .66em;
+}
+}
+
+/*4:3   320x240*/
+@media only screen and (min-width: 320px) and (min-height: 240px) {
+    
+    .container {
+        padding-top: .83em;       
+    }
+    
+    img, a {
+        position: relative;
+        width: 53px;
+        height: 53px;
+        border-radius: 6px;  
+}
+    
+    #l-01, #l-03, #l-05 {
+        margin-right: auto;
+        margin-left: .66em;   
+}
+
+    #l-02, #l-04, #l-06 {
+        margin-left: auto;
+        margin-right: .66em;
+}
+}
+
+/*2:3   320x480*/
+@media only screen and (min-width: 320px) and (min-height: 480px) {
+    
+    .container {
+        padding-top: 2.6em;       
+    }
+    
+    img, a {
+        position: relative;
+        width: 77px;
+        height: 77px;
+        border-radius: 6px;  
+}
+    
+    #l-01, #l-03, #l-05 {
+        margin-right: auto;
+        margin-left: .66em;   
+}
+
+    #l-02, #l-04, #l-06 {
+        margin-left: auto;
+        margin-right: .66em;
+}
+}
+
+/*9:16   320x568*/
+@media only screen and (min-width: 320px) and (min-height: 568px) {
+    
+    .container {
+        padding-top: 3.23em;       
+    }
+    
+    img, a {
+        position: relative;
+        width: 83px;
+        height: 83px;
+        border-radius: 6px;  
+}
+    
+    #l-01, #l-03, #l-05 {
+        margin-right: auto;
+        margin-left: .66em;   
+        top: 0;
+}
+
+    #l-02, #l-04, #l-06 {
+        margin-left: auto;
+        margin-right: .66em;
+        top: 0;
+}
+}
+
+/*9:16   337.5x600*/
+@media only screen and (min-width: 337px) {
+    
+    .container {
+        padding-top: 3.07em;       
+    }
+    
+    img, a {
+        position: relative;
+        width: 100px;
+        height: 100px;
+        border-radius: 7px;  
+}
+    
+    #l-01, #l-03, #l-05 {
+        margin-right: auto;
+        margin-left: .6em;   
+}
+
+    #l-02, #l-04, #l-06 {
+        margin-left: auto;
+        margin-right: .6em;
+}
+}
+
+/*2:3   342x512*/
+@media only screen and (min-width: 342px) {
+    
+    .container {
+        padding-top: 2.66em;       
+    }
+    
+    img, a {
+        position: relative;
+        width: 87px;
+        height: 87px;
+        border-radius: 7px;  
+}
+    
+    #l-01, #l-03, #l-05 {
+        margin-right: auto;
+        margin-left: .6em;   
+}
+
+    #l-02, #l-04, #l-06 {
+        margin-left: auto;
+        margin-right: .6em;
+}
+}
+
+/*3:4   360x480*/
+@media only screen and (min-width: 360px) and (min-height: 480px) {
+    
+    .container {
+        padding-top: 2.23em;       
+    }
+    
+    img, a {
+        position: relative;
+        width: 87px;
+        height: 87px;
+        border-radius: 7px;  
+}
+    
+    #l-01, #l-03, #l-05 {
+        margin-right: auto;
+        margin-left: .66em;   
+
+}
+
+    #l-02, #l-04, #l-06 {
+        margin-left: auto;
+        margin-right: .66em;
+}
+}
+
+/*9:16   360x640*/
+@media only screen and (min-width: 360px) and (min-height: 640px) {
+    
+    .container {
+        padding-top: 3.23em;       
+    }
+    
+    img, a {
+        position: relative;
+        width: 109px;
+        height: 109px;
+        border-radius: 7px;  
+}
+    
+    #l-01, #l-03, #l-05 {
+        margin-right: auto;
+        margin-left: .66em;   
+}
+
+    #l-02, #l-04, #l-06 {
+        margin-left: auto;
+        margin-right: .66em;
+}
+}
+
+/*16:9   375x211*/
+@media only screen and (min-width: 375px) and (min-height: 211px) {
+    
+    .container {
+        padding-top: .47em;       
+    }
+    
+    img, a {
+        position: relative;
+        width: 57px;
+        height: 57px;
+        border-radius: 6px;
+}
+    
+    #l-01, #l-03, #l-05 {
+        margin-right: auto;
+        margin-left: .66em;   
+}
+
+    #l-02, #l-04, #l-06 {
+        margin-left: auto;
+        margin-right: .66em;;
+}
+}
+
+/*9:16   375x667*/
+@media only screen and (min-width: 375px) and (min-height: 667px) {
+    
+    .container {
+        padding-top: 3.53em;       
+    }
+    
+    img, a {
+        position: relative;
+        width: 111px;
+        height: 111px;
+        border-radius: 7px;  
+}
+    
+    #l-01, #l-03, #l-05 {
+        margin-right: auto;
+        margin-left: .66em;   
+}
+
+    #l-02, #l-04, #l-06 {
+        margin-left: auto;
+        margin-right: .66em;
+}
+}
+
+/*2:3   400x600*/
+@media only screen and (min-width: 400px) and (min-height: 600px) {
+    
+    .container {
+        padding-top: 3.13em;       
+    }
+    
+    img, a {
+        position: relative;
+        width: 97px;
+        height: 97px;
+        border-radius: 7px;  
+}
+    
+    #l-01, #l-03, #l-05 {
+        margin-right: auto;
+        margin-left: .66em;   
+}
+
+    #l-02, #l-04, #l-06 {
+        margin-left: auto;
+        margin-right: .66em;
+}
+}
+
+/*10:16   400x640*/
+@media only screen and (min-width: 400px) and (min-height: 640px) {
+    
+    .container {
+        padding-top: 3.66em;       
+    }
+    
+    img, a {
+        position: relative;
+        width: 97px;
+        height: 97px;
+        border-radius: 7px;  
+}
+    
+    #l-01, #l-03, #l-05 {
+        margin-right: auto;
+        margin-left: .66em;   
+}
+
+    #l-02, #l-04, #l-06 {
+        margin-left: auto;
+        margin-right: .66em;
+}
+}
+
+/*16:9   425x239*/
+@media only screen and (min-width: 425px) {
+    
+    .container {
+        padding-top: .375em;       
+    }
+    
+    img, a {
+        position: relative;
+        width: 66px;
+        height: 66px;
+        border-radius: 8px;  
+}
+    
+    #l-01, #l-03, #l-05 {
+        margin-right: auto;
+        margin-left: .47em;   
+}
+
+    #l-02, #l-04, #l-06 {
+        margin-left: auto;
+        margin-right: .47em;
+}
+}
+
+/*16:9   432x243*/
+@media screen and (min-width: 432px) and (min-height: 243px) {
+    
+    .container {
+        padding-top: .43em;       
+    }
+    
+    img, a {
+        position: relative;
+        width: 66px;
+        height: 66px;
+        border-radius: 8px;  
+}
+    
+    #l-01, #l-03, #l-05 {
+        margin-right: auto;
+        margin-left: .39em;  
+}
+
+    #l-02, #l-04, #l-06 {
+        margin-left: auto;
+        margin-right: .39em;
+}
+}
+
+/*9:16   432x768*/
+@media screen and (min-width: 432px) and (min-height: 768px) {
+    
+    .container {
+        padding-top: 4.17em;       
+    }
+    
+    img, a {
+        position: relative;
+        width: 120px;
+        height: 120px;
+        border-radius: 8px;  
+}
+    
+    #l-01, #l-03, #l-05 {
+        margin-right: auto;
+        margin-left: .73em;   
+}
+
+    #l-02, #l-04, #l-06 {
+        margin-left: auto;
+        margin-right: .73em;
+}
+}
+
+/*3:4   450x600*/
+@media screen and (min-width: 450px) {
+    
+    .container {
+        padding-top: 2.93em;       
+    }
+    
+    img, a {
+        position: relative;
+        width: 106px;
+        height: 106px;
+        border-radius: 8px;  
+}
+    
+    #l-01, #l-03, #l-05 {
+        margin-right: auto;
+        margin-left: .73em;   
+}
+
+    #l-02, #l-04, #l-06 {
+        margin-left: auto;
+        margin-right: .73em;
+}
+}
+
+/*16:9   480x270*/
+@media screen and (min-width: 480px) and (min-height: 270px) {
+    
+    .container {
+        padding-top: .63em;       
+    }
+    
+    img, a {
+        position: relative;
+        width: 69px;
+        height: 69px;
+        border-radius: 8px;  
+}
+    
+    #l-01, #l-03, #l-05 {
+        margin-right: auto;
+        margin-left: .63em;   
+}
+
+    #l-02, #l-04, #l-06 {
+        margin-left: auto;
+        margin-right: .63em;
+}
+}
+
+/*3:2   480x320*/
+@media screen and (min-width: 480px) and (min-height: 320px) {
+    
+    .container {
+        padding-top: 1.03em;       
+    }
+    
+    img, a {
+        position: relative;
+        width: 73px;
+        height: 73px;
+        border-radius: 8px;  
+}
+    
+    #l-01, #l-03, #l-05 {
+        margin-right: auto;
+        margin-left: .63em;   
+}
+
+    #l-02, #l-04, #l-06 {
+        margin-left: auto;
+        margin-right: .63em;
+}
+}
+
+/*4:3   480x360*/
+@media screen and (min-width: 480px) and (min-height: 360px) {
+    
+    .container {
+        padding-top: 1em;       
+    }
+    
+    img, a {
+        position: relative;
+        width: 87px;
+        height: 87px;
+        border-radius: 8px;  
+}
+    
+    #l-01, #l-03, #l-05 {
+        margin-right: auto;
+        margin-left: .63em;   
+}
+
+    #l-02, #l-04, #l-06 {
+        margin-left: auto;
+        margin-right: .63em;
+}
+}
+
+/*3:4   480x600*/
+@media screen and (min-width: 480px) and (min-height: 600px) {
+    
+    .container {
+        padding-top: 2.73em;       
+    }
+    
+    img, a {
+        position: relative;
+        width: 113px;
+        height: 113px;
+        border-radius: 8px;  
+}
+    
+    #l-01, #l-03, #l-05 {
+        margin-right: auto;
+        margin-left: .63em;   
+}
+
+    #l-02, #l-04, #l-06 {
+        margin-left: auto;
+        margin-right: .63em;
+}
+}
+
+/*3:2   512x342*/
+@media screen and (min-width: 512px) and (min-height: 342px) {
+    
+    .container {
+        padding-top: 1.3em;       
+    }
+    
+    img, a {
+        position: relative;
+        width: 73px;
+        height: 73px;
+        border-radius: 8px;  
+}
+    
+    #l-01, #l-03, #l-05 {
+        margin-right: auto;
+        margin-left: .63em;   
+}
+
+    #l-02, #l-04, #l-06 {
+        margin-left: auto;
+        margin-right: .63em;
+}
+}
+
+/*2:3   512x768*/
+@media screen and (min-width: 512px) and (min-height: 768px) {
+    
+    .container {
+        padding-top: 3.87em;       
+    }
+    
+    img, a {
+        position: relative;
+        width: 133px;
+        height: 133px;
+        border-radius: 8px;  
+}
+    
+    #l-01, #l-03, #l-05 {
+        margin-right: auto;
+        margin-left: .63em;   
+}
+
+    #l-02, #l-04, #l-06 {
+        margin-left: auto;
+        margin-right: .63em;
+}
+}
+
+/*16:9   568x320*/
+@media screen and (min-width: 568px) {
+    
+    .container {
+        padding-top: .99em;       
+    }
+    
+    img, a {
+        position: relative;
+        width: 73px;
+        height: 73px;
+        border-radius: 8px;  
+}
+    
+    #l-01, #l-03, #l-05 {
+        margin-right: auto;
+        margin-left: .99em;   
+}
+
+    #l-02, #l-04, #l-06 {
+        margin-left: auto;
+        margin-right: .99em;
+}
+}
+
+/*3:4   576x768*/
+@media screen and (min-width: 576px) {
+    
+    .container {
+        padding-top: 3.47em;       
+    }
+    
+    img, a {
+        position: relative;
+        width: 147px;
+        height: 147px;
+        border-radius: 8px;  
+}
+    
+    #l-01, #l-03, #l-05 {
+        margin-right: auto;
+        margin-left: .63em;   
+}
+
+    #l-02, #l-04, #l-06 {
+        margin-left: auto;
+        margin-right: .63em;
+}
+}
+
+
+
+
+
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+
+/*16:9   600x337.5*/
+@media only screen and (min-width: 600px) and (min-height: 337px) {
+    
+    .container {
+        padding-top: .73em;       
+}
+    
+    img, a {
+        position: relative;
+        width: 87px;
+        height: 87px;
+        border-radius: 8px; 
+}
+    
+    #l-01, #l-03, #l-05 {
+        margin-right: auto;
+        margin-left: .73em;   
+}
+
+    #l-02, #l-04, #l-06 {
+        margin-left: auto;
+        margin-right: .73em;
+}
+}
+
+/*3:2   600x400*/
+@media only screen and (min-width: 600px) and (min-height: 400px) {
+    
+    .container {
+        padding-top: 1.23em;       
+}
+    
+    img, a {
+        position: relative;
+        width: 93px;
+        height: 93px;
+        border-radius: 8px; 
+}
+    
+    #l-01, #l-03, #l-05 {
+        margin-right: auto;
+        margin-left: .73em;   
+}
+
+    #l-02, #l-04, #l-06 {
+        margin-left: auto;
+        margin-right: .73em;
+}
+}
+
+/*4:3   600x450*/
+@media only screen and (min-width: 600px) and (min-height: 450px) {
+    
+    .container {
+        padding-top: 1.57em;       
+}
+    
+    img, a {
+        position: relative;
+        width: 99px;
+        height: 99px;
+        border-radius: 8px; 
+}
+    
+    #l-01, #l-03, #l-05 {
+        margin-right: auto;
+        margin-left: .73em;   
+}
+
+    #l-02, #l-04, #l-06 {
+        margin-left: auto;
+        margin-right: .73em;
+}
+}
+
+/*16:9   640x360*/
+@media only screen and (min-width: 640px) and (min-height: 360px) {
+    
+   .container {
+        padding-top: .83em;       
+    }
+    
+    img, a {
+        position: relative;
+        width: 91px;
+        height: 91px;
+        border-radius: 9px;  
+}
+    
+    #l-01, #l-03, #l-05 {
+        margin-right: auto;
+        margin-left: .66em;   
+}
+
+    #l-02, #l-04, #l-06 {
+        margin-left: auto;
+        margin-right: .69em;
+}
+}
+
+/*16:10   640x400*/
+@media only screen and (min-width: 640px) and (min-height: 400px) {
+    
+    .container {
+         padding-top: 1.13em;       
+     }
+     
+     img, a {
+         position: relative;
+         width: 99px;
+         height: 99px;
+         border-radius: 10px;  
+ }
+     
+     #l-01, #l-03, #l-05 {
+         margin-right: auto;
+         margin-left: .66em;   
+ }
+ 
+     #l-02, #l-04, #l-06 {
+         margin-left: auto;
+         margin-right: .69em;
+ }
+ }
+
+/*16:9   640x480*/
+@media only screen and (min-width: 640px) and (min-height: 480px) {
+    
+   .container {
+        padding-top: 1.93em;       
+    }
+    
+    img, a {
+        position: relative;
+        width: 99px;
+        height: 99px;
+        border-radius: 10px;  
+}
+    
+    #l-01, #l-03, #l-05 {
+        margin-right: auto;
+        margin-left: .66em;   
+}
+
+    #l-02, #l-04, #l-06 {
+        margin-left: auto;
+        margin-right: .69em;
+}
+}
+
+/*16:9*   667x375*/
+@media only screen and (min-width: 667px) {
+    
+   .container {
+        padding-top: .84em;       
+    }
+    
+    img, a {
+        position: relative;
+        width: 97px;
+        height: 97px;
+        border-radius: 9px;  
+}
+    
+    #l-01, #l-03, #l-05 {
+        margin-right: auto;
+        margin-left: .85em;   
+}
+
+    #l-02, #l-04, #l-06 {
+        margin-left: auto;
+        margin-right: .85em;
+}
+}
+
+/*9:16   720x1280*/
+@media screen and (min-width: 720px) and (max-height: 1280px) {
+    
+    .container {
+        padding-top: 7.33em;       
+    }
+    
+    img, a {
+        position: relative;
+        width: 193px;
+        height: 193px;
+        border-radius: 9px; 
+}
+    
+    #l-01, #l-03, #l-05 {
+        margin-right: auto;
+        margin-left: .77em;   
+}
+
+    #l-02, #l-04, #l-06 {
+        margin-left: auto;
+        margin-right: .77em;
+}
+}
+
+
+
+
+
+
+/* Medium devices (landscape tablets, 768px and up) */
+
+/*16:9   768x432*/
+@media only screen and (min-width: 768px) and (min-height: 432px) {
+    
+   .container {
+        padding-top: 1.23em;       
+    }
+    
+    img, a {
+        position: relative;
+        width: 104px;
+        height: 104px;
+        border-radius: 9px;  
+}
+    
+    #l-01, #l-03, #l-05 {
+        margin-right: auto;
+        margin-left: 1.27em;   
+}
+
+    #l-02, #l-04, #l-06 {
+        margin-left: auto;
+        margin-right: 1.27em;
+}
+}
+
+/*3:2   768x512*/
+@media only screen and (min-width: 768px) and (min-height: 512px) {
+    
+   .container {
+        padding-top: 1.91em;       
+    }
+    
+    img, a {
+        position: relative;
+        width: 109px;
+        height: 109px;
+        border-radius: 9px;  
+}
+    
+    #l-01, #l-03, #l-05 {
+        margin-right: auto;
+        margin-left: 1.27em;   
+}
+
+    #l-02, #l-04, #l-06 {
+        margin-left: auto;
+        margin-right: 1.27em;
+}
+}
+
+/*4:3   768x576*/
+@media only screen and (min-width: 768px) and (min-height: 576px) {
+    
+   .container {
+        padding-top: 2.27em;       
+    }
+    
+    img, a {
+        position: relative;
+        width: 119px;
+        height: 119px;
+        border-radius: 10px;  
+}
+    
+    #l-01, #l-03, #l-05 {
+        margin-right: auto;
+        margin-left: 1.33em;   
+}
+
+    #l-02, #l-04, #l-06 {
+        margin-left: auto;
+        margin-right: 1.33em;
+}
+}
+
+/*3:4   768x1024*/
+@media only screen and (min-width: 768px) and (min-height: 1024px) {
+    
+    .container {
+        padding-top: 4.53em;
+    }
+    
+    img, a {
+        position: relative;
+        width: 193px;
+        height: 193px;
+        border-radius: 6px; 
+}
+    
+    #l-01, #l-03, #l-05 {
+        margin-right: auto;
+        margin-left: 1.66em;   
+}
+
+    #l-02, #l-04, #l-06 {
+        margin-left: auto;
+        margin-right: 1.13em;
+}
+}
+
+/*10:16   800×1280*/
+@media only screen and (min-width: 800px) {
+    
+    .container {
+        padding-top: 6.33em;
+    }
+    
+    img, a {
+        position: relative;
+        width: 213px;
+        height: 213px;
+        border-radius: 6px; 
+}
+    
+    #l-01, #l-03, #l-05 {
+        margin-right: auto;
+        margin-left: 1.13em;   
+}
+
+    #l-02, #l-04, #l-06 {
+        margin-left: auto;
+        margin-right: 1.13em;
+}
+}
+
+/*10:16   900x1440*/
+@media only screen and (min-width: 900px) {
+    
+    .container {
+        padding-top: 7.69em;
+    }
+    
+    img, a {
+        position: relative;
+        width: 233px;
+        height: 233px;
+        border-radius: 6px; 
+}
+    
+    #l-01, #l-03, #l-05 {
+        margin-right: auto;
+        margin-left: 1.66em;   
+}
+
+    #l-02, #l-04, #l-06 {
+        margin-left: auto;
+        margin-right: 1.66em;
+}
+}
+
+
+
+
+
+/*laptops/desktops, large devices start here*/
+/*16:9   992x558*/
+@media only screen and (min-width: 992px) {
+    
+    .container {
+        padding-top: 1.61em;       
+    }
+    
+    img, a {
+        position: relative;
+        width: 133px;
+        height: 133px;
+        border-radius: 10px;  
+}
+    
+    #l-01, #l-03, #l-05 {
+        margin-right: auto;
+        margin-left: 1.61em;   
+}
+
+    #l-02, #l-04, #l-06 {
+        margin-left: auto;
+        margin-right: 1.61em;
+}
+}
+
+
+/*16:9   1024x576*/
+@media screen and (min-width: 1024px) and (min-height: 576px) {
+    
+    .container {
+        padding-top: 1.72em;       
+    }
+    
+    img, a {
+        position: relative;
+        width: 137px;
+        height: 137px;
+        border-radius: 10px;  
+}
+    
+    #l-01, #l-03, #l-05 {
+        margin-right: auto;
+        margin-left: 1.72em;   
+}
+
+    #l-02, #l-04, #l-06 {
+        margin-left: auto;
+        margin-right: 1.72em;
+}
+}
+
+
+/*4:3   1024x768*/
+@media screen and (min-width: 1024px) and (min-height: 768px) {
+    
+    .container {
+        padding-top: 3.13em;       
+    }
+    
+    img, a {
+        position: relative;
+        width: 153px;
+        height: 153px;
+        border-radius: 10px;  
+}
+    
+    #l-01, #l-03, #l-05 {
+        margin-right: auto;
+        margin-left: 3.13em;   
+}
+
+    #l-02, #l-04, #l-06 {
+        margin-left: auto;
+        margin-right: 3.13em;
+}
+}
+
+
+/*3:4   1024×1366*/
+@media only screen and (min-width: 1024px) and (min-height: 1366px) {
+    
+    .container {
+        padding-top: 6em;
+    }
+    
+    img, a {
+        position: relative;
+        width: 266px;
+        height: 266px;
+        border-radius: 17px; 
+}
+    
+    #l-01, #l-03, #l-05 {
+        margin-right: auto;
+        margin-left: 1.66em;   
+}
+
+    #l-02, #l-04, #l-06 {
+        margin-left: auto;
+        margin-right: 1.66em;
+}
+}
+
+/*16:9   1200x675*/
+@media screen and (min-width: 1200px) {
+    
+    .container {
+        padding-top: 2.175em;       
+}
+    
+    img, a {
+        position: relative;
+        width: 153px;
+        height: 153px;
+        border-radius: 12px;  
+}
+    
+    #l-01, #l-03, #l-05 {
+        margin-right: auto;
+        margin-left: 2.175em;   
+}
+
+    #l-02, #l-04, #l-06 {
+        margin-left: auto;
+        margin-right: 2.175em;
+}
+}
+
+/*16:9   1280x720*/
+@media screen and (min-width: 1280px) and (min-height: 720px) {
+    
+    .container {
+        padding-top: 2.33em;       
+}
+    
+    img, a {
+        position: relative;
+        width: 164px;
+        height: 164px;
+        border-radius: 12px;  
+}
+    
+    #l-01, #l-03, #l-05 {
+        margin-right: auto;
+        margin-left: 2.33em;   
+}
+
+    #l-02, #l-04, #l-06 {
+        margin-left: auto;
+        margin-right: 2.33em;
+}
+}
+
+/*16:10  1280x800*/
+@media screen and (min-width: 1280px) and (min-height: 800px) {
+    
+    .container {
+        padding-top: 2.33em;       
+}
+    
+    img, a {
+        position: relative;
+        width: 193px;
+        height: 193px;
+        border-radius: 12px;  
+}
+    
+    #l-01, #l-03, #l-05 {
+        margin-right: auto;
+        margin-left: 2.33em;   
+}
+
+    #l-02, #l-04, #l-06 {
+        margin-left: auto;
+        margin-right: 2.33em;
+}
+}
+
+/*16:9   1366x768*/
+@media screen and (min-width: 1366px) and (min-height: 768px) {
+    
+    .container {
+        padding-top: 2.57em;       
+}
+    
+    img, a {
+        position: relative;
+        width: 174px;
+        height: 174px;
+        border-radius: 13px;  
+}
+    
+    #l-01, #l-03, #l-05 {
+        margin-right: auto;
+        margin-left: 2.57em;   
+}
+
+    #l-02, #l-04, #l-06 {
+        margin-left: auto;
+        margin-right: 2.57em;
+}
+}
+
+/*4:3   1366x1024*/
+@media screen and (min-width: 1366px) and (min-height: 1024px) {
+    
+    .container {
+        padding-top: 2.9em;       
+}
+    
+    img, a {
+        position: relative;
+        width: 249px;
+        height: 249px;
+        border-radius: 13px;  
+}
+    
+    #l-01, #l-03, #l-05 {
+        margin-right: auto;
+        margin-left: 2.69em;   
+}
+
+    #l-02, #l-04, #l-06 {
+        margin-left: auto;
+        margin-right: 2.69em;
+}
+}
+
+/*16:10   1440x900*/
+@media screen and (min-width: 1366px) {
+    
+    .container {
+        padding-top: 2.9em;       
+}
+    
+    img, a {
+        position: relative;
+        width: 203px;
+        height: 203px;
+        border-radius: 13px;  
+}
+    
+    #l-01, #l-03, #l-05 {
+        margin-right: auto;
+        margin-left: 2.97em;   
+}
+
+    #l-02, #l-04, #l-06 {
+        margin-left: auto;
+        margin-right: 2.97em;
+}
+}
+
+/*16:9   1536x864*/
+@media screen and (min-width: 1536px) {
+    
+    .container {
+        padding-top: 3.13em;       
+}
+    
+    img, a {
+        position: relative;
+        width: 183px;
+        height: 183px;
+        border-radius: 15px;  
+}
+    
+    #l-01, #l-03, #l-05 {
+        margin-right: auto;
+        margin-left: 3.13em;   
+}
+
+    #l-02, #l-04, #l-06 {
+        margin-left: auto;
+        margin-right: 3.13em;
+}
+}
+
+
+
+/*laptops/desktops, extra-large devices start here*/
+/*16:9   1600x900*/
+@media screen and (min-width: 1600px) {
+    
+    .container {
+        padding-top: 3.21em;       
+}
+    
+    img, a {
+        position: relative;
+        width: 193px;
+        height: 193px;
+        border-radius: 16px;  
+}
+    
+    #l-01, #l-03, #l-05 {
+        margin-right: auto;
+        margin-left: 3.21em;   
+}
+
+    #l-02, #l-04, #l-06 {
+        margin-left: auto;
+        margin-right: 3.21em;
+}
+}
+
+/*16:9   1920x1080*/
+@media screen and (min-width: 1920px) {
+    
+    .container {
+        padding-top: 3.86em;       
+}
+    
+    img, a {
+        position: relative;
+        width: 233px;
+        height: 233px;
+        border-radius: 18px;  
+}
+    
+    #l-01, #l-03, #l-05 {
+        margin-right: auto;
+        margin-left: 3.86em;   
+}
+
+    #l-02, #l-04, #l-06 {
+        margin-left: auto;
+        margin-right: 3.86em;
+}
+}
+
+/*16:9   2560x1440*/
+@media screen and (min-width: 2560px) {
+    
+    .container {
+        padding-top: 5.7em;       
+}
+    
+    img, a {
+        position: relative;
+        width: 296px;
+        height: 296px;
+        border-radius: 24px;       
+}
+    
+    #l-01, #l-03, #l-05 {
+        margin-right: auto;
+        margin-left: 5.7em;   
+}
+
+    #l-02, #l-04, #l-06 {
+        margin-left: auto;
+        margin-right: 5.7em;
+}
+}
+
+/*16:9   3840x2160*/
+@media screen and (min-width: 3840px) {
+    
+    .container {
+        padding-top: 7.72em;       
+}
+    
+    img, a {
+        position: relative;
+        width: 466px;
+        height: 466px;
+        border-radius: 37px;  
+}
+    
+    #l-01, #l-03, #l-05 {
+        margin-right: auto;
+        margin-left: 7.72em;   
+}
+
+    #l-02, #l-04, #l-06 {
+        margin-left: auto;
+        margin-right: 7.72em;
+}
+}
+

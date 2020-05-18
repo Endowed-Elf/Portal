@@ -1,0 +1,1936 @@
+* {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+}
+
+/*
+body, ul, html {
+}
+*/
+
+body {
+    background: #00454a;
+}
+
+.middle-container {
+    display: flex;
+    flex-direction: row; 
+    justify-content: center;
+    background: #363636; 
+    border: 1px solid black;
+    overflow-x: hidden;
+}
+
+.player {
+    padding:0px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    background: black;
+    background-clip: content-box;
+    transform: scale(.77, .77);
+    height: cover;
+    width: cover;
+    text-decoration-color: aliceblue;
+   
+}
+
+
+
+.top {
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    overflow: hidden;
+    background: #00454a;
+    height: 166px;
+    width:100%;
+}
+
+.top-innards {
+    width: 33%;
+    height: 100%;
+    text-align: center;
+    font-size: .9em;
+    padding-top: 1em;
+}
+
+#t1 {
+    border-right: none;
+}
+
+#t2 {
+    border-left: 1px solid black;
+    border-right: 1px solid black;
+}
+
+#t3 {
+    border-left: none;
+}
+
+.bottom {
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    background: #00454a;
+    height: 166px;
+    width:100%;
+}
+
+.bottom-innards {
+    width: 33%;
+    text-align: center;
+    font-size: .9em;
+    padding-top: 1em;
+}
+
+#b1 {
+    border: none;
+}
+
+#b2 {
+    border-left: 1px solid black;
+    border-right: 1px solid black;
+}
+
+#b3 {
+    border: none;
+}
+
+.back-button-aligner {
+    position: fixed;    
+    margin: 0 auto;
+    transform: translate(0px, 0px);
+    transform: scale(1);
+    overflow: hidden;
+    z-index: 1;
+    /* bottom: ~.5em , this moves button up and down */
+}
+
+.svg-back-button {
+    position: fixed;
+    transform: translate(0px, 0px); 
+    z-index: 1;
+    overflow-x: hidden;
+    /* top: px;      
+        right: px;   These two center button in viewbox.
+    */
+}
+
+svg .back-button {
+    fill: white;
+    z-index: 1;
+    overflow-x: hidden;
+}
+
+svg .back-button:hover {
+    fill: lightgreen;
+}
+
+svg .back-button:active {
+    fill: lime;
+}
+
+
+
+
+
+
+.bestowal-aligner {
+    position: fixed;    
+    margin: 0 auto;
+    transform: translate(0px, 0px);
+    transform: scale(1);
+    overflow: hidden;
+    z-index: 1;
+    border: 1px solid blue;
+}
+
+.svg-bestowal-button {
+    position: fixed;
+    transform: translate(0px, 0px); 
+    z-index: 1;
+    overflow-x: hidden;
+    /* top: px;      
+        right: px;   These two center button in viewbox.
+    */
+}
+
+svg .button {
+    z-index: 1;
+    overflow-x: hidden;
+}
+
+svg .button:hover {
+    fill: lightgreen;
+}
+
+svg .button:active {
+    fill: lime;
+}
+
+/*9:16   180x320*/
+
+@media screen and (min-width: 180px) {
+
+    .back-button-aligner {   
+        height: 20px;
+        width: 45px;
+        bottom: .13em;
+        left: 0;     
+}
+    
+    .svg-back-button {
+        height: 180px;
+        width: 320px;
+        transform: scale(.147);
+        top: -80px;
+        right: -139px;
+}
+
+    .bestowal-aligner {   
+        height: 49px;
+        width: 45px;
+        bottom: .13;
+        right: 0;  
+}
+
+    .svg-bestowal-button {
+        height: 180px;
+        width: 320px;
+        transform: scale(.434);
+        top: -54px;
+        right: -139px;
+}
+}
+
+/*10:16   200x320*/
+@media screen and (min-width: 200px) {
+
+    .back-button-aligner {   
+        height: 20px;
+        width: 45px;
+        bottom: .13em;
+        left: 0;     
+}
+    
+    .svg-back-button {
+        height: 180px;
+        width: 320px;
+        transform: scale(.147);
+        top: -80px;
+        right: -139px;
+}
+
+    .bestowal-aligner {   
+        height: 49px;
+        width: 45px;
+        bottom: .13em;
+        right: 0;  
+}
+
+    .svg-bestowal-button {
+        height: 180px;
+        width: 320px;
+        transform: scale(.434);
+        top: -54px;
+        right: -139px;
+}
+}
+
+/*9:16   211x375*/
+@media screen and (min-width: 211px) {
+
+    .back-button-aligner {   
+        height: 20px;
+        width: 45px;
+        bottom: .13em;
+        left: 0;     
+}
+    
+    .svg-back-button {
+        height: 180px;
+        width: 320px;
+        transform: scale(.147);
+        top: -80px;
+        right: -139px;
+}
+
+    .bestowal-aligner {   
+        height: 49px;
+        width: 45px;
+        bottom: .13em;
+        right: 0;  
+}
+
+    .svg-bestowal-button {
+        height: 180px;
+        width: 320px;
+        transform: scale(.434);
+        top: -54px;
+        right: -139px;
+}
+}
+
+/*2:3   213x320 - don't know how to do it yet but it's fine here how it is*/
+@media screen and (min-width: 213px) {
+
+    .back-button-aligner {   
+        height: 20px;
+        width: 45px;
+        bottom: .13em;
+        left: 0;     
+}
+    
+    .svg-back-button {
+        height: 180px;
+        width: 320px;
+        transform: scale(.147);
+        top: -80px;
+        right: -139px;
+}
+
+    .bestowal-aligner {   
+        height: 49px;
+        width: 45px;
+        bottom: .13em;
+        right: 0;  
+}
+
+    .svg-bestowal-button {
+        height: 180px;
+        width: 320px;
+        transform: scale(.434);
+        top: -54px;
+        right: -139px;
+}
+}
+
+/*9:16   239x425*/
+@media screen and (min-width: 239px) {
+
+    .back-button-aligner {   
+        height: 20px;
+        width: 45px;
+        bottom: .13em;
+        left: 0;     
+}
+    
+    .svg-back-button {
+        height: 180px;
+        width: 320px;
+        transform: scale(.147);
+        top: -80px;
+        right: -139px;
+}
+
+    .bestowal-aligner {   
+        height: 49px;
+        width: 45px;
+        bottom: .13em;
+        right: 0;  
+}
+
+    .svg-bestowal-button {
+        height: 180px;
+        width: 320px;
+        transform: scale(.434);
+        top: -54px;
+        right: -139px;
+}
+}
+
+/*9:16   270x480*/
+@media screen and (min-width: 270px) {
+
+    .back-button-aligner {   
+        height: 20px;
+        width: 45px;
+        bottom: .13em;
+        left: 0;     
+}
+    
+    .svg-back-button {
+        height: 180px;
+        width: 320px;
+        transform: scale(.147);
+        top: -80px;
+        right: -139px;
+}
+
+    .bestowal-aligner {   
+        height: 49px;
+        width: 45px;
+        bottom: .13em;
+        right: 0;  
+}
+
+    .svg-bestowal-button {
+        height: 180px;
+        width: 320px;
+        transform: scale(.434);
+        top: -54px;
+        right: -139px;
+}
+}
+
+/*16:9   320x180*/
+@media screen and (min-width: 320px) and (min-height: 180px) {
+
+    .back-button-aligner {   
+        height: 21px;
+        width: 51px;
+        bottom: .13em;
+        left: 0;     
+}
+    
+    .svg-back-button {
+        height: 180px;
+        width: 320px;
+        transform: scale(.166);
+        top: -80px;
+        right: -136px;
+}
+
+    .bestowal-aligner {   
+        height: 57px;
+        width: 47px;
+        bottom: .13em;
+        right: 0;  
+}
+
+    .svg-bestowal-button {
+        height: 180px;
+        width: 320px;
+        transform: scale(.5);
+        top: -49px;
+        right: -137px;
+}
+}
+
+/*16:10   320x200*/
+@media screen and (min-width: 320px) and (min-height: 200px) {
+
+    .back-button-aligner {   
+        height: 21px;
+        width: 51px;
+        bottom: .13em;
+        left: 0;     
+}
+    
+    .svg-back-button {
+        height: 180px;
+        width: 320px;
+        transform: scale(.166);
+        top: -80px;
+        right: -136px;
+}
+
+    .bestowal-aligner {   
+        height: 57px;
+        width: 47px;
+        bottom: .13em;
+        right: 0;  
+}
+
+    .svg-bestowal-button {
+        height: 180px;
+        width: 320px;
+        transform: scale(.5);
+        top: -49px;
+        right: -137px;
+}
+}
+
+/*3:2   320x213.33*/
+@media screen and (min-width: 320px) and (min-height: 213px) {
+
+    .back-button-aligner {   
+        height: 21px;
+        width: 51px;
+        bottom: .13em;
+        left: 0;     
+}
+    
+    .svg-back-button {
+        height: 180px;
+        width: 320px;
+        transform: scale(.166);
+        top: -80px;
+        right: -136px;
+}
+
+    .bestowal-aligner {   
+        height: 57px;
+        width: 47px;
+        bottom: .13em;
+        right: 0;  
+}
+
+    .svg-bestowal-button {
+        height: 180px;
+        width: 320px;
+        transform: scale(.5);
+        top: -49px;
+        right: -137px;
+}
+}
+
+/*4:3   320x240*/
+@media screen and (min-width: 320px) and (min-height: 240px) {
+
+    .back-button-aligner {   
+        height: 21px;
+        width: 51px;
+        bottom: .13em;
+        left: 0;     
+}
+    
+    .svg-back-button {
+        height: 180px;
+        width: 320px;
+        transform: scale(.166);
+        top: -80px;
+        right: -136px;
+}
+
+    .bestowal-aligner {   
+        height: 57px;
+        width: 47px;
+        bottom: .13em;
+        right: 0;  
+}
+
+    .svg-bestowal-button {
+        height: 180px;
+        width: 320px;
+        transform: scale(.5);
+        top: -49px;
+        right: -137px;
+}
+}
+
+/*2:3   320x480*/
+@media screen and (min-width: 320px) and (min-height: 480px) {
+
+    .back-button-aligner {   
+        height: 24px;
+        width: 54px;
+        bottom: .13em;
+        left: 0;     
+}
+    
+    .svg-back-button {
+        height: 180px;
+        width: 320px;
+        transform: scale(.177);
+        top: -78px;
+        right: -134px;
+}
+
+    .bestowal-aligner {   
+        height: 63px;
+        width: 53px;
+        bottom: .13em;
+        right: 0;  
+}
+
+    .svg-bestowal-button {
+        height: 180px;
+        width: 320px;
+        transform: scale(.57);
+        top: -44px;
+        right: -135px;
+}
+}
+
+/*9:16   320x568*/
+@media screen and (min-width: 320px) and (min-height: 568px) {
+
+    .bottom {
+        height: 193px;
+}
+
+    .top {
+        height: 193px;
+}
+
+    .back-button-aligner {   
+        height: 29px;
+        width: 66px;
+        bottom: .13em;
+        left: 0;     
+}
+    
+    .svg-back-button {
+        height: 180px;
+        width: 320px;
+        transform: scale(.213);
+        top: -76px;
+        right: -129px;
+}
+
+    .bestowal-aligner {   
+        height: 83px;
+        width: 73px;
+        bottom: .13em;
+        right: 0;  
+}
+
+    .svg-bestowal-button {
+        height: 180px;
+        width: 320px;
+        transform: scale(.73);
+        top: -30px;
+        right: -125px;
+}
+}
+
+/*9:16   337.5x600*/
+@media screen and (min-width: 337px) {
+
+    .bottom {
+        height: 205px;
+}
+
+    .top {
+        height: 204px;
+}
+
+    .back-button-aligner {   
+        height: 29px;
+        width: 66px;
+        bottom: .13em;
+        left: 0;     
+}
+    
+    .svg-back-button {
+        height: 180px;
+        width: 320px;
+        transform: scale(.213);
+        top: -76px;
+        right: -129px;
+}
+
+    .bestowal-aligner {   
+        height: 83px;
+        width: 73px;
+        bottom: .13em;
+        right: 0;  
+}
+
+    .svg-bestowal-button {
+        height: 180px;
+        width: 320px;
+        transform: scale(.73);
+        top: -30px;
+        right: -125px;
+}
+}
+
+/*2:3   342x512*/
+@media screen and (min-width: 342px) {
+
+    .bottom {
+        height: 160px;
+}
+
+    .top {
+        height: 159px;
+}
+
+    .back-button-aligner {   
+        height: 29px;
+        width: 66px;
+        bottom: .13em;
+        left: 0;     
+}
+    
+    .svg-back-button {
+        height: 180px;
+        width: 320px;
+        transform: scale(.213);
+        top: -76px;
+        right: -129px;
+}
+
+    .bestowal-aligner {   
+        height: 83px;
+        width: 73px;
+        bottom: .13em;
+        right: 0;  
+}
+
+    .svg-bestowal-button {
+        height: 180px;
+        width: 320px;
+        transform: scale(.73);
+        top: -30px;
+        right: -125px;
+}
+}
+
+/*3:4   360x480*/
+@media screen and (min-width: 360px) and (min-height: 480px) {
+
+    .bottom {
+        height: 138px;
+    }
+
+    .top {
+        height: 138px;
+    }
+
+    .back-button-aligner {   
+        height: 24px;
+        width: 54px;
+        bottom: .13em;
+        left: 0;     
+}
+    
+    .svg-back-button {
+        height: 180px;
+        width: 320px;
+        transform: scale(.177);
+        top: -78px;
+        right: -134px;
+}
+
+    .bestowal-aligner {   
+        height: 63px;
+        width: 53px;
+        bottom: .13em;
+        right: 0;  
+}
+
+    .svg-bestowal-button {
+        height: 180px;
+        width: 320px;
+        transform: scale(.57);
+        top: -44px;
+        right: -135px;
+}
+}
+
+/*9:16   360x640*/
+@media screen and (min-width: 360px) and (min-height: 640px) {
+
+    .bottom {
+        height: 218px;
+}
+
+    .top {
+        height: 218px;
+}
+
+    .back-button-aligner {   
+        height: 29px;
+        width: 66px;
+        bottom: .13em;
+        left: 0;     
+}
+    
+    .svg-back-button {
+        height: 180px;
+        width: 320px;
+        transform: scale(.213);
+        top: -76px;
+        right: -129px;
+}
+
+    .bestowal-aligner {   
+        height: 83px;
+        width: 73px;
+        bottom: .13em;
+        right: 0;  
+}
+
+    .svg-bestowal-button {
+        height: 180px;
+        width: 320px;
+        transform: scale(.73);
+        top: -30px;
+        right: -125px;
+}
+}
+
+/*16:9   375x211*/
+@media screen and (min-width: 375px) and (min-height: 211px) {
+
+    .back-button-aligner {   
+        height: 21px;
+        width: 51px;
+        bottom: .13em;
+        left: 0;     
+}
+    
+    .svg-back-button {
+        height: 180px;
+        width: 320px;
+        transform: scale(.166);
+        top: -80px;
+        right: -136px;
+}
+
+    .bestowal-aligner {   
+        height: 57px;
+        width: 47px;
+        bottom: .13em;
+        right: 0;  
+}
+
+    .svg-bestowal-button {
+        height: 180px;
+        width: 320px;
+        transform: scale(.5);
+        top: -49px;
+        right: -137px;
+}
+}
+
+/*9:16   375x667*/
+@media screen and (min-width: 375px) and (min-height: 667px) {
+
+    .bottom {
+        height: 227px;
+}
+
+    .top {
+        height: 228px;
+}
+
+    .back-button-aligner {   
+        height: 37px;
+        width: 77px;
+        bottom: .13em;
+        left: 0;     
+}
+    
+    .svg-back-button {
+        height: 180px;
+        width: 320px;
+        transform: scale(.261);
+        top: -71px;
+        right: -124px;
+}
+
+    .bestowal-aligner {   
+        height: 93px;
+        width: 83px;
+        bottom: .13em;
+        right: 0;  
+}
+
+    .svg-bestowal-button {
+        height: 180px;
+        width: 320px;
+        transform: scale(.83);
+        top: -23px;
+        right: -121px;
+}
+}
+
+/*2:3   400x600*/
+@media screen and (min-width: 400px) and (min-height: 600px) {
+
+    .bottom {
+        height: 227px;
+}
+
+    .top {
+        height: 228px;
+}
+
+    .back-button-aligner {   
+        height: 37px;
+        width: 77px;
+        bottom: .13em;
+        left: 0;     
+}
+    
+    .svg-back-button {
+        height: 180px;
+        width: 320px;
+        transform: scale(.261);
+        top: -71px;
+        right: -124px;
+}
+
+    .bestowal-aligner {   
+        height: 93px;
+        width: 83px;
+        bottom: .13em;
+        right: 0;  
+}
+
+    .svg-bestowal-button {
+        height: 180px;
+        width: 320px;
+        transform: scale(.83);
+        top: -23px;
+        right: -121px;
+}
+}
+
+/*10:16   400x640*/
+@media screen and (min-width: 400px) and (min-height: 640px) {
+
+    .bottom {
+        height: 227px;
+}
+
+    .top {
+        height: 228px;
+}
+
+    .back-button-aligner {   
+        height: 37px;
+        width: 77px;
+        bottom: .13em;
+        left: 0;     
+}
+    
+    .svg-back-button {
+        height: 180px;
+        width: 320px;
+        transform: scale(.261);
+        top: -71px;
+        right: -124px;
+}
+
+    .bestowal-aligner {   
+        height: 93px;
+        width: 83px;
+        bottom: .13em;
+        right: 0;  
+}
+
+    .svg-bestowal-button {
+        height: 180px;
+        width: 320px;
+        transform: scale(.83);
+        top: -23px;
+        right: -121px;
+}
+}
+
+/*16:9   425x239*/
+@media screen and (min-width: 425px) {
+
+    .back-button-aligner {   
+        height: 21px;
+        width: 51px;
+        bottom: .13em;
+        left: 0;     
+}
+    
+    .svg-back-button {
+        height: 180px;
+        width: 320px;
+        transform: scale(.166);
+        top: -80px;
+        right: -136px;
+}
+
+    .bestowal-aligner {   
+        height: 57px;
+        width: 47px;
+        bottom: .13em;
+        right: 0;  
+}
+
+    .svg-bestowal-button {
+        height: 180px;
+        width: 320px;
+        transform: scale(.5);
+        top: -49px;
+        right: -137px;
+}
+}
+
+/*16:9   432x243*/
+@media screen and (min-width: 432px) and (min-height: 243px) {
+
+    .back-button-aligner {   
+        height: 23px;
+        width: 51px;
+        bottom: .13em;
+        left: 0;     
+}
+    
+    .svg-back-button {
+        height: 180px;
+        width: 320px;
+        transform: scale(.176);
+        top: -79px;
+        right: -136px;
+}
+
+    .bestowal-aligner {   
+        height: 59px;
+        width: 47px;
+        bottom: .13em;
+        right: 0;  
+}
+
+    .svg-bestowal-button {
+        height: 180px;
+        width: 320px;
+        transform: scale(.53);
+        top: -47px;
+        right: -137px;
+}
+}
+
+/*9:16   432x768*/
+@media screen and (min-width: 432px) and (min-height: 768px) {
+
+    .bottom {
+        height: 262px;
+}
+
+    .top {
+        height: 262px;
+}
+
+    .back-button-aligner {   
+        height: 37px;
+        width: 83px;
+        bottom: .13em;
+        left: 0;     
+}
+    
+    .svg-back-button {
+        height: 180px;
+        width: 320px;
+        transform: scale(.271);
+        top: -71px;
+        right: -121px;
+}
+
+    .bestowal-aligner {   
+        height: 97px;
+        width: 83px;
+        bottom: .13em;
+        right: 0;  
+}
+
+    .svg-bestowal-button {
+        height: 180px;
+        width: 320px;
+        transform: scale(.87);
+        top: -19px;
+        right: -121px;
+}
+}
+
+/*3:4   450x600*/
+@media screen and (min-width: 450px) {
+
+    .bottom {
+        height: 262px;
+}
+
+    .top {
+        height: 262px;
+}
+
+    .back-button-aligner {   
+        height: 37px;
+        width: 83px;
+        bottom: .13em;
+        left: 0;     
+}
+    
+    .svg-back-button {
+        height: 180px;
+        width: 320px;
+        transform: scale(.271);
+        top: -71px;
+        right: -121px;
+}
+
+    .bestowal-aligner {   
+        height: 97px;
+        width: 83px;
+        bottom: .13em;
+        right: 0;  
+}
+
+    .svg-bestowal-button {
+        height: 180px;
+        width: 320px;
+        transform: scale(.87);
+        top: -19px;
+        right: -121px;
+}
+}
+
+/*16:9   480x270*/
+@media screen and (min-width: 480px) and (min-height: 270px) {
+
+    .bottom {
+        height: 120px
+    }
+
+    .top {
+        height: 120px;
+    }
+
+    .back-button-aligner {   
+        height: 25px;
+        width: 59px;
+        bottom: .13em;
+        left: 0;     
+}
+    
+    .svg-back-button {
+        height: 180px;
+        width: 320px;
+        transform: scale(.193);
+        top: -77px;
+        right: -132px;
+}
+
+    .bestowal-aligner {   
+        height: 77px;
+        width: 60px;
+        bottom: .13em;
+        right: 0;  
+}
+
+    .svg-bestowal-button {
+        height: 180px;
+        width: 320px;
+        transform: scale(.69);
+        top: -33px;
+        right: -130px;
+}
+}
+
+/*3:2   480x320*/
+@media screen and (min-width: 480px) and (min-height: 320px) {
+
+    .bottom {
+        height: 120px
+    }
+
+    .top {
+        height: 120px;
+    }
+
+    .back-button-aligner {   
+        height: 25px;
+        width: 59px;
+        bottom: .13em;
+        left: 0;     
+}
+    
+    .svg-back-button {
+        height: 180px;
+        width: 320px;
+        transform: scale(.193);
+        top: -77px;
+        right: -132px;
+}
+
+    .bestowal-aligner {   
+        height: 77px;
+        width: 60px;
+        bottom: .13em;
+        right: 0;  
+}
+
+    .svg-bestowal-button {
+        height: 180px;
+        width: 320px;
+        transform: scale(.69);
+        top: -33px;
+        right: -130px;
+}
+}
+
+/*4:3   480x360*/
+@media screen and (min-width: 480px) and (min-height: 360px) {
+
+    .bottom {
+        height: 120px
+    }
+
+    .top {
+        height: 120px;
+    }
+
+    .back-button-aligner {   
+        height: 25px;
+        width: 59px;
+        bottom: .13em;
+        left: 0;     
+}
+    
+    .svg-back-button {
+        height: 180px;
+        width: 320px;
+        transform: scale(.193);
+        top: -77px;
+        right: -132px;
+}
+
+    .bestowal-aligner {   
+        height: 77px;
+        width: 60px;
+        bottom: .13em;
+        right: 0;  
+}
+
+    .svg-bestowal-button {
+        height: 180px;
+        width: 320px;
+        transform: scale(.69);
+        top: -33px;
+        right: -130px;
+}
+}
+
+/*3:4   480x600*/
+@media screen and (min-width: 480px) and (min-height: 600px) {
+
+    .bottom {
+        height: 262px;
+}
+
+    .top {
+        height: 262px;
+}
+
+    .back-button-aligner {   
+        height: 37px;
+        width: 83px;
+        bottom: .13em;
+        left: 0;     
+}
+    
+    .svg-back-button {
+        height: 180px;
+        width: 320px;
+        transform: scale(.271);
+        top: -71px;
+        right: -121px;
+}
+
+    .bestowal-aligner {   
+        height: 97px;
+        width: 83px;
+        bottom: .13em;
+        right: 0;  
+}
+
+    .svg-bestowal-button {
+        height: 180px;
+        width: 320px;
+        transform: scale(.87);
+        top: -19px;
+        right: -121px;
+}
+}
+
+/*3:2   512x342*/
+@media screen and (min-width: 512px) and (min-height: 342px) {
+
+    .bottom {
+        height: 120px
+    }
+
+    .top {
+        height: 120px;
+    }
+
+    .back-button-aligner {   
+        height: 29px;
+        width: 66px;
+        bottom: .13em;
+        left: 0;     
+}
+    
+    .svg-back-button {
+        height: 180px;
+        width: 320px;
+        transform: scale(.213);
+        top: -76px;
+        right: -129px;
+}
+
+    .bestowal-aligner {   
+        height: 77px;
+        width: 60px;
+        bottom: .13em;
+        right: 0;  
+}
+
+    .svg-bestowal-button {
+        height: 180px;
+        width: 320px;
+        transform: scale(.69);
+        top: -33px;
+        right: -130px;
+}
+}
+
+/*2:3   512x768*/
+@media screen and (min-width: 480px) and (min-height: 768px) {
+
+    .bottom {
+        height: 239px;
+}
+
+    .top {
+        height: 239px;
+}
+
+    .back-button-aligner {   
+        height: 37px;
+        width: 83px;
+        bottom: .13em;
+        left: 0;     
+}
+    
+    .svg-back-button {
+        height: 180px;
+        width: 320px;
+        transform: scale(.271);
+        top: -71px;
+        right: -121px;
+}
+
+    .bestowal-aligner {   
+        height: 97px;
+        width: 83px;
+        bottom: .13em;
+        right: 0;  
+}
+
+    .svg-bestowal-button {
+        height: 180px;
+        width: 320px;
+        transform: scale(.87);
+        top: -19px;
+        right: -121px;
+}
+}
+
+/*16:9   568x320*/
+@media screen and (min-width: 568px) {
+
+    .bottom {
+        height: 120px
+    }
+
+    .top {
+        height: 120px;
+    }
+
+    .back-button-aligner {   
+        height: 29px;
+        width: 66px;
+        bottom: .13em;
+        left: 0;     
+}
+    
+    .svg-back-button {
+        height: 180px;
+        width: 320px;
+        transform: scale(.213);
+        top: -76px;
+        right: -129px;
+}
+
+    .bestowal-aligner {   
+        height: 77px;
+        width: 60px;
+        bottom: .13em;
+        right: 0;  
+}
+
+    .svg-bestowal-button {
+        height: 180px;
+        width: 320px;
+        transform: scale(.69);
+        top: -33px;
+        right: -130px;
+}
+}
+
+/*3:4   576x768*/
+@media screen and (min-width: 576px) {
+
+    .bottom {
+        height: 221px;
+}
+
+    .top {
+        height: 221px;
+}
+
+    .back-button-aligner {   
+        height: 37px;
+        width: 83px;
+        bottom: .13em;
+        left: 0;     
+}
+    
+    .svg-back-button {
+        height: 180px;
+        width: 320px;
+        transform: scale(.271);
+        top: -71px;
+        right: -121px;
+}
+
+    .bestowal-aligner {   
+        height: 97px;
+        width: 83px;
+        bottom: .13em;
+        right: 0;  
+}
+
+    .svg-bestowal-button {
+        height: 180px;
+        width: 320px;
+        transform: scale(.87);
+        top: -19px;
+        right: -121px;
+}
+}
+
+
+
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+
+/*16:9   600x337.5*/
+@media screen and (min-width: 600px) and (min-height: 337px) {
+
+    .bottom {
+        height: 137px
+    }
+
+    .top {
+        height: 137px;
+    }
+
+    .back-button-aligner {   
+        height: 34px;
+        width: 77px;
+        bottom: .13em;
+        left: 0;     
+}
+    
+    .svg-back-button {
+        height: 180px;
+        width: 320px;
+        transform: scale(.26);
+        top: -73px;
+        right: -124px;
+}
+
+    .bestowal-aligner {   
+        height: 87px;
+        width: 77px;
+        bottom: .13em;
+        right: 0;  
+}
+
+    .svg-bestowal-button {
+        height: 180px;
+        width: 320px;
+        transform: scale(.79);
+        top: -27px;
+        right: -123px;
+}
+}
+
+/*3:2   600x400*/  
+@media screen and (min-width: 600px) and (min-height: 400px) {
+
+    .bottom {
+        height: 137px
+    }
+
+    .top {
+        height: 137px;
+    }
+
+    .back-button-aligner {   
+        height: 34px;
+        width: 77px;
+        bottom: .13em;
+        left: 0;     
+}
+    
+    .svg-back-button {
+        height: 180px;
+        width: 320px;
+        transform: scale(.26);
+        top: -73px;
+        right: -124px;
+}
+
+    .bestowal-aligner {   
+        height: 87px;
+        width: 77px;
+        bottom: .13em;
+        right: 0;  
+}
+
+    .svg-bestowal-button {
+        height: 180px;
+        width: 320px;
+        transform: scale(.79);
+        top: -27px;
+        right: -123px;
+}
+}
+
+/*4:3   600x450*/
+@media screen and (min-width: 600px) and (min-height: 450px) {
+
+    .bottom {
+        height: 137px
+    }
+
+    .top {
+        height: 137px;
+    }
+
+    .back-button-aligner {   
+        height: 34px;
+        width: 77px;
+        bottom: .13em;
+        left: 0;     
+}
+    
+    .svg-back-button {
+        height: 180px;
+        width: 320px;
+        transform: scale(.26);
+        top: -73px;
+        right: -124px;
+}
+
+    .bestowal-aligner {   
+        height: 87px;
+        width: 77px;
+        bottom: .13em;
+        right: 0;  
+}
+
+    .svg-bestowal-button {
+        height: 180px;
+        width: 320px;
+        transform: scale(.79);
+        top: -27px;
+        right: -123px;
+}
+}
+
+/*16:9   640x360*/
+@media screen and (min-width: 640px) and (min-height: 360px) {
+
+    .bottom {
+        height: 166px
+    }
+
+    .top {
+        height: 166px;
+    }
+
+    .back-button-aligner {   
+        height: 34px;
+        width: 77px;
+        bottom: .13em;
+        left: 0;     
+}
+    
+    .svg-back-button {
+        height: 180px;
+        width: 320px;
+        transform: scale(.26);
+        top: -73px;
+        right: -124px;
+}
+
+    .bestowal-aligner {   
+        height: 87px;
+        width: 77px;
+        bottom: .13em;
+        right: 0;  
+}
+
+    .svg-bestowal-button {
+        height: 180px;
+        width: 320px;
+        transform: scale(.79);
+        top: -27px;
+        right: -123px;
+}
+}
+
+/*16:10   640x400*/
+@media screen and (min-width: 640px) and (min-height: 400px) {
+
+    .bottom {
+        height: 187px
+    }
+
+    .top {
+        height: 187px;
+    }
+
+    .back-button-aligner {   
+        height: 34px;
+        width: 77px;
+        bottom: .13em;
+        left: 0;     
+}
+    
+    .svg-back-button {
+        height: 180px;
+        width: 320px;
+        transform: scale(.26);
+        top: -73px;
+        right: -124px;
+}
+
+    .bestowal-aligner {   
+        height: 87px;
+        width: 77px;
+        bottom: .13em;
+        right: 0;  
+}
+
+    .svg-bestowal-button {
+        height: 180px;
+        width: 320px;
+        transform: scale(.79);
+        top: -27px;
+        right: -123px;
+}
+}
+
+/*16:9   640x480*/
+@media screen and (min-width: 640px) and (min-height: 400px) {
+
+    .bottom {
+        height: 187px
+    }
+
+    .top {
+        height: 187px;
+    }
+
+    .back-button-aligner {   
+        height: 34px;
+        width: 77px;
+        bottom: .13em;
+        left: 0;     
+}
+    
+    .svg-back-button {
+        height: 180px;
+        width: 320px;
+        transform: scale(.26);
+        top: -73px;
+        right: -124px;
+}
+
+    .bestowal-aligner {   
+        height: 87px;
+        width: 77px;
+        bottom: .13em;
+        right: 0;  
+}
+
+    .svg-bestowal-button {
+        height: 180px;
+        width: 320px;
+        transform: scale(.79);
+        top: -27px;
+        right: -123px;
+}
+}    
+
+/*16:9*   667x375*/
+@media screen and (min-width: 640px) and (min-height: 400px) {
+
+    .bottom {
+        height: 187px
+    }
+
+    .top {
+        height: 187px;
+    }
+
+    .back-button-aligner {   
+        height: 34px;
+        width: 77px;
+        bottom: .13em;
+        left: 0;     
+}
+    
+    .svg-back-button {
+        height: 180px;
+        width: 320px;
+        transform: scale(.26);
+        top: -73px;
+        right: -124px;
+}
+
+    .bestowal-aligner {   
+        height: 87px;
+        width: 77px;
+        bottom: .13em;
+        right: 0;  
+}
+
+    .svg-bestowal-button {
+        height: 180px;
+        width: 320px;
+        transform: scale(.79);
+        top: -27px;
+        right: -123px;
+}
+}
+
+/*9:16   720x1280*/
+@media screen and (min-width: 576px) {
+
+    .bottom {
+        height: 433px;
+}
+
+    .top {
+        height: 433px;
+}
+
+.back-button-aligner {   
+    height: 50px;
+    width: 113px;
+    bottom: .13em;
+    left: 0;     
+}
+
+.svg-back-button {
+    height: 180px;
+    width: 320px;
+    transform: scale(.37);
+    top: -67px;
+    right: -107px;
+}
+
+.bestowal-aligner {   
+    height: 113px;
+    width: 100px;
+    bottom: .13em;
+    right: 0;  
+}
+
+.svg-bestowal-button {
+    height: 180px;
+    width: 320px;
+    transform: scale(1);
+    top: -9px;
+    right: -111px;
+}
+}
+
+
+
+
+
+/* Medium devices (landscape tablets, 768px and up) */
+
+/*16:9   768x432*/
+@media screen and (min-width: 768px) and (min-height: 432px) {
+
+    .bottom {
+        height: 187px
+    }
+
+    .top {
+        height: 187px;
+    }
+
+    .back-button-aligner {   
+        height: 34px;
+        width: 77px;
+        bottom: .13em;
+        left: 0;     
+}
+    
+    .svg-back-button {
+        height: 180px;
+        width: 320px;
+        transform: scale(.26);
+        top: -73px;
+        right: -124px;
+}
+
+    .bestowal-aligner {   
+        height: 87px;
+        width: 77px;
+        bottom: .13em;
+        right: 0;  
+}
+
+    .svg-bestowal-button {
+        height: 180px;
+        width: 320px;
+        transform: scale(.79);
+        top: -27px;
+        right: -123px;
+}
+}
+
+/*3:2   768x512*/
+@media screen and (min-width: 768px) and (min-height: 512px) {
+
+    .bottom {
+        height: 213px
+    }
+
+    .top {
+        height: 213px;
+    }
+
+    .back-button-aligner {   
+        height: 34px;
+        width: 77px;
+        bottom: .13em;
+        left: 0;     
+}
+    
+    .svg-back-button {
+        height: 180px;
+        width: 320px;
+        transform: scale(.26);
+        top: -73px;
+        right: -124px;
+}
+
+    .bestowal-aligner {   
+        height: 87px;
+        width: 77px;
+        bottom: .13em;
+        right: 0;  
+}
+
+    .svg-bestowal-button {
+        height: 180px;
+        width: 320px;
+        transform: scale(.79);
+        top: -27px;
+        right: -123px;
+}
+}
+
+/*4:3   768x576*/
+@media screen and (min-width: 768px) and (min-height: 512px) {
+
+    .bottom {
+        height: 213px
+    }
+
+    .top {
+        height: 213px;
+    }
+
+    .back-button-aligner {   
+        height: 34px;
+        width: 77px;
+        bottom: .13em;
+        left: 0;     
+}
+    
+    .svg-back-button {
+        height: 180px;
+        width: 320px;
+        transform: scale(.26);
+        top: -73px;
+        right: -124px;
+}
+
+    .bestowal-aligner {   
+        height: 87px;
+        width: 77px;
+        bottom: .13em;
+        right: 0;  
+}
+
+    .svg-bestowal-button {
+        height: 180px;
+        width: 320px;
+        transform: scale(.79);
+        top: -27px;
+        right: -123px;
+}
+}
+
+
+/*10:16   800×1280*/
+
+
+/*10:16   900x1440*/
+
+
+
+
+
+
+/*laptops/desktops, large devices start here*/
+
+/*16:9   992x558*/
+
+
+/*16:9   1024x576*/
+
+
+/*3:4   1024×1366*/
+
+
+/*16:9   1200x675*/
+
+
+/*16:9   1280x720*/
+
+
+/*16:10  1280x800*/
+
+
+/*16:9   1366x768*/
+
+
+/*4:3   1366x1024*/
+
+
+/*16:10   1440x900*/
+
+
+/*16:9   1536x864*/
+
+
+
+
+/*laptops/desktops, extra-large devices start here*/
+/*16:9   1600x900*/
+
+
+/*16:9   1920x1080*/
+
+
+/*16:9   2560x1440*/
+
+
+/*16:9   3840x2160*/
