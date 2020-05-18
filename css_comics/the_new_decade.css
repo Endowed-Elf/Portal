@@ -37,7 +37,6 @@ body {
     transform: translate(0px, 0px);
     transform: scale(1);
     overflow: hidden;
-    border: 1px solid blue;
 }
 
 .svg-back-button {
