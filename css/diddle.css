@@ -12,6 +12,7 @@ body, ul, html {
 
 body {
     background: #00454a;
+    font-size: 16px;
 }
 
 .middle-container {
@@ -35,8 +36,7 @@ body {
     transform: scale(.77, .77);
     height: cover;
     width: cover;
-    text-decoration-color: aliceblue;
-   
+    text-decoration-color: aliceblue;  
 }
 */
 
@@ -57,8 +57,6 @@ body {
     width: 100%;
     height: 100%;
 }
-
-
 
 .top {
     display: flex;
@@ -135,7 +133,7 @@ body {
     transform: translate(0px, 0px); 
     z-index: 1;
     overflow-x: hidden;
-    /* top: px;      
+    /*  top: px;      
         right: px;   These two center button in viewbox.
     */
 }
@@ -153,9 +151,6 @@ svg .back-button:hover {
 svg .back-button:active {
     fill: lime;
 }
-
-
-
 
 
 
@@ -192,14 +187,13 @@ svg .button:active {
 }
 
 /*9:16   180x320*/
-
 @media screen and (min-width: 180px) {
 
     .back-button-aligner {   
         height: 20px;
         width: 45px;
         bottom: .13em;
-        left: 0;     
+        left: .13em;     
 }
     
     .svg-back-button {
@@ -213,8 +207,8 @@ svg .button:active {
     .bestowal-aligner {   
         height: 49px;
         width: 45px;
-        bottom: .13;
-        right: 0;  
+        bottom: .11em;
+        right: .1em;  
 }
 
     .svg-bestowal-button {
@@ -224,6 +218,51 @@ svg .button:active {
         top: -54px;
         right: -139px;
 }
+
+    .top-innards {
+        display: none;
+    }
+
+    .bottom-innards {
+        display: none;
+    }
+    
+    .top {
+        display: flex;
+        justify-content: center;
+        text-align: center;  
+        font-family: 'Concert One', cursive;
+        font-size: .66em;
+        color: ghostwhite;
+        width: 100vw;
+    }
+
+    #top {
+        padding: 1em;
+        line-height: 1.66em;
+        border-style: double;
+        margin-bottom: .05em;
+    }
+
+    .bottom {
+        display: flex;
+        justify-content: center;
+        text-align: center;  
+        font-family: 'Concert One', cursive;
+        font-size: .66em;
+        color: ghostwhite;
+        width: 100vw;    
+    }
+
+    #bottom {
+        padding: 1em;
+        width: 100vw;
+        line-height: 1.66em;
+        border-style: double;
+        margin-top: .05em;
+    }
+
+
 }
 
 /*10:16   200x320*/
@@ -232,8 +271,8 @@ svg .button:active {
     .back-button-aligner {   
         height: 20px;
         width: 45px;
-        bottom: .13em;
-        left: 0;     
+        bottom: .17em;
+        left: .33em;     
 }
     
     .svg-back-button {
@@ -247,8 +286,8 @@ svg .button:active {
     .bestowal-aligner {   
         height: 49px;
         width: 45px;
-        bottom: .13em;
-        right: 0;  
+        bottom: .21em;
+        right: .27em;  
 }
 
     .svg-bestowal-button {
@@ -257,6 +296,50 @@ svg .button:active {
         transform: scale(.434);
         top: -54px;
         right: -139px;
+}
+
+.top-innards {
+    display: none;
+}
+
+.bottom-innards {
+    display: none;
+}
+
+.top {
+    display: flex;
+    justify-content: center;
+    text-align: center;  
+    font-family: 'Concert One', cursive;
+    font-size: .69em;
+    color: ghostwhite;
+    width: 100vw;
+}
+
+#top {
+    padding: 1em;
+    padding-top: 1.5em;
+    line-height: 1.66em;
+    border-style: double;
+    margin-bottom: .1em;
+}
+
+.bottom {
+    display: flex;
+    justify-content: center;
+    text-align: center;  
+    font-family: 'Concert One', cursive;
+    font-size: .66em;
+    color: ghostwhite;
+    width: 100vw;    
+}
+
+#bottom {
+    padding: 1em;
+    width: 100vw;
+    line-height: 1.66em;
+    border-style: double;
+    margin-top: .05em;
 }
 }
 
@@ -266,8 +349,8 @@ svg .button:active {
     .back-button-aligner {   
         height: 20px;
         width: 45px;
-        bottom: .13em;
-        left: 0;     
+        bottom: .23em;
+        left: .17em;     
 }
     
     .svg-back-button {
@@ -281,8 +364,8 @@ svg .button:active {
     .bestowal-aligner {   
         height: 49px;
         width: 45px;
-        bottom: .13em;
-        right: 0;  
+        bottom: .23em;
+        right: .13em;  
 }
 
     .svg-bestowal-button {
@@ -291,6 +374,50 @@ svg .button:active {
         transform: scale(.434);
         top: -54px;
         right: -139px;
+}
+
+    .top-innards {
+        display: none;
+}
+
+    .bottom-innards {
+        display: none;
+}
+
+    .top {
+        display: flex;
+        justify-content: center;
+        text-align: center;  
+        font-family: 'Concert One', cursive;
+        font-size: .69em;
+        color: ghostwhite;
+        width: 100vw;
+}
+
+    #top {
+        padding: 1em;
+        padding-top: 1.6em;
+        line-height: 1.66em;
+        border-style: double;
+        margin-bottom: .05em;
+}
+
+    .bottom {
+        display: flex;
+        justify-content: center;
+        text-align: center;  
+        font-family: 'Concert One', cursive;
+        font-size: .66em;
+        color: ghostwhite;
+        width: 100vw;    
+}
+
+    #bottom {
+        padding: 1em;
+        width: 100vw;
+        line-height: 1.66em;
+        border-style: double;
+        margin-top: .05em;
 }
 }
 
@@ -300,8 +427,8 @@ svg .button:active {
     .back-button-aligner {   
         height: 20px;
         width: 45px;
-        bottom: .13em;
-        left: 0;     
+        bottom: .3em;
+        left: .33em;     
 }
     
     .svg-back-button {
@@ -315,8 +442,8 @@ svg .button:active {
     .bestowal-aligner {   
         height: 49px;
         width: 45px;
-        bottom: .13em;
-        right: 0;  
+        bottom: .33em;
+        right: .27em;  
 }
 
     .svg-bestowal-button {
@@ -326,6 +453,52 @@ svg .button:active {
         top: -54px;
         right: -139px;
 }
+
+    .top-innards {
+        display: none;
+    }
+
+    .bottom-innards {
+        display: none;
+}
+
+    .top {
+        display: flex;
+        justify-content: center;
+        text-align: center;  
+        font-family: 'Concert One', cursive;
+        font-size: .69em;
+        color: ghostwhite;
+        width: 100vw;
+}
+
+    #top {
+        padding: 1em;
+        padding-top: 1.5em;
+        line-height: 1.66em;
+        border-style: double;
+        margin-bottom: .05em;
+}
+
+    .bottom {
+        display: flex;
+        justify-content: center;
+        text-align: center;  
+        font-family: 'Concert One', cursive;
+        font-size: .66em;
+        color: ghostwhite;
+        width: 100vw;    
+}
+
+    #bottom {
+        padding: 1em;
+        width: 100vw;
+        line-height: 1.66em;
+        border-style: double;
+        margin-top: .05em;
+}
+
+
 }
 
 /*9:16   239x425*/
@@ -334,8 +507,8 @@ svg .button:active {
     .back-button-aligner {   
         height: 20px;
         width: 45px;
-        bottom: .13em;
-        left: 0;     
+        bottom: .3em;
+        left: .27em;     
 }
     
     .svg-back-button {
@@ -349,8 +522,8 @@ svg .button:active {
     .bestowal-aligner {   
         height: 49px;
         width: 45px;
-        bottom: .13em;
-        right: 0;  
+        bottom: .33em;
+        right: .23em;  
 }
 
     .svg-bestowal-button {
@@ -359,6 +532,49 @@ svg .button:active {
         transform: scale(.434);
         top: -54px;
         right: -139px;
+}
+
+    .top-innards {
+        display: none;
+    }
+
+    .bottom-innards {
+        display: none;
+}
+
+    .top {
+        display: flex;
+        justify-content: center;
+        text-align: center;  
+        font-family: 'Concert One', cursive;
+        font-size: .75em;
+        color: ghostwhite;
+        width: 100vw;
+}
+
+    #top {
+        padding: 1em;
+        line-height: 1.66em;
+        border-style: double;
+        margin-bottom: .05em;
+}
+
+    .bottom {
+        display: flex;
+        justify-content: center;
+        text-align: center;  
+        font-family: 'Concert One', cursive;
+        font-size: .66em;
+        color: ghostwhite;
+        width: 100vw;    
+}
+
+    #bottom {
+        padding: 1em;
+        width: 100vw;
+        line-height: 1.66em;
+        border-style: double;
+        margin-top: .05em;
 }
 }
 
@@ -368,8 +584,8 @@ svg .button:active {
     .back-button-aligner {   
         height: 20px;
         width: 45px;
-        bottom: .13em;
-        left: 0;     
+        bottom: .33em;
+        left: .33em;     
 }
     
     .svg-back-button {
@@ -383,8 +599,8 @@ svg .button:active {
     .bestowal-aligner {   
         height: 49px;
         width: 45px;
-        bottom: .13em;
-        right: 0;  
+        bottom: .33em;
+        right: .33em;  
 }
 
     .svg-bestowal-button {
@@ -394,6 +610,50 @@ svg .button:active {
         top: -54px;
         right: -139px;
 }
+
+    .top-innards {
+        display: none;
+}
+
+    .bottom-innards {
+        display: none;
+}
+
+    .top {
+        display: flex;
+        justify-content: center;
+        text-align: center;  
+        font-family: 'Concert One', cursive;
+        font-size: .79em;
+        color: ghostwhite;
+        width: 100vw;
+}
+
+    #top {
+        padding: 1em;
+        padding-top: 1.4em;
+        line-height: 1.66em;
+        border-style: double;
+        margin-bottom: .08em;
+}
+
+    .bottom {
+        display: flex;
+        justify-content: center;
+        text-align: center;  
+        font-family: 'Concert One', cursive;
+        font-size: .66em;
+        color: ghostwhite;
+        width: 100vw;    
+}
+
+    #bottom {
+        padding: 1em;
+        width: 100vw;
+        line-height: 1.66em;
+        border-style: double;
+        margin-top: .05em;
+    }
 }
 
 /*16:9   320x180*/
@@ -402,8 +662,8 @@ svg .button:active {
     .back-button-aligner {   
         height: 21px;
         width: 51px;
-        bottom: .13em;
-        left: 0;     
+        bottom: .33em;
+        left: .33em;     
 }
     
     .svg-back-button {
@@ -417,8 +677,8 @@ svg .button:active {
     .bestowal-aligner {   
         height: 57px;
         width: 47px;
-        bottom: .13em;
-        right: 0;  
+        bottom: .33em;
+        right: .33em;  
 }
 
     .svg-bestowal-button {
@@ -427,6 +687,50 @@ svg .button:active {
         transform: scale(.5);
         top: -49px;
         right: -137px;
+}
+
+    .top-innards {
+        display: none;
+    }
+
+    .bottom-innards {
+        display: none;
+}
+
+    .top {
+        display: flex;
+        justify-content: center;
+        text-align: center;  
+        font-family: 'Concert One', cursive;
+        font-size: .93em;
+        color: ghostwhite;
+        width: 100vw;
+}
+
+    #top {
+        padding: .6em;
+        padding-top: .53em;
+        line-height: 1.66em;
+        border-style: double;
+        margin-bottom: .05em;
+}
+
+    .bottom {
+        display: flex;
+        justify-content: center;
+        text-align: center;  
+        font-family: 'Concert One', cursive;
+        font-size: .66em;
+        color: ghostwhite;
+        width: 100vw;    
+}
+
+    #bottom {
+        padding: 1em;
+        width: 100vw;
+        line-height: 1.66em;
+        border-style: double;
+        margin-top: .05em;
 }
 }
 
@@ -436,8 +740,8 @@ svg .button:active {
     .back-button-aligner {   
         height: 21px;
         width: 51px;
-        bottom: .13em;
-        left: 0;     
+        bottom: .33em;
+        left: .33em;     
 }
     
     .svg-back-button {
@@ -451,8 +755,8 @@ svg .button:active {
     .bestowal-aligner {   
         height: 57px;
         width: 47px;
-        bottom: .13em;
-        right: 0;  
+        bottom: .33em;
+        right: .33em;  
 }
 
     .svg-bestowal-button {
@@ -461,6 +765,49 @@ svg .button:active {
         transform: scale(.5);
         top: -49px;
         right: -137px;
+}
+
+    .top-innards {
+        display: none;
+}
+
+    .bottom-innards {
+        display: none;
+}
+
+    .top {
+        display: flex;
+        justify-content: center;
+        text-align: center;  
+        font-family: 'Concert One', cursive;
+        font-size: .93em;
+        color: ghostwhite;
+        width: 100vw;
+}
+
+    #top {
+        padding: .6em;
+        line-height: 1.66em;
+        border-style: double;
+        margin-bottom: .05em;
+}
+
+    .bottom {
+        display: flex;
+        justify-content: center;
+        text-align: center;  
+        font-family: 'Concert One', cursive;
+        font-size: .66em;
+        color: ghostwhite;
+        width: 100vw;    
+}
+
+    #bottom {
+        padding: 1em;
+        width: 100vw;
+        line-height: 1.66em;
+        border-style: double;
+        margin-top: .05em;
 }
 }
 
@@ -470,8 +817,8 @@ svg .button:active {
     .back-button-aligner {   
         height: 21px;
         width: 51px;
-        bottom: .13em;
-        left: 0;     
+        bottom: .33em;
+        left: .33em;     
 }
     
     .svg-back-button {
@@ -485,8 +832,8 @@ svg .button:active {
     .bestowal-aligner {   
         height: 57px;
         width: 47px;
-        bottom: .13em;
-        right: 0;  
+        bottom: .33em;
+        right: .33em;  
 }
 
     .svg-bestowal-button {
@@ -495,6 +842,50 @@ svg .button:active {
         transform: scale(.5);
         top: -49px;
         right: -137px;
+}
+
+    .top-innards {
+        display: none;
+}
+
+    .bottom-innards {
+        display: none;
+}
+
+    .top {
+        display: flex;
+        justify-content: center;
+        text-align: center;  
+        font-family: 'Concert One', cursive;
+        font-size: .93em;
+        color: ghostwhite;
+        width: 100vw;
+}
+
+    #top {
+        padding: .6em;
+        padding-top: .53em;
+        line-height: 1.66em;
+        border-style: double;
+        margin-bottom: .05em;
+}
+
+    .bottom {
+        display: flex;
+        justify-content: center;
+        text-align: center;  
+        font-family: 'Concert One', cursive;
+        font-size: .66em;
+        color: ghostwhite;
+        width: 100vw;    
+}
+
+    #bottom {
+        padding: 1em;
+        width: 100vw;
+        line-height: 1.66em;
+        border-style: double;
+        margin-top: .05em;
 }
 }
 
@@ -504,8 +895,8 @@ svg .button:active {
     .back-button-aligner {   
         height: 21px;
         width: 51px;
-        bottom: .13em;
-        left: 0;     
+        bottom: .33em;
+        left: .33em;     
 }
     
     .svg-back-button {
@@ -519,8 +910,8 @@ svg .button:active {
     .bestowal-aligner {   
         height: 57px;
         width: 47px;
-        bottom: .13em;
-        right: 0;  
+        bottom: .33em;
+        right: .33em;  
 }
 
     .svg-bestowal-button {
@@ -530,167 +921,376 @@ svg .button:active {
         top: -49px;
         right: -137px;
 }
+
+
+    .top-innards {
+        display: none;
+}
+
+    .bottom-innards {
+        display: none;
+}
+
+    .top {
+        display: flex;
+        justify-content: center;
+        text-align: center;  
+        font-family: 'Concert One', cursive;
+        font-size: .93em;
+        color: ghostwhite;
+        width: 100vw;
+}
+
+    #top {
+        padding: .6em;
+        padding-top: .53em;
+        line-height: 1.66em;
+        border-style: double;
+        margin-bottom: .05em;
+}
+
+    .bottom {
+        display: flex;
+        justify-content: center;
+        text-align: center;  
+        font-family: 'Concert One', cursive;
+        font-size: .66em;
+        color: ghostwhite;
+        width: 100vw;    
+}
+
+    #bottom {
+        padding: 1em;
+        width: 100vw;
+        line-height: 1.66em;
+        border-style: double;
+        margin-top: .05em;
+}
 }
 
 /*2:3   320x480*/
 @media screen and (min-width: 320px) and (min-height: 480px) {
 
     .back-button-aligner {   
-        height: 24px;
-        width: 54px;
-        bottom: .13em;
-        left: 0;     
+        height: 21px;
+        width: 51px;
+        bottom: .33em;
+        left: .33em;     
 }
     
     .svg-back-button {
         height: 180px;
         width: 320px;
-        transform: scale(.177);
-        top: -78px;
-        right: -134px;
+        transform: scale(.166);
+        top: -80px;
+        right: -136px;
 }
 
     .bestowal-aligner {   
-        height: 63px;
-        width: 53px;
-        bottom: .13em;
-        right: 0;  
+        height: 57px;
+        width: 47px;
+        bottom: .33em;
+        right: .33em;  
 }
 
     .svg-bestowal-button {
         height: 180px;
         width: 320px;
-        transform: scale(.57);
-        top: -44px;
-        right: -135px;
+        transform: scale(.5);
+        top: -49px;
+        right: -137px;
+}
+
+    .top-innards {
+        display: none;
+}
+
+    .bottom-innards {
+        display: none;
+}
+
+    .top {
+        display: flex;
+        justify-content: center;
+        text-align: center;  
+        font-family: 'Concert One', cursive;
+        font-size: .93em;
+        color: ghostwhite;
+        width: 100vw;
+}
+
+    #top {
+        padding: .6em;
+        padding-top: .5em;
+        line-height: 1.66em;
+        border-style: double;
+        margin-bottom: .05em;
+}
+
+    .bottom {
+        display: flex;
+        justify-content: center;
+        text-align: center;  
+        font-family: 'Concert One', cursive;
+        font-size: .66em;
+        color: ghostwhite;
+        width: 100vw; 
+        height: 133px;   
+}
+
+    #bottom {
+        padding: 1em;
+        width: 100vw;
+        line-height: 1.66em;
+        border-style: double;
+        margin-top: .05em;
 }
 }
 
 /*9:16   320x568*/
 @media screen and (min-width: 320px) and (min-height: 568px) {
 
-    .bottom {
-        height: 193px;
-}
-
-    .top {
-        height: 193px;
-}
-
     .back-button-aligner {   
-        height: 29px;
-        width: 66px;
-        bottom: .13em;
-        left: 0;     
+        height: 21px;
+        width: 51px;
+        bottom: .33em;
+        left: .33em;     
 }
     
     .svg-back-button {
         height: 180px;
         width: 320px;
-        transform: scale(.213);
-        top: -76px;
-        right: -129px;
+        transform: scale(.166);
+        top: -80px;
+        right: -136px;
 }
 
     .bestowal-aligner {   
-        height: 83px;
-        width: 73px;
-        bottom: .13em;
-        right: 0;  
+        height: 57px;
+        width: 47px;
+        bottom: .33em;
+        right: .33em;  
 }
 
     .svg-bestowal-button {
         height: 180px;
         width: 320px;
-        transform: scale(.73);
-        top: -30px;
-        right: -125px;
+        transform: scale(.5);
+        top: -49px;
+        right: -137px;
+}
+
+
+    .top-innards {
+        display: none;
+}
+
+    .bottom-innards {
+        display: none;
+}
+
+    .top {
+        display: flex;
+        justify-content: center;
+        text-align: center;  
+        font-family: 'Concert One', cursive;
+        font-size: .93em;
+        color: ghostwhite;
+        width: 100vw;
+}
+
+    #top {
+        padding: .6em;
+        padding-top: .5em;
+        line-height: 1.66em;
+        border-style: double;
+        margin-bottom: .05em;
+}
+
+    .bottom {
+        display: flex;
+        justify-content: center;
+        text-align: center;  
+        font-family: 'Concert One', cursive;
+        font-size: .66em;
+        color: ghostwhite;
+        width: 100vw; 
+        height: 166px;   
+}
+
+    #bottom {
+        padding: 1em;
+        width: 100vw;
+        line-height: 1.66em;
+        border-style: double;
+        margin-top: .05em;
+        height: 195px;
 }
 }
 
 /*9:16   337.5x600*/
 @media screen and (min-width: 337px) {
 
-    .bottom {
-        height: 205px;
-}
-
-    .top {
-        height: 204px;
-}
-
     .back-button-aligner {   
-        height: 29px;
-        width: 66px;
-        bottom: .13em;
-        left: 0;     
+        height: 21px;
+        width: 51px;
+        bottom: .33em;
+        left: .33em;     
 }
     
     .svg-back-button {
         height: 180px;
         width: 320px;
-        transform: scale(.213);
-        top: -76px;
-        right: -129px;
+        transform: scale(.166);
+        top: -80px;
+        right: -136px;
 }
 
     .bestowal-aligner {   
-        height: 83px;
-        width: 73px;
-        bottom: .13em;
-        right: 0;  
+        height: 57px;
+        width: 47px;
+        bottom: .33em;
+        right: .33em;  
 }
 
     .svg-bestowal-button {
         height: 180px;
         width: 320px;
-        transform: scale(.73);
-        top: -30px;
-        right: -125px;
+        transform: scale(.5);
+        top: -49px;
+        right: -137px;
+}
+
+
+    .top-innards {
+        display: none;
+}
+
+    .bottom-innards {
+        display: none;
+}
+
+    .top {
+        display: flex;
+        justify-content: center;
+        text-align: center;  
+        font-family: 'Concert One', cursive;
+        font-size: .93em;
+        color: ghostwhite;
+        width: 100vw;
+}
+
+    #top {
+        padding: 1em;
+        padding-top: .5em;
+        line-height: 1.66em;
+        border-style: double;
+        margin-bottom: .05em;
+}
+
+    .bottom {
+        display: flex;
+        justify-content: center;
+        text-align: center;  
+        font-family: 'Concert One', cursive;
+        font-size: .66em;
+        color: ghostwhite;
+        width: 100vw;    
+}
+
+    #bottom {
+        padding: 1em;
+        width: 100vw;
+        line-height: 1.66em;
+        border-style: double;
+        margin-top: .05em;
+        height: 217px;
 }
 }
 
 /*2:3   342x512*/
 @media screen and (min-width: 342px) {
 
-    .bottom {
-        height: 160px;
-}
-
-    .top {
-        height: 159px;
-}
-
     .back-button-aligner {   
-        height: 29px;
-        width: 66px;
-        bottom: .13em;
-        left: 0;     
+        height: 21px;
+        width: 51px;
+        bottom: .33em;
+        left: .33em;     
 }
     
     .svg-back-button {
         height: 180px;
         width: 320px;
-        transform: scale(.213);
-        top: -76px;
-        right: -129px;
+        transform: scale(.166);
+        top: -80px;
+        right: -136px;
 }
 
     .bestowal-aligner {   
-        height: 83px;
-        width: 73px;
-        bottom: .13em;
-        right: 0;  
+        height: 57px;
+        width: 47px;
+        bottom: .33em;
+        right: .33em;  
 }
 
     .svg-bestowal-button {
         height: 180px;
         width: 320px;
-        transform: scale(.73);
-        top: -30px;
-        right: -125px;
+        transform: scale(.5);
+        top: -49px;
+        right: -137px;
+}
+
+
+    .top-innards {
+        display: none;
+}
+
+    .bottom-innards {
+        display: none;
+}
+
+    .top {
+        display: flex;
+        justify-content: center;
+        text-align: center;  
+        font-family: 'Concert One', cursive;
+        font-size: .93em;
+        color: ghostwhite;
+        width: 100vw;
+}
+
+    #top {
+        padding: 1em;
+        padding-top: .5em;
+        line-height: 1.66em;
+        border-style: double;
+        margin-bottom: .05em;
+}
+
+    .bottom {
+        display: flex;
+        justify-content: center;
+        text-align: center;  
+        font-family: 'Concert One', cursive;
+        font-size: .66em;
+        color: ghostwhite;
+        height: 127px;
+        width: 100vw; 
+}
+
+    #bottom {
+        padding: 1em;
+        width: 100vw;
+        line-height: 1.66em;
+        border-style: double;
+        margin-top: .05em;
+        height: 127px;
 }
 }
+
+
+
 
 /*3:4   360x480*/
 @media screen and (min-width: 360px) and (min-height: 480px) {
@@ -706,8 +1306,8 @@ svg .button:active {
     .back-button-aligner {   
         height: 24px;
         width: 54px;
-        bottom: .13em;
-        left: 0;     
+        bottom: .33em;
+        left: .33em;     
 }
     
     .svg-back-button {
@@ -721,8 +1321,8 @@ svg .button:active {
     .bestowal-aligner {   
         height: 63px;
         width: 53px;
-        bottom: .13em;
-        right: 0;  
+        bottom: .33em;
+        right: .33em;  
 }
 
     .svg-bestowal-button {
@@ -731,6 +1331,51 @@ svg .button:active {
         transform: scale(.57);
         top: -44px;
         right: -135px;
+}
+
+    .top-innards {
+        display: none;
+}
+
+    .bottom-innards {
+        display: none;
+}
+
+    .top {
+        display: flex;
+        justify-content: center;
+        text-align: center;  
+        font-family: 'Concert One', cursive;
+        font-size: .93em;
+        color: ghostwhite;
+        width: 100vw;
+}
+
+    #top {
+        padding: 1em;
+        padding-top: .33em;
+        line-height: 1.66em;
+        border-style: double;
+        margin-bottom: .05em;
+}
+
+    .bottom {
+        display: flex;
+        justify-content: center;
+        text-align: center;  
+        font-family: 'Concert One', cursive;
+        font-size: .66em;
+        color: ghostwhite;
+        width: 100vw;    
+}
+
+    #bottom {
+        padding: 1em;
+        width: 100vw;
+        line-height: 1.66em;
+        border-style: double;
+        margin-top: .05em;
+        height: 113px;
 }
 }
 
@@ -748,8 +1393,8 @@ svg .button:active {
     .back-button-aligner {   
         height: 29px;
         width: 66px;
-        bottom: .13em;
-        left: 0;     
+        bottom: .33em;
+        left: .33em;     
 }
     
     .svg-back-button {
@@ -763,8 +1408,8 @@ svg .button:active {
     .bestowal-aligner {   
         height: 83px;
         width: 73px;
-        bottom: .13em;
-        right: 0;  
+        bottom: .33em;
+        right: .33em;  
 }
 
     .svg-bestowal-button {
@@ -774,6 +1419,51 @@ svg .button:active {
         top: -30px;
         right: -125px;
 }
+
+    .top-innards {
+        display: none;
+}
+
+    .bottom-innards {
+        display: none;
+}
+
+    .top {
+        display: flex;
+        justify-content: center;
+        text-align: center;  
+        font-family: 'Concert One', cursive;
+        font-size: 1em;
+        color: ghostwhite;
+        width: 100vw;
+}
+
+    #top {
+        padding: 2em;
+        padding-top: 1em;
+        line-height: 1.66em;
+        border-style: double;
+        margin-bottom: .05em;
+}
+
+    .bottom {
+        display: flex;
+        justify-content: center;
+        text-align: center;  
+        font-family: 'Concert One', cursive;
+        font-size: .66em;
+        color: ghostwhite;
+        width: 100vw;    
+}
+
+    #bottom {
+        padding: 1em;
+        width: 100vw;
+        line-height: 1.66em;
+        border-style: double;
+        margin-top: .05em;
+        height: 193px;
+}
 }
 
 /*16:9   375x211*/
@@ -782,8 +1472,8 @@ svg .button:active {
     .back-button-aligner {   
         height: 21px;
         width: 51px;
-        bottom: .13em;
-        left: 0;     
+        bottom: .33em;
+        left: .33em;     
 }
     
     .svg-back-button {
@@ -797,8 +1487,8 @@ svg .button:active {
     .bestowal-aligner {   
         height: 57px;
         width: 47px;
-        bottom: .13em;
-        right: 0;  
+        bottom: .33em;
+        right: .33em;  
 }
 
     .svg-bestowal-button {
@@ -808,24 +1498,60 @@ svg .button:active {
         top: -49px;
         right: -137px;
 }
+
+    .top-innards {
+        display: none;
+}
+
+    .bottom-innards {
+        display: none;
+}
+
+    .top {
+        display: flex;
+        justify-content: center;
+        text-align: center;  
+        font-family: 'Concert One', cursive;
+        font-size: .93em;
+        color: ghostwhite;
+        width: 100vw;
+}
+
+    #top {
+        padding: 1.3em;
+        line-height: 1.66em;
+        border-style: double;
+        margin-bottom: .05em;
+}
+
+    .bottom {
+        display: flex;
+        justify-content: center;
+        text-align: center;  
+        font-family: 'Concert One', cursive;
+        font-size: .66em;
+        color: ghostwhite;
+        width: 100vw;    
+}
+
+    #bottom {
+        padding: 1em;
+        width: 100vw;
+        line-height: 1.66em;
+        border-style: double;
+        margin-top: .05em;
+        height: 100px;
+}
 }
 
 /*9:16   375x667*/
 @media screen and (min-width: 375px) and (min-height: 667px) {
 
-    .bottom {
-        height: 227px;
-}
-
-    .top {
-        height: 228px;
-}
-
     .back-button-aligner {   
         height: 37px;
         width: 77px;
-        bottom: .13em;
-        left: 0;     
+        bottom: .33em;
+        left: .33em;     
 }
     
     .svg-back-button {
@@ -839,8 +1565,8 @@ svg .button:active {
     .bestowal-aligner {   
         height: 93px;
         width: 83px;
-        bottom: .13em;
-        right: 0;  
+        bottom: .33em;
+        right: .33em;  
 }
 
     .svg-bestowal-button {
@@ -849,25 +1575,63 @@ svg .button:active {
         transform: scale(.83);
         top: -23px;
         right: -121px;
+}
+
+
+    .top-innards {
+        display: none;
+}
+
+    .bottom-innards {
+        display: none;
+}
+
+    .top {
+        display: flex;
+        justify-content: center;
+        text-align: center;  
+        font-family: 'Concert One', cursive;
+        font-size: .93em;
+        color: ghostwhite;
+        width: 100vw;
+}
+
+    #top {
+        padding: 3em;
+        padding-top: 2.1em;
+        line-height: 1.66em;
+        border-style: double;
+        margin-bottom: .05em;
+}
+
+    .bottom {
+        display: flex;
+        justify-content: center;
+        text-align: center;  
+        font-family: 'Concert One', cursive;
+        font-size: .66em;
+        color: ghostwhite;
+        width: 100vw;    
+}
+
+    #bottom {
+        padding: 1em;
+        width: 100vw;
+        line-height: 1.66em;
+        border-style: double;
+        margin-top: .05em;
+        height: 210px;
 }
 }
 
 /*2:3   400x600*/
 @media screen and (min-width: 400px) and (min-height: 600px) {
 
-    .bottom {
-        height: 227px;
-}
-
-    .top {
-        height: 228px;
-}
-
     .back-button-aligner {   
         height: 37px;
         width: 77px;
-        bottom: .13em;
-        left: 0;     
+        bottom: .33em;
+        left: .33em;     
 }
     
     .svg-back-button {
@@ -881,8 +1645,8 @@ svg .button:active {
     .bestowal-aligner {   
         height: 93px;
         width: 83px;
-        bottom: .13em;
-        right: 0;  
+        bottom: .33em;
+        right: .33em;  
 }
 
     .svg-bestowal-button {
@@ -891,25 +1655,63 @@ svg .button:active {
         transform: scale(.83);
         top: -23px;
         right: -121px;
+}
+
+
+    .top-innards {
+        display: none;
+}
+
+    .bottom-innards {
+        display: none;
+}
+
+    .top {
+        display: flex;
+        justify-content: center;
+        text-align: center;  
+        font-family: 'Concert One', cursive;
+        font-size: .93em;
+        color: ghostwhite;
+        width: 100vw;
+}
+
+    #top {
+        padding: .5em;
+        padding-top: .4em;
+        line-height: 1.66em;
+        border-style: double;
+        margin-bottom: .05em;
+}
+
+    .bottom {
+        display: flex;
+        justify-content: center;
+        text-align: center;  
+        font-family: 'Concert One', cursive;
+        font-size: .66em;
+        color: ghostwhite;
+        width: 100vw;    
+}
+
+    #bottom {
+        padding: 1em;
+        width: 100vw;
+        line-height: 1.66em;
+        border-style: double;
+        margin-top: .05em;
+        height: 208px;
 }
 }
 
 /*10:16   400x640*/
 @media screen and (min-width: 400px) and (min-height: 640px) {
 
-    .bottom {
-        height: 227px;
-}
-
-    .top {
-        height: 228px;
-}
-
     .back-button-aligner {   
         height: 37px;
         width: 77px;
-        bottom: .13em;
-        left: 0;     
+        bottom: .33em;
+        left: .33em;     
 }
     
     .svg-back-button {
@@ -923,8 +1725,8 @@ svg .button:active {
     .bestowal-aligner {   
         height: 93px;
         width: 83px;
-        bottom: .13em;
-        right: 0;  
+        bottom: .33em;
+        right: .33em;  
 }
 
     .svg-bestowal-button {
@@ -933,6 +1735,53 @@ svg .button:active {
         transform: scale(.83);
         top: -23px;
         right: -121px;
+}
+
+
+    .top-innards {
+        display: none;
+}
+
+    .bottom-innards {
+        display: none;
+}
+
+    .top {
+        display: flex;
+        justify-content: center;
+        text-align: center;  
+        font-family: 'Concert One', cursive;
+        font-size: 1em;
+        color: ghostwhite;
+        width: 100vw;
+}
+
+    #top {
+        padding: 3em;
+        padding-top: .6em;
+        line-height: 2em;
+        border-style: double;
+        margin-bottom: .05em;
+}
+
+    .bottom {
+        display: flex;
+        justify-content: center;
+        text-align: center;  
+        font-family: 'Concert One', cursive;
+        font-size: .66em;
+        color: ghostwhite;
+        width: 100vw;
+        height: 170px;    
+}
+
+    #bottom {
+        padding: 1em;
+        width: 100vw;
+        line-height: 1.66em;
+        border-style: double;
+        margin-top: .05em;
+        height: 170px;
 }
 }
 
@@ -942,8 +1791,8 @@ svg .button:active {
     .back-button-aligner {   
         height: 21px;
         width: 51px;
-        bottom: .13em;
-        left: 0;     
+        bottom: .33em;
+        left: .33em;     
 }
     
     .svg-back-button {
@@ -957,8 +1806,8 @@ svg .button:active {
     .bestowal-aligner {   
         height: 57px;
         width: 47px;
-        bottom: .13em;
-        right: 0;  
+        bottom: .33em;
+        right: .33em;  
 }
 
     .svg-bestowal-button {
@@ -968,6 +1817,52 @@ svg .button:active {
         top: -49px;
         right: -137px;
 }
+
+    .top-innards {
+        display: none;
+}
+
+    .bottom-innards {
+        display: none;
+}
+
+    .top {
+        display: flex;
+        justify-content: center;
+        text-align: center;  
+        font-family: 'Concert One', cursive;
+        font-size: 1em;
+        color: ghostwhite;
+        width: 100vw;
+}
+
+    #top {
+        padding: 1.6em;
+        padding-top: 1em;
+        line-height: 1.66em;
+        border-style: double;
+        margin-bottom: .05em;
+}
+
+    .bottom {
+        display: flex;
+        justify-content: center;
+        text-align: center;  
+        font-family: 'Concert One', cursive;
+        font-size: .66em;
+        color: ghostwhite;
+        width: 100vw;
+        height: 153px;    
+}
+
+    #bottom {
+    padding: 1em;
+    width: 100vw;
+    line-height: 1.66em;
+    border-style: double;
+    margin-top: .05em;
+    height: 153px;
+}
 }
 
 /*16:9   432x243*/
@@ -976,8 +1871,8 @@ svg .button:active {
     .back-button-aligner {   
         height: 23px;
         width: 51px;
-        bottom: .13em;
-        left: 0;     
+        bottom: .33em;
+        left: .33em;     
 }
     
     .svg-back-button {
@@ -991,8 +1886,8 @@ svg .button:active {
     .bestowal-aligner {   
         height: 59px;
         width: 47px;
-        bottom: .13em;
-        right: 0;  
+        bottom: .33em;
+        right: .33em;  
 }
 
     .svg-bestowal-button {
@@ -1002,24 +1897,60 @@ svg .button:active {
         top: -47px;
         right: -137px;
 }
+
+    .top-innards {
+        display: none;
+}
+
+    .bottom-innards {
+        display: none;
+}
+
+    .top {
+        display: flex;
+        justify-content: center;
+        text-align: center;  
+        font-family: 'Concert One', cursive;
+        font-size: .93em;
+        color: ghostwhite;
+        width: 100vw;
+}
+
+    #top {
+        padding: 1.3em;
+        line-height: 1.66em;
+        border-style: double;
+        margin-bottom: .05em;
+}
+
+    .bottom {
+        display: flex;
+        justify-content: center;
+        text-align: center;  
+        font-family: 'Concert One', cursive;
+        font-size: .66em;
+        color: ghostwhite;
+        width: 100vw;    
+}
+
+    #bottom {
+        padding: 1em;
+        width: 100vw;
+        line-height: 1.66em;
+        border-style: double;
+        margin-top: .05em;
+        height: 100px;
+}
 }
 
 /*9:16   432x768*/
 @media screen and (min-width: 432px) and (min-height: 768px) {
 
-    .bottom {
-        height: 262px;
-}
-
-    .top {
-        height: 262px;
-}
-
     .back-button-aligner {   
         height: 37px;
         width: 83px;
-        bottom: .13em;
-        left: 0;     
+        bottom: .33em;
+        left: .33em;     
 }
     
     .svg-back-button {
@@ -1033,8 +1964,8 @@ svg .button:active {
     .bestowal-aligner {   
         height: 97px;
         width: 83px;
-        bottom: .13em;
-        right: 0;  
+        bottom: .33em;
+        right: .33em;  
 }
 
     .svg-bestowal-button {
@@ -1043,25 +1974,64 @@ svg .button:active {
         transform: scale(.87);
         top: -19px;
         right: -121px;
+}
+
+
+    .top-innards {
+        display: none;
+}
+
+    .bottom-innards {
+        display: none;
+}
+
+    .top {
+        display: flex;
+        justify-content: center;
+        text-align: center;  
+        font-family: 'Concert One', cursive;
+        font-size: 1em;
+        color: ghostwhite;
+        width: 100vw;
+}
+
+    #top {
+        padding: 3em;
+        padding-top: .7em;
+        line-height: 2em;
+        border-style: double;
+        margin-bottom: .05em;
+}
+
+    .bottom {
+        display: flex;
+        justify-content: center;
+        text-align: center;  
+        font-family: 'Concert One', cursive;
+        font-size: .66em;
+        color: ghostwhite;
+        width: 100vw;
+        height: 278px;    
+}
+
+    #bottom {
+        padding: 1em;
+        width: 100vw;
+        line-height: 1.66em;
+        border-style: double;
+        margin-top: .05em;
+        height: 278px;
 }
 }
 
 /*3:4   450x600*/
 @media screen and (min-width: 450px) {
 
-    .bottom {
-        height: 262px;
-}
-
-    .top {
-        height: 262px;
-}
-
     .back-button-aligner {   
         height: 37px;
         width: 83px;
-        bottom: .13em;
-        left: 0;     
+        bottom: .33em;
+        left: .33em;     
 }
     
     .svg-back-button {
@@ -1075,8 +2045,8 @@ svg .button:active {
     .bestowal-aligner {   
         height: 97px;
         width: 83px;
-        bottom: .13em;
-        right: 0;  
+        bottom: .33em;
+        right: .33em;  
 }
 
     .svg-bestowal-button {
@@ -1086,24 +2056,63 @@ svg .button:active {
         top: -19px;
         right: -121px;
 }
+
+
+    .top-innards {
+        display: none;
+}
+
+    .bottom-innards {
+        display: none;
+}
+
+    .top {
+        display: flex;
+        justify-content: center;
+        text-align: center;  
+        font-family: 'Concert One', cursive;
+        font-size: 1em;
+        color: ghostwhite;
+        width: 100vw;
+}
+
+    #top {
+        padding: 1em;
+        padding-top: .6em;
+        line-height: 1.45em;
+        border-style: double;
+        margin-bottom: .05em;
+}
+
+    .bottom {
+        display: flex;
+        justify-content: center;
+        text-align: center;  
+        font-family: 'Concert One', cursive;
+        font-size: .66em;
+        color: ghostwhite;
+        width: 100vw;
+        height: 180px;    
+}
+
+    #bottom {
+        padding: 1em;
+        width: 100vw;
+        line-height: 1.66em;
+        border-style: double;
+        margin-top: .05em;
+        height: 180px;
+}
 }
 
 /*16:9   480x270*/
 @media screen and (min-width: 480px) and (min-height: 270px) {
 
-    .bottom {
-        height: 120px
-    }
-
-    .top {
-        height: 120px;
-    }
-
     .back-button-aligner {   
         height: 25px;
         width: 59px;
-        bottom: .13em;
-        left: 0;     
+        bottom: .33em;
+        left: .33em;     
 }
     
     .svg-back-button {
@@ -1117,8 +2126,8 @@ svg .button:active {
     .bestowal-aligner {   
         height: 77px;
         width: 60px;
-        bottom: .13em;
-        right: 0;  
+        bottom: .33em;
+        right: .33em;  
 }
 
     .svg-bestowal-button {
@@ -1127,25 +2136,63 @@ svg .button:active {
         transform: scale(.69);
         top: -33px;
         right: -130px;
+}
+
+    .top-innards {
+        display: none;
+}
+
+    .bottom-innards {
+        display: none;
+}
+
+    .top {
+        display: flex;
+        justify-content: center;
+        text-align: center;  
+        font-family: 'Concert One', cursive;
+        font-size: 1em;
+        color: ghostwhite;
+        width: 100vw;
+}
+
+    #top {
+        padding: 1.33em;
+        padding-top: 1.69em;
+        line-height: 1.66em;
+        border-style: double;
+        margin-bottom: .05em;
+}
+
+    .bottom {
+        display: flex;
+        justify-content: center;
+        text-align: center;  
+        font-family: 'Concert One', cursive;
+        font-size: .66em;
+        color: ghostwhite;
+        width: 100vw;
+        height: 153px;    
+}
+
+    #bottom {
+        padding: 1em;
+        width: 100vw;
+        line-height: 1.66em;
+        border-style: double;
+        margin-top: .05em;
+        height: 153px;
 }
 }
 
 /*3:2   480x320*/
 @media screen and (min-width: 480px) and (min-height: 320px) {
 
-    .bottom {
-        height: 120px
-    }
-
-    .top {
-        height: 120px;
-    }
-
     .back-button-aligner {   
         height: 25px;
         width: 59px;
-        bottom: .13em;
-        left: 0;     
+        bottom: .33em;
+        left: .33em;     
 }
     
     .svg-back-button {
@@ -1159,8 +2206,8 @@ svg .button:active {
     .bestowal-aligner {   
         height: 77px;
         width: 60px;
-        bottom: .13em;
-        right: 0;  
+        bottom: .33em;
+        right: .33em;  
 }
 
     .svg-bestowal-button {
@@ -1169,6 +2216,52 @@ svg .button:active {
         transform: scale(.69);
         top: -33px;
         right: -130px;
+}
+
+    .top-innards {
+        display: none;
+}
+
+    .bottom-innards {
+        display: none;
+}
+
+    .top {
+        display: flex;
+        justify-content: center;
+        text-align: center;  
+        font-family: 'Concert One', cursive;
+        font-size: 1em;
+        color: ghostwhite;
+        width: 100vw;
+}
+
+    #top {
+        padding: 1.6em;
+        padding-top: 1em;
+        line-height: 1.66em;
+        border-style: double;
+        margin-bottom: .05em;
+}
+
+    .bottom {
+        display: flex;
+        justify-content: center;
+        text-align: center;  
+        font-family: 'Concert One', cursive;
+        font-size: .66em;
+        color: ghostwhite;
+        width: 100vw;
+        height: 153px;    
+}
+
+    #bottom {
+        padding: 1em;
+        width: 100vw;
+        line-height: 1.66em;
+        border-style: double;
+        margin-top: .05em;
+        height: 153px;
 }
 }
 
@@ -1186,8 +2279,8 @@ svg .button:active {
     .back-button-aligner {   
         height: 25px;
         width: 59px;
-        bottom: .13em;
-        left: 0;     
+        bottom: .33em;
+        left: .33em;     
 }
     
     .svg-back-button {
@@ -1201,8 +2294,8 @@ svg .button:active {
     .bestowal-aligner {   
         height: 77px;
         width: 60px;
-        bottom: .13em;
-        right: 0;  
+        bottom: .33em;
+        right: .33em;  
 }
 
     .svg-bestowal-button {
@@ -1212,9 +2305,55 @@ svg .button:active {
         top: -33px;
         right: -130px;
 }
+
+    .top-innards {
+        display: none;
 }
 
-/*3:4   480x600*/
+    .bottom-innards {
+        display: none;
+}
+
+    .top {
+        display: flex;
+        justify-content: center;
+        text-align: center;  
+        font-family: 'Concert One', cursive;
+        font-size: 1em;
+        color: ghostwhite;
+        width: 100vw;
+}
+
+    #top {
+        padding: 1.6em;
+        padding-top: .33em;
+        line-height: 1.66em;
+        border-style: double;
+        margin-bottom: .05em;
+}
+
+    .bottom {
+        display: flex;
+        justify-content: center;
+        text-align: center;  
+        font-family: 'Concert One', cursive;
+        font-size: .66em;
+        color: ghostwhite;
+        width: 100vw;
+        height: 153px;    
+}
+
+    #bottom {
+        padding: 1em;
+        width: 100vw;
+        line-height: 1.66em;
+        border-style: double;
+        margin-top: .05em;
+        height: 153px;
+}
+}
+
+/*3:4   480x600 It's not though. I don't know what it is.*/
 @media screen and (min-width: 480px) and (min-height: 600px) {
 
     .bottom {
@@ -1228,8 +2367,8 @@ svg .button:active {
     .back-button-aligner {   
         height: 37px;
         width: 83px;
-        bottom: .13em;
-        left: 0;     
+        bottom: .33em;
+        left: .33em;     
 }
     
     .svg-back-button {
@@ -1243,8 +2382,8 @@ svg .button:active {
     .bestowal-aligner {   
         height: 97px;
         width: 83px;
-        bottom: .13em;
-        right: 0;  
+        bottom: .33em;
+        right: .33em;  
 }
 
     .svg-bestowal-button {
@@ -1253,6 +2392,140 @@ svg .button:active {
         transform: scale(.87);
         top: -19px;
         right: -121px;
+}
+
+    .top-innards {
+        display: none;
+}
+
+    .bottom-innards {
+        display: none;
+}
+
+    .top {
+        display: flex;
+        justify-content: center;
+        text-align: center;  
+        font-family: 'Concert One', cursive;
+        font-size: 1.33em;
+        color: ghostwhite;
+        width: 100vw;
+}
+
+    #top {
+        padding: 1.6em;
+        padding-top: 1.1em;
+        line-height: 1.66em;
+        border-style: double;
+        margin-bottom: .05em;
+}
+
+    .bottom {
+        display: flex;
+        justify-content: center;
+        text-align: center;  
+        font-family: 'Concert One', cursive;
+        font-size: .66em;
+        color: ghostwhite;
+        width: 100vw;
+        height: 153px;    
+}
+
+    #bottom {
+        padding: 1em;
+        width: 100vw;
+        line-height: 1.66em;
+        border-style: double;
+        margin-top: .05em;
+        height: 153px;
+}
+}
+
+/*3:4   480x640*/
+@media screen and (min-width: 480px) and (min-height: 640px) {
+
+    .bottom {
+        height: 262px;
+}
+
+    .top {
+        height: 262px;
+}
+
+    .back-button-aligner {   
+        height: 37px;
+        width: 83px;
+        bottom: .33em;
+        left: .33em;     
+}
+    
+    .svg-back-button {
+        height: 180px;
+        width: 320px;
+        transform: scale(.271);
+        top: -71px;
+        right: -121px;
+}
+
+    .bestowal-aligner {   
+        height: 97px;
+        width: 83px;
+        bottom: .33em;
+        right: .33em;  
+}
+
+    .svg-bestowal-button {
+        height: 180px;
+        width: 320px;
+        transform: scale(.87);
+        top: -19px;
+        right: -121px;
+}
+
+    .top-innards {
+        display: none;
+}
+
+    .bottom-innards {
+        display: none;
+}
+
+    .top {
+        display: flex;
+        justify-content: center;
+        text-align: center;  
+        font-family: 'Concert One', cursive;
+        font-size: 1.33em;
+        color: ghostwhite;
+        width: 100vw;
+}
+
+    #top {
+        padding: 1.6em;
+        padding-top: 1.1em;
+        line-height: 1.66em;
+        border-style: double;
+        margin-bottom: .05em;
+}
+
+    .bottom {
+        display: flex;
+        justify-content: center;
+        text-align: center;  
+        font-family: 'Concert One', cursive;
+        font-size: .66em;
+        color: ghostwhite;
+        width: 100vw;
+        height: 153px;    
+}
+
+    #bottom {
+        padding: 1em;
+        width: 100vw;
+        line-height: 1.66em;
+        border-style: double;
+        margin-top: .05em;
+        height: 153px;
 }
 }
 
@@ -1270,8 +2543,8 @@ svg .button:active {
     .back-button-aligner {   
         height: 29px;
         width: 66px;
-        bottom: .13em;
-        left: 0;     
+        bottom: .33em;
+        left: .33em;     
 }
     
     .svg-back-button {
@@ -1285,8 +2558,8 @@ svg .button:active {
     .bestowal-aligner {   
         height: 77px;
         width: 60px;
-        bottom: .13em;
-        right: 0;  
+        bottom: .33em;
+        right: .33em;  
 }
 
     .svg-bestowal-button {
@@ -1296,24 +2569,70 @@ svg .button:active {
         top: -33px;
         right: -130px;
 }
+
+    .top-innards {
+        display: none;
+    }
+
+    .bottom-innards {
+        display: none;
+}
+
+    .top {
+        display: flex;
+        justify-content: center;
+        text-align: center;  
+        font-family: 'Concert One', cursive;
+        font-size: 1em;
+        color: ghostwhite;
+        width: 100vw;
+}
+
+    #top {
+        padding: 1.6em;
+        padding-top: .33em;
+        line-height: 1.66em;
+        border-style: double;
+        margin-bottom: .05em;
+}
+
+    .bottom {
+        display: flex;
+        justify-content: center;
+        text-align: center;  
+        font-family: 'Concert One', cursive;
+        font-size: .66em;
+        color: ghostwhite;
+        width: 100vw;
+        height: 153px;    
+}
+
+    #bottom {
+        padding: 1em;
+        width: 100vw;
+        line-height: 1.66em;
+        border-style: double;
+        margin-top: .05em;
+        height: 153px;
+}
 }
 
 /*2:3   512x768*/
-@media screen and (min-width: 480px) and (min-height: 768px) {
+@media screen and (min-width: 512px) and (min-height: 768px) {
 
     .bottom {
         height: 239px;
 }
 
     .top {
-        height: 239px;
+        height: 187px;
 }
 
     .back-button-aligner {   
         height: 37px;
         width: 83px;
-        bottom: .13em;
-        left: 0;     
+        bottom: .33em;
+        left: .33em;     
 }
     
     .svg-back-button {
@@ -1327,8 +2646,8 @@ svg .button:active {
     .bestowal-aligner {   
         height: 97px;
         width: 83px;
-        bottom: .13em;
-        right: 0;  
+        bottom: .33em;
+        right: .33em;  
 }
 
     .svg-bestowal-button {
@@ -1337,25 +2656,63 @@ svg .button:active {
         transform: scale(.87);
         top: -19px;
         right: -121px;
+}
+
+    .top-innards {
+        display: none;
+}
+
+    .bottom-innards {
+        display: none;
+}
+
+    .top {
+        display: flex;
+        justify-content: center;
+        text-align: center;  
+        font-family: 'Concert One', cursive;
+        font-size: 1em;
+        color: ghostwhite;
+        width: 100vw;
+}
+
+    #top {
+        padding: 2.66em;
+        padding-top: 1.66em;
+        line-height: 1.66em;
+        border-style: double;
+        margin-bottom: .05em;
+}
+
+    .bottom {
+        display: flex;
+        justify-content: center;
+        text-align: center;  
+        font-family: 'Concert One', cursive;
+        font-size: 1.33em;
+        color: ghostwhite;
+        width: 100vw;
+        height: 243px;    
+}
+
+    #bottom {
+        padding: 1em;
+        width: 100vw;
+        line-height: 1.66em;
+        border-style: double;
+        margin-top: .05em;
+        height: 243px;
 }
 }
 
 /*16:9   568x320*/
 @media screen and (min-width: 568px) {
 
-    .bottom {
-        height: 120px
-    }
-
-    .top {
-        height: 120px;
-    }
-
     .back-button-aligner {   
         height: 29px;
         width: 66px;
-        bottom: .13em;
-        left: 0;     
+        bottom: .33em;
+        left: .33em;     
 }
     
     .svg-back-button {
@@ -1369,8 +2726,8 @@ svg .button:active {
     .bestowal-aligner {   
         height: 77px;
         width: 60px;
-        bottom: .13em;
-        right: 0;  
+        bottom: .33em;
+        right: .33em;  
 }
 
     .svg-bestowal-button {
@@ -1380,50 +2737,146 @@ svg .button:active {
         top: -33px;
         right: -130px;
 }
+
+    .top-innards {
+        display: none;
 }
 
-/*3:4   576x768*/
-@media screen and (min-width: 576px) {
-
-    .bottom {
-        height: 221px;
+    .bottom-innards {
+        display: none;
 }
 
     .top {
-        height: 221px;
+        display: flex;
+        justify-content: center;
+        text-align: center;  
+        font-family: 'Concert One', cursive;
+        font-size: 1em;
+        color: ghostwhite;
+        width: 100vw;
+        height: 120px;
 }
 
+    #top {
+        padding: 1.6em;
+        padding-top: .33em;
+        line-height: 1.66em;
+        border-style: double;
+        margin-bottom: .05em;
+}
+
+    .bottom {
+        display: flex;
+        justify-content: center;
+        text-align: center;  
+        font-family: 'Concert One', cursive;
+        font-size: .66em;
+        color: ghostwhite;
+        width: 100vw;
+        height: 153px;    
+}
+
+    #bottom {
+        padding: 1em;
+        width: 100vw;
+        line-height: 1.66em;
+        border-style: double;
+        margin-top: .05em;
+        height: 153px;
+}
+}
+
+
+
+/*ONCE I GET HERE I LOSE CONTROL OF HEIGHT*/
+
+
+
+/*3:4   576x768*/
+@media screen and (min-width: 576px) and (min-height: 768px) {
+
     .back-button-aligner {   
-        height: 37px;
-        width: 83px;
-        bottom: .13em;
-        left: 0;     
+        height: 29px;
+        width: 66px;
+        bottom: 100.33em;
+        left: .33em;    
 }
     
     .svg-back-button {
         height: 180px;
         width: 320px;
-        transform: scale(.271);
-        top: -71px;
-        right: -121px;
+        transform: scale(.213);
+        top: -76px;
+        right: -129px;
+
 }
 
     .bestowal-aligner {   
-        height: 97px;
-        width: 83px;
-        bottom: .13em;
-        right: 0;  
+        height: 77px;
+        width: 60px;
+        bottom: .33em;
+        right: .33em;  
 }
 
     .svg-bestowal-button {
         height: 180px;
         width: 320px;
-        transform: scale(.87);
-        top: -19px;
-        right: -121px;
-}
+        transform: scale(.69);
+        top: -33px;
+        right: -130px;
 }
 
+    .top-innards {
+        display: none;
+}
+
+    .bottom-innards {
+        display: none;
+}
+
+    .top {
+        display: flex;
+        justify-content: center;
+        text-align: center;  
+        font-family: 'Concert One', cursive;
+        font-size: 1em;
+        color: ghostwhite;
+        width: 100vw;
+        max-height: 120px;
+        padding-bottom: .1em;
+}
+
+    #top {
+        padding: 1.6em;
+        padding-top: .33em;
+        line-height: 1.66em;
+        border-style: double;
+        margin-bottom: .05em;
+        max-height: 120px;
+}
+
+    .bottom {
+        display: flex;
+        justify-content: center;
+        text-align: center;  
+        font-family: 'Concert One', cursive;
+        font-size: .66em;
+        color: ghostwhite;
+        width: 100vw;
+        padding-top: .1em; 
+        max-height: 293px;  
+}
+
+    #bottom {
+        padding: 1em;
+        width: 100vw;
+        line-height: 1.66em;
+        border-style: double;
+        margin-top: .05em;
+        height: 293px;
+        overflow: hidden;
+}
+}
 
 
 
@@ -1432,19 +2885,11 @@ svg .button:active {
 /*16:9   600x337.5*/
 @media screen and (min-width: 600px) and (min-height: 337px) {
 
-    .bottom {
-        height: 137px
-    }
-
-    .top {
-        height: 137px;
-    }
-
     .back-button-aligner {   
         height: 34px;
         width: 77px;
-        bottom: .13em;
-        left: 0;     
+        bottom: .33em;
+        left: .33em; 
 }
     
     .svg-back-button {
@@ -1458,8 +2903,8 @@ svg .button:active {
     .bestowal-aligner {   
         height: 87px;
         width: 77px;
-        bottom: .13em;
-        right: 0;  
+        bottom: .33em;
+        right: .33em;  
 }
 
     .svg-bestowal-button {
@@ -1468,25 +2913,68 @@ svg .button:active {
         transform: scale(.79);
         top: -27px;
         right: -123px;
+}
+
+    .top-innards {
+        display: none;
+}
+
+    .bottom-innards {
+        display: none;
+}
+
+    .top {
+        display: flex;
+        justify-content: center;
+        text-align: center;  
+        font-family: 'Concert One', cursive;
+        font-size: 1em;
+        color: ghostwhite;
+        width: 100vw;
+        max-height: 120px;
+        padding-bottom: .1em;
+}
+
+    #top {
+        padding: 1.6em;
+        padding-top: .33em;
+        line-height: 1.66em;
+        border-style: double;
+        margin-bottom: .05em;
+        max-height: 120px;
+}
+
+    .bottom {
+        display: flex;
+        justify-content: center;
+        text-align: center;  
+        font-family: 'Concert One', cursive;
+        font-size: .66em;
+        color: ghostwhite;
+        width: 100vw;
+        padding-top: .1em; 
+        max-height: 193px;  
+}
+
+    #bottom {
+        padding: 1em;
+        width: 100vw;
+        line-height: 1.66em;
+        border-style: double;
+        margin-top: .05em;
+        height: 193px;
+        overflow: hidden;
 }
 }
 
 /*3:2   600x400*/  
 @media screen and (min-width: 600px) and (min-height: 400px) {
 
-    .bottom {
-        height: 137px
-    }
-
-    .top {
-        height: 137px;
-    }
-
     .back-button-aligner {   
         height: 34px;
         width: 77px;
-        bottom: .13em;
-        left: 0;     
+        bottom: .33em;
+        left: .33em; 
 }
     
     .svg-back-button {
@@ -1500,8 +2988,8 @@ svg .button:active {
     .bestowal-aligner {   
         height: 87px;
         width: 77px;
-        bottom: .13em;
-        right: 0;  
+        bottom: .33em;
+        right: .33em;  
 }
 
     .svg-bestowal-button {
@@ -1510,25 +2998,68 @@ svg .button:active {
         transform: scale(.79);
         top: -27px;
         right: -123px;
+}
+
+    .top-innards {
+        display: none;
+}
+
+    .bottom-innards {
+        display: none;
+}
+
+    .top {
+        display: flex;
+        justify-content: center;
+        text-align: center;  
+        font-family: 'Concert One', cursive;
+        font-size: 1em;
+        color: ghostwhite;
+        width: 100vw;
+        max-height: 120px;
+        padding-bottom: .1em;
+}
+
+    #top {
+        padding: 1.6em;
+        padding-top: .33em;
+        line-height: 1.66em;
+        border-style: double;
+        margin-bottom: .05em;
+        max-height: 120px;
+}
+
+    .bottom {
+        display: flex;
+        justify-content: center;
+        text-align: center;  
+        font-family: 'Concert One', cursive;
+        font-size: .66em;
+        color: ghostwhite;
+        width: 100vw;
+        padding-top: .1em; 
+        max-height: 193px;  
+}
+
+    #bottom {
+        padding: 1em;
+        width: 100vw;
+        line-height: 1.66em;
+        border-style: double;
+        margin-top: .05em;
+        height: 193px;
+        overflow: hidden;
 }
 }
 
 /*4:3   600x450*/
 @media screen and (min-width: 600px) and (min-height: 450px) {
 
-    .bottom {
-        height: 137px
-    }
-
-    .top {
-        height: 137px;
-    }
-
     .back-button-aligner {   
         height: 34px;
         width: 77px;
-        bottom: .13em;
-        left: 0;     
+        bottom: .33em;
+        left: .33em; 
 }
     
     .svg-back-button {
@@ -1542,8 +3073,8 @@ svg .button:active {
     .bestowal-aligner {   
         height: 87px;
         width: 77px;
-        bottom: .13em;
-        right: 0;  
+        bottom: .33em;
+        right: .33em;  
 }
 
     .svg-bestowal-button {
@@ -1552,25 +3083,68 @@ svg .button:active {
         transform: scale(.79);
         top: -27px;
         right: -123px;
+}
+
+    .top-innards {
+        display: none;
+}
+
+    .bottom-innards {
+        display: none;
+}
+
+    .top {
+        display: flex;
+        justify-content: center;
+        text-align: center;  
+        font-family: 'Concert One', cursive;
+        font-size: 1em;
+        color: ghostwhite;
+        width: 100vw;
+        max-height: 120px;
+        padding-bottom: .1em;
+}
+
+    #top {
+        padding: 1.6em;
+        padding-top: .33em;
+        line-height: 1.66em;
+        border-style: double;
+        margin-bottom: .05em;
+        max-height: 120px;
+}
+
+    .bottom {
+        display: flex;
+        justify-content: center;
+        text-align: center;  
+        font-family: 'Concert One', cursive;
+        font-size: .66em;
+        color: ghostwhite;
+        width: 100vw;
+        padding-top: .1em; 
+        max-height: 213px;  
+}
+
+    #bottom {
+        padding: 1em;
+        width: 100vw;
+        line-height: 1.66em;
+        border-style: double;
+        margin-top: .05em;
+        height: 213px;
+        overflow: hidden;
 }
 }
 
 /*16:9   640x360*/
 @media screen and (min-width: 640px) and (min-height: 360px) {
 
-    .bottom {
-        height: 166px
-    }
-
-    .top {
-        height: 166px;
-    }
-
     .back-button-aligner {   
         height: 34px;
         width: 77px;
-        bottom: .13em;
-        left: 0;     
+        bottom: .33em;
+        left: .33em; 
 }
     
     .svg-back-button {
@@ -1584,8 +3158,8 @@ svg .button:active {
     .bestowal-aligner {   
         height: 87px;
         width: 77px;
-        bottom: .13em;
-        right: 0;  
+        bottom: .33em;
+        right: .33em;  
 }
 
     .svg-bestowal-button {
@@ -1594,25 +3168,68 @@ svg .button:active {
         transform: scale(.79);
         top: -27px;
         right: -123px;
+}
+
+    .top-innards {
+        display: none;
+}
+
+    .bottom-innards {
+        display: none;
+}
+
+    .top {
+        display: flex;
+        justify-content: center;
+        text-align: center;  
+        font-family: 'Concert One', cursive;
+        font-size: 1.03em;
+        color: ghostwhite;
+        width: 100vw;
+        max-height: 120px;
+        padding-bottom: .1em;
+}
+
+    #top {
+        padding: 1.6em;
+        padding-top: 1em;
+        line-height: 1.66em;
+        border-style: double;
+        margin-bottom: .05em;
+        max-height: 120px;
+}
+
+    .bottom {
+        display: flex;
+        justify-content: center;
+        text-align: center;  
+        font-family: 'Concert One', cursive;
+        font-size: .66em;
+        color: ghostwhite;
+        width: 100vw;
+        padding-top: .1em; 
+        max-height: 213px;  
+}
+
+    #bottom {
+        padding: 1em;
+        width: 100vw;
+        line-height: 1.66em;
+        border-style: double;
+        margin-top: .05em;
+        height: 213px;
+        overflow: hidden;
 }
 }
 
 /*16:10   640x400*/
 @media screen and (min-width: 640px) and (min-height: 400px) {
 
-    .bottom {
-        height: 187px
-    }
-
-    .top {
-        height: 187px;
-    }
-
     .back-button-aligner {   
         height: 34px;
         width: 77px;
-        bottom: .13em;
-        left: 0;     
+        bottom: .33em;
+        left: .33em; 
 }
     
     .svg-back-button {
@@ -1626,8 +3243,8 @@ svg .button:active {
     .bestowal-aligner {   
         height: 87px;
         width: 77px;
-        bottom: .13em;
-        right: 0;  
+        bottom: .33em;
+        right: .33em;  
 }
 
     .svg-bestowal-button {
@@ -1636,25 +3253,68 @@ svg .button:active {
         transform: scale(.79);
         top: -27px;
         right: -123px;
+}
+
+    .top-innards {
+        display: none;
+}
+
+    .bottom-innards {
+        display: none;
+}
+
+    .top {
+        display: flex;
+        justify-content: center;
+        text-align: center;  
+        font-family: 'Concert One', cursive;
+        font-size: 1.03em;
+        color: ghostwhite;
+        width: 100vw;
+        max-height: 120px;
+        padding-bottom: .1em;
+}
+
+    #top {
+        padding: 1.6em;
+        padding-top: 1em;
+        line-height: 1.66em;
+        border-style: double;
+        margin-bottom: .05em;
+        max-height: 120px;
+}
+
+    .bottom {
+        display: flex;
+        justify-content: center;
+        text-align: center;  
+        font-family: 'Concert One', cursive;
+        font-size: .66em;
+        color: ghostwhite;
+        width: 100vw;
+        padding-top: .1em; 
+        max-height: 213px;  
+}
+
+    #bottom {
+        padding: 1em;
+        width: 100vw;
+        line-height: 1.66em;
+        border-style: double;
+        margin-top: .05em;
+        height: 213px;
+        overflow: hidden;
 }
 }
 
 /*16:9   640x480*/
-@media screen and (min-width: 640px) and (min-height: 400px) {
-
-    .bottom {
-        height: 187px
-    }
-
-    .top {
-        height: 187px;
-    }
+@media screen and (min-width: 640px) and (min-height: 480px) {
 
     .back-button-aligner {   
         height: 34px;
         width: 77px;
-        bottom: .13em;
-        left: 0;     
+        bottom: .33em;
+        left: .33em; 
 }
     
     .svg-back-button {
@@ -1668,8 +3328,8 @@ svg .button:active {
     .bestowal-aligner {   
         height: 87px;
         width: 77px;
-        bottom: .13em;
-        right: 0;  
+        bottom: .33em;
+        right: .33em;  
 }
 
     .svg-bestowal-button {
@@ -1679,89 +3339,225 @@ svg .button:active {
         top: -27px;
         right: -123px;
 }
-}    
+
+    .top-innards {
+        display: none;
+}
+
+    .bottom-innards {
+        display: none;
+}
+
+    .top {
+        display: flex;
+        justify-content: center;
+        text-align: center;  
+        font-family: 'Concert One', cursive;
+        font-size: 1.03em;
+        color: ghostwhite;
+        width: 100vw;
+        max-height: 120px;
+        padding-bottom: .1em;
+}
+
+    #top {
+        padding: 1.6em;
+        padding-top: 1em;
+        line-height: 1.66em;
+        border-style: double;
+        margin-bottom: .05em;
+        max-height: 120px;
+}
+
+    .bottom {
+        display: flex;
+        justify-content: center;
+        text-align: center;  
+        font-family: 'Concert One', cursive;
+        font-size: .66em;
+        color: ghostwhite;
+        width: 100vw;
+        padding-top: .1em; 
+        max-height: 213px;  
+}
+
+    #bottom {
+        padding: 1em;
+        width: 100vw;
+        line-height: 1.66em;
+        border-style: double;
+        margin-top: .05em;
+        height: 213px;
+        overflow: hidden;
+}
+}   
 
 /*16:9*   667x375*/
-@media screen and (min-width: 640px) and (min-height: 400px) {
-
-    .bottom {
-        height: 187px
-    }
-
-    .top {
-        height: 187px;
-    }
+@media screen and (min-width: 667px) {
 
     .back-button-aligner {   
-        height: 34px;
-        width: 77px;
-        bottom: .13em;
-        left: 0;     
+        height: 43px;
+        width: 101px;
+        bottom: .33em;
+        left: .33em;     
 }
     
     .svg-back-button {
         height: 180px;
         width: 320px;
-        transform: scale(.26);
-        top: -73px;
-        right: -124px;
+        transform: scale(.33);
+        top: -69px;
+        right: -111px;
 }
 
     .bestowal-aligner {   
-        height: 87px;
-        width: 77px;
-        bottom: .13em;
-        right: 0;  
+        height: 111px;
+        width: 91px;
+        bottom: .33em;
+        right: .33em; 
 }
 
     .svg-bestowal-button {
         height: 180px;
         width: 320px;
-        transform: scale(.79);
-        top: -27px;
-        right: -123px;
+        transform: scale(.99);
+        top: -9px;
+        right: -117px;
+}  
+
+    .top-innards {
+        display: none;
+}
+
+    .bottom-innards {
+        display: none;
+}
+
+    .top {
+        display: flex;
+        justify-content: center;
+        text-align: center; 
+        font-family: 'Concert One', cursive;
+        font-size: 1.13em;
+        color: ghostwhite;
+        width: 100vw;
+        min-height: 166px;
+        padding-bottom: .1em;
+}
+
+    #top {
+        padding: 3.3em;
+        padding-top: 1.17em;
+        line-height: 1.66em;
+        border-style: double;
+        margin-bottom: .05em;
+        max-height: 166px;
+}
+
+    .bottom {
+        display: flex;
+        justify-content: center;
+        text-align: center;  
+        font-family: 'Concert One', cursive;
+        font-size: .66em;
+        color: ghostwhite;
+        width: 100vw;
+        padding-top: .1em; 
+        min-height: 213px;  
+}
+
+    #bottom {
+        padding: 1em;
+        width: 100vw;
+        line-height: 1.66em;
+        border-style: double;
+        margin-top: .05em;
+        max-height: 213px;
 }
 }
 
 /*9:16   720x1280*/
-@media screen and (min-width: 576px) {
+@media screen and (min-width: 720px) {
 
-    .bottom {
-        height: 433px;
+    .back-button-aligner {   
+        height: 63px;
+        width: 143px;
+        bottom: .33em;
+        left: .33em;     
+}
+    
+    .svg-back-button {
+        height: 180px;
+        width: 320px;
+        transform: scale(.47);
+        top: -59px;
+        right: -91px;
+}
+
+    .bestowal-aligner {   
+        height: 149px;
+        width: 123px;
+        bottom: .33em;
+        right: .33em; 
+}
+
+    .svg-bestowal-button {
+        height: 180px;
+        width: 320px;
+        transform: scale(1.27);
+        top: 17px;
+        right: -101px;
+}  
+
+    .top-innards {
+        display: none;
+}
+
+    .bottom-innards {
+        display: none;
 }
 
     .top {
-        height: 433px;
+        display: flex;
+        justify-content: center;
+        text-align: center; 
+        font-family: 'Concert One', cursive;
+        font-size: 1.66em;
+        color: ghostwhite;
+        width: 100vw;
+        min-height: 333px;
+        padding-bottom: .1em;
 }
 
-.back-button-aligner {   
-    height: 50px;
-    width: 113px;
-    bottom: .13em;
-    left: 0;     
+    #top {
+        padding: 2em;
+        padding-top:2em;
+        line-height: 1.66em;
+        border-style: double;
+        margin-bottom: .05em;
+        max-height: 333px;
 }
 
-.svg-back-button {
-    height: 180px;
-    width: 320px;
-    transform: scale(.37);
-    top: -67px;
-    right: -107px;
+    .bottom {
+        display: flex;
+        justify-content: center;
+        text-align: center;  
+        font-family: 'Concert One', cursive;
+        font-size: .66em;
+        color: ghostwhite;
+        width: 100vw;
+        padding-top: .1em; 
+         
 }
 
-.bestowal-aligner {   
-    height: 113px;
-    width: 100px;
-    bottom: .13em;
-    right: 0;  
-}
-
-.svg-bestowal-button {
-    height: 180px;
-    width: 320px;
-    transform: scale(1);
-    top: -9px;
-    right: -111px;
+    #bottom {
+        padding: 1em;
+        width: 100vw;
+        line-height: 1.66em;
+        border-style: double;
+        margin-top: .05em;
+        overflow: hidden;
+        min-height: 511px;
 }
 }
 
@@ -1785,8 +3581,8 @@ svg .button:active {
     .back-button-aligner {   
         height: 34px;
         width: 77px;
-        bottom: .13em;
-        left: 0;     
+        bottom: .6em;
+        left: .43em;     
 }
     
     .svg-back-button {
@@ -1800,8 +3596,8 @@ svg .button:active {
     .bestowal-aligner {   
         height: 87px;
         width: 77px;
-        bottom: .13em;
-        right: 0;  
+        bottom: .6em;
+        right: .43em;  
 }
 
     .svg-bestowal-button {
@@ -1827,8 +3623,8 @@ svg .button:active {
     .back-button-aligner {   
         height: 34px;
         width: 77px;
-        bottom: .13em;
-        left: 0;     
+        bottom: .6em;
+        left: .43em;     
 }
     
     .svg-back-button {
@@ -1842,8 +3638,8 @@ svg .button:active {
     .bestowal-aligner {   
         height: 87px;
         width: 77px;
-        bottom: .13em;
-        right: 0;  
+        bottom: .6em;
+        right: .43em;  
 }
 
     .svg-bestowal-button {
@@ -1856,7 +3652,7 @@ svg .button:active {
 }
 
 /*4:3   768x576*/
-@media screen and (min-width: 768px) and (min-height: 512px) {
+@media screen and (min-width: 768px) and (min-height: 576px) {
 
     .bottom {
         height: 213px
@@ -1869,8 +3665,8 @@ svg .button:active {
     .back-button-aligner {   
         height: 34px;
         width: 77px;
-        bottom: .13em;
-        left: 0;     
+        bottom: .6em;
+        left: .43em;     
 }
     
     .svg-back-button {
@@ -1884,8 +3680,8 @@ svg .button:active {
     .bestowal-aligner {   
         height: 87px;
         width: 77px;
-        bottom: .13em;
-        right: 0;  
+        bottom: .6em;
+        right: .43em;  
 }
 
     .svg-bestowal-button {
@@ -1899,10 +3695,176 @@ svg .button:active {
 
 
 /*10:16   800×1280*/
+@media screen and (min-width: 800px) {
 
+    .back-button-aligner {   
+        height: 73px;
+        width: 169px;
+        bottom: .6em;
+        left: .43em;   
+}
+    
+    .svg-back-button {
+        height: 180px;
+        width: 320px;
+        transform: scale(.56);
+        top: -53px;
+        right: -79px;
+}
+
+    .bestowal-aligner {   
+        height: 166px;
+        width: 133px;
+        bottom: .6em;
+        right: .43em;  
+}
+
+    .svg-bestowal-button {
+        height: 180px;
+        width: 320px;
+        transform: scale(1.43);
+        top: 31px;
+        right: -95px;
+        
+}  
+
+    .top-innards {
+        display: none;
+}
+
+    .bottom-innards {
+        display: none;
+}
+
+    .top {
+        display: flex;
+        justify-content: center;
+        text-align: center; 
+        font-family: 'Concert One', cursive;
+        font-size: 1.66em;
+        color: ghostwhite;
+        width: 100vw;
+        min-height: 333px;
+        padding-bottom: .1em;
+}
+
+    #top {
+        padding: 2em;
+        padding-top:2em;
+        line-height: 1.66em;
+        border-style: double;
+        margin-bottom: .05em;
+        max-height: 333px;
+}
+
+    .bottom {
+        display: flex;
+        justify-content: center;
+        text-align: center;  
+        font-family: 'Concert One', cursive;
+        font-size: .66em;
+        color: ghostwhite;
+        width: 100vw;
+        padding-top: .1em; 
+         
+}
+
+    #bottom {
+        padding: 1em;
+        width: 100vw;
+        line-height: 1.66em;
+        border-style: double;
+        margin-top: .05em;
+        overflow: hidden;
+        min-height: 466px;
+}
+}
 
 /*10:16   900x1440*/
+@media screen and (min-width: 900px) {
 
+    .back-button-aligner {   
+        height: 73px;
+        width: 169px;
+        bottom: .6em;
+        left: .43em;    
+}
+    
+    .svg-back-button {
+        height: 180px;
+        width: 320px;
+        transform: scale(.56);
+        top: -53px;
+        right: -79px;
+}
+
+    .bestowal-aligner {   
+        height: 166px;
+        width: 133px;
+        bottom: .6em;
+        right: .43em; 
+}
+
+    .svg-bestowal-button {
+        height: 180px;
+        width: 320px;
+        transform: scale(1.43);
+        top: 31px;
+        right: -95px;
+        
+}  
+
+    .top-innards {
+        display: none;
+}
+
+    .bottom-innards {
+        display: none;
+}
+
+    .top {
+        display: flex;
+        justify-content: center;
+        text-align: center; 
+        font-family: 'Concert One', cursive;
+        font-size: 1.79em;
+        color: ghostwhite;
+        width: 100vw;
+        min-height: 333px;
+        padding-bottom: .1em;
+}
+
+    #top {
+        padding: 2.33em;
+        padding-top: 1.7em;
+        line-height: 1.66em;
+        border-style: double;
+        margin-bottom: .05em;
+        max-height: 333px;
+}
+
+    .bottom {
+        display: flex;
+        justify-content: center;
+        text-align: center;  
+        font-family: 'Concert One', cursive;
+        font-size: .66em;
+        color: ghostwhite;
+        width: 100vw;
+        padding-top: .1em; 
+         
+}
+
+    #bottom {
+        padding: 1em;
+        width: 100vw;
+        line-height: 1.66em;
+        border-style: double;
+        margin-top: .05em;
+        overflow: hidden;
+        min-height: 569px;
+}
+}
 
 
 
@@ -1911,45 +3873,2526 @@ svg .button:active {
 /*laptops/desktops, large devices start here*/
 
 /*16:9   992x558*/
+@media screen and (min-width: 992px) {
 
+    .top {
+        display: none;
+    }
+
+    .bottom {
+        display: none;
+    }
+
+    .back-button-aligner {   
+        bottom: .66em;
+        left: .69em;     
+}
+
+    .bestowal-aligner {   
+        bottom: .66em;
+        right: 1.03em; 
+}
+
+    .top-02 {
+        display: flex;
+        flex-wrap: nowrap;
+        justify-content: space-between;
+        overflow: hidden;
+        background: #00454a;
+        height: 266px;
+        width:100%;
+    }
+    
+    .top-innards {
+        display: flex;
+        justify-content: center;
+        text-align: center;  
+        font-family: 'Concert One', cursive;
+        font-size: 3.33em;
+        color: ghostwhite;
+        width: 33%;
+        height: 100%;
+        text-align: center;
+        font-size: .9em;
+        padding: 3em;
+        padding-top: 2.33em;
+        line-height: 1.96em;
+    }
+    
+    #t1 {
+        border-right: none;
+        border-top: 3px solid black;
+        border-left: 3px solid black;
+    }
+    
+    #t2 {
+        border-left: 3px solid black;
+        border-right: 3px solid black;
+        border-top: 3px solid black;
+    }
+    
+    #t3 {
+        border-left: none;
+        border-top: 3px solid black;
+        border-right: 3px solid black;
+    }
+
+    .bottom-02 {
+        display: flex;
+        flex-wrap: nowrap;
+        justify-content: space-between;
+        overflow: hidden;
+        background: #00454a;
+        height: 393px;
+        width:100%;
+    }
+    
+    .bottom-innards {
+        display: flex;
+        justify-content: center;
+        text-align: center;  
+        font-family: 'Concert One', cursive;
+        font-size: 3.33em;
+        color: ghostwhite;
+        width: 33%;
+        height: 100%;
+        text-align: center;
+        font-size: .9em;
+        padding: 3em;
+        padding-top: 2.33em;
+        line-height: 1.96em;
+    }
+    
+    #b1 {
+        border-right: none;
+        border-bottom: 3px solid black;
+        border-left: 3px solid black;
+    }
+    
+    #b2 {
+        border-left: 3px solid black;
+        border-right: 3px solid black;
+        border-bottom: 3px solid black;
+    }
+    
+    #b3 {
+        border-top: none;
+        border-left: none;
+        border-bottom: 3px solid black;
+        border-right: 3px solid black;
+    }
+
+    .middle-container {
+        border: 3px solid black;
+}
+}
 
 /*16:9   1024x576*/
+@media screen and (min-width: 1024px) and (min-height: 576px) {
+
+    .top {
+        display: none;
+    }
+
+    .bottom {
+        display: none;
+    }
+
+    .top-02 {
+        display: flex;
+        flex-wrap: nowrap;
+        justify-content: space-between;
+        overflow: hidden;
+        background: #00454a;
+        height: 266px;
+        width:100%;
+    }
+    
+    .top-innards {
+        display: flex;
+        justify-content: center;
+        text-align: center;  
+        font-family: 'Concert One', cursive;
+        font-size: 3.33em;
+        color: ghostwhite;
+        width: 33%;
+        height: 100%;
+        text-align: center;
+        font-size: .9em;
+        padding: 3em;
+        padding-top: 2.33em;
+        line-height: 1.96em;
+    }
+    
+    #t1 {
+        border-right: none;
+        border-top: 3px solid black;
+        border-left: 3px solid black;
+    }
+    
+    #t2 {
+        border-left: 3px solid black;
+        border-right: 3px solid black;
+        border-top: 3px solid black;
+    }
+    
+    #t3 {
+        border-left: none;
+        border-top: 3px solid black;
+        border-right: 3px solid black;
+    }
+
+    .bottom-02 {
+        display: flex;
+        flex-wrap: nowrap;
+        justify-content: space-between;
+        overflow: hidden;
+        background: #00454a;
+        height: 393px;
+        width:100%;
+    }
+    
+    .bottom-innards {
+        display: flex;
+        justify-content: center;
+        text-align: center;  
+        font-family: 'Concert One', cursive;
+        font-size: 3.33em;
+        color: ghostwhite;
+        width: 33%;
+        height: 100%;
+        text-align: center;
+        font-size: .9em;
+        padding: 3em;
+        padding-top: 2.33em;
+        line-height: 1.96em;
+    }
+    
+    #b1 {
+        border-right: none;
+        border-bottom: 3px solid black;
+        border-left: 3px solid black;
+    }
+    
+    #b2 {
+        border-left: 3px solid black;
+        border-right: 3px solid black;
+        border-bottom: 3px solid black;
+    }
+    
+    #b3 {
+        border-top: none;
+        border-left: none;
+        border-bottom: 3px solid black;
+        border-right: 3px solid black;
+    }
+
+    .middle-container {
+        border: 3px solid black;
+}
+}
+
+
+
+/* GOTTA START TO ADJUST BUTTON SIZE HERE*/
 
 
 /*3:4   1024×1366*/
+@media screen and (min-width: 1024px) and (min-height: 1366px) {
 
+    .top {
+        display: none;
+    }
+
+    .bottom {
+        display: none;
+    }
+
+    .back-button-aligner {   
+        height: 73px;
+        width: 147px;
+        bottom: .33em;
+        left: .37em;          
+}
+    
+    .svg-back-button {
+        height: 180px;
+        width: 320px;
+        transform: scale(.47);
+        top: -53px;
+        right: -87px;
+}
+
+    .bestowal-aligner {   
+        height: 166px;
+        width: 127px;
+        bottom: .33em;
+        right: .37em; 
+}
+
+    .svg-bestowal-button {
+        height: 180px;
+        width: 320px;
+        transform: scale(1.33);
+        top: 27px;
+        right: -99px;
+
+} 
+
+    .top-02 {
+        display: flex;
+        flex-wrap: nowrap;
+        justify-content: space-between;
+        overflow: hidden;
+        background: #00454a;
+        height: 393px;
+        width:100%;
+    }
+    
+    .top-innards {
+        display: flex;
+        justify-content: center;
+        text-align: center;  
+        font-family: 'Concert One', cursive;
+        color: ghostwhite;
+        width: 33%;
+        height: 100%;
+        text-align: center;
+        font-size: 1.33em;
+        padding: 2em;
+        padding-top: 2.33em;
+        line-height: 1.96em;
+    }
+    
+    #t1 {
+        border-right: none;
+        border-top: 3px solid black;
+        border-left: 3px solid black;
+    }
+    
+    #t2 {
+        border-left: 3px solid black;
+        border-right: 3px solid black;
+        border-top: 3px solid black;
+        width: 66vw;
+    }
+    
+    #t3 {
+        border-left: none;
+        border-top: 3px solid black;
+        border-right: 3px solid black;
+    }
+
+    .bottom-02 {
+        display: flex;
+        flex-wrap: nowrap;
+        justify-content: space-between;
+        overflow: hidden;
+        background: #00454a;
+        height: 393px;
+        width:100%;
+    }
+    
+    .bottom-innards {
+        display: flex;
+        justify-content: center;
+        text-align: center;  
+        font-family: 'Concert One', cursive;
+        font-size: 3.33em;
+        color: ghostwhite;
+        width: 33%;
+        height: 100%;
+        text-align: center;
+        font-size: .9em;
+        padding: 3em;
+        padding-top: 2.33em;
+        line-height: 1.96em;
+    }
+    
+    #b1 {
+        border-right: none;
+        border-bottom: 3px solid black;
+        border-left: 3px solid black;
+    }
+    
+    #b2 {
+        border-left: 3px solid black;
+        border-right: 3px solid black;
+        border-bottom: 3px solid black;
+    }
+    
+    #b3 {
+        border-top: none;
+        border-left: none;
+        border-bottom: 3px solid black;
+        border-right: 3px solid black;
+    }
+
+    .middle-container {
+        border: 3px solid black;
+}
+}
+
+/*IDK             galaxy-s10  1080x2280*/
+@media screen and (min-width: 1080px) and (min-height: 2280px) {
+
+    .top {
+        display: none;
+    }
+
+    .bottom {
+        display: none;
+    }
+
+    .back-button-aligner {   
+        height: 103px;
+        width: 243px;
+        bottom: .63em;
+        left: .67em;
+        border: 1px solid black;   
+          
+}
+    
+    .svg-back-button {
+        height: 180px;
+        width: 320px;
+        transform: scale(.73);
+        top: -39px;
+        right: -43px;
+}
+
+    .bestowal-aligner {   
+        height: 199px;
+        width: 166px;
+        bottom: .63em;
+        right: .67em; 
+        border: 1px solid black;
+}
+
+    .svg-bestowal-button {
+        height: 180px;
+        width: 320px;
+        transform: scale(1.66);
+        top: 51px;
+        right: -79px;
+} 
+
+    .top-02 {
+        display: flex;
+        flex-wrap: nowrap;
+        justify-content: space-between;
+        overflow: hidden;
+        background: #00454a;
+        height: 666px;
+        width:100%;
+    }
+    
+    .top-innards {
+        display: flex;
+        justify-content: center;
+        text-align: center;  
+        font-family: 'Concert One', cursive;
+        font-size: 3.33em;
+        color: ghostwhite;
+        width: 33%;
+        height: 100%;
+        text-align: center;
+        font-size: 2.13em;
+        padding: 1em;
+        padding-top: .83em;
+        line-height: 1.96em;
+    }
+    
+    #t1 {
+        border-right: none;
+        border-top: 4px solid black;
+        border-left: 4px solid black;
+    }
+    
+    #t2 {
+        border-left: 4px solid black;
+        border-right: 4px solid black;
+        border-top: 4px solid black;
+        width: 66vw;
+    }
+    
+    #t3 {
+        border-left: none;
+        border-top: 3px solid black;
+        border-right: 3px solid black;
+    }
+
+    .bottom-02 {
+        display: flex;
+        flex-wrap: nowrap;
+        justify-content: space-between;
+        overflow: hidden;
+        background: #00454a;
+        height: 999px;
+        width:100%;
+    }
+    
+    .bottom-innards {
+        display: flex;
+        justify-content: center;
+        text-align: center;  
+        font-family: 'Concert One', cursive;
+        font-size: 3.33em;
+        color: ghostwhite;
+        width: 33%;
+        height: 100%;
+        text-align: center;
+        font-size: .9em;
+        padding: 3em;
+        padding-top: 2.33em;
+        line-height: 1.96em;
+    }
+    
+    #b1 {
+        border-right: none;
+        border-bottom: 4px solid black;
+        border-left: 4px solid black;
+    }
+    
+    #b2 {
+        border-left: 4px solid black;
+        border-right: 4px solid black;
+        border-bottom: 4px solid black;
+    }
+    
+    #b3 {
+        border-top: none;
+        border-left: none;
+        border-bottom: 4px solid black;
+        border-right: 4px solid black;
+    }
+
+    .middle-container {
+        border: 4px solid black;
+}
+}
 
 /*16:9   1200x675*/
+@media screen and (min-width: 1200px) and (min-height: 675px) {
 
+    .top {
+        display: none;
+    }
+
+    .bottom {
+        display: none;
+    }
+
+    .back-button-aligner {   
+        height: 66px;
+        width: 143px;
+        bottom: .63em;
+        left: .67em;            
+}
+    
+    .svg-back-button {
+        height: 180px;
+        width: 320px;
+        transform: scale(.43);
+        top: -57px;
+        right: -87px;
+}
+
+    .bestowal-aligner {   
+        height: 173px;
+        width: 133px;
+        bottom: .63em;
+        right: .67em; 
+}
+
+    .svg-bestowal-button {
+        height: 180px;
+        width: 320px;
+        transform: scale(1.53);
+        top: 33px;
+        right: -97px;
+}
+
+    .top-02 {
+        display: flex;
+        flex-wrap: nowrap;
+        justify-content: space-between;
+        overflow: hidden;
+        background: #00454a;
+        height: 266px;
+        width:100%;
+    }
+    
+    .top-innards {
+        display: flex;
+        justify-content: center;
+        text-align: center;  
+        font-family: 'Concert One', cursive;
+        color: ghostwhite;
+        width: 33%;
+        height: 100%;
+        text-align: center;
+        font-size: 1em;
+        padding: 3em;
+        padding-top: 2.22em;
+        line-height: 1.96em;
+    }
+    
+    #t1 {
+        border-right: none;
+        border-top: 3px solid black;
+        border-left: 3px solid black;
+    }
+    
+    #t2 {
+        border-left: 3px solid black;
+        border-right: 3px solid black;
+        border-top: 3px solid black;
+    }
+    
+    #t3 {
+        border-left: none;
+        border-top: 3px solid black;
+        border-right: 3px solid black;
+    }
+
+    .bottom-02 {
+        display: flex;
+        flex-wrap: nowrap;
+        justify-content: space-between;
+        overflow: hidden;
+        background: #00454a;
+        height: 521px;
+        width:100%;
+    }
+    
+    .bottom-innards {
+        display: flex;
+        justify-content: center;
+        text-align: center;  
+        font-family: 'Concert One', cursive;
+        font-size: 3.33em;
+        color: ghostwhite;
+        width: 33%;
+        height: 100%;
+        text-align: center;
+        font-size: .9em;
+        padding: 3em;
+        padding-top: 2.33em;
+        line-height: 1.96em;
+    }
+    
+    #b1 {
+        border-right: none;
+        border-bottom: 3px solid black;
+        border-left: 3px solid black;
+    }
+    
+    #b2 {
+        border-left: 3px solid black;
+        border-right: 3px solid black;
+        border-bottom: 3px solid black;
+    }
+    
+    #b3 {
+        border-top: none;
+        border-left: none;
+        border-bottom: 3px solid black;
+        border-right: 3px solid black;
+    }
+
+    .middle-container {
+        border: 3px solid black;
+}
+}
+
+/* idk  my desktop viewport          1280x587*/
+@media screen and (min-width: 1280px) and (min-height: 587px) {
+
+    .top {
+        display: none;
+    }
+
+    .bottom {
+        display: none;
+    }
+
+    .back-button-aligner {   
+        height: 66px;
+        width: 143px;
+        bottom: .63em;
+        left: .67em;           
+}
+    
+    .svg-back-button {
+        height: 180px;
+        width: 320px;
+        transform: scale(.43);
+        top: -57px;
+        right: -93px;
+}
+
+    .bestowal-aligner {   
+        height: 173px;
+        width: 133px;
+        bottom: .63em;
+        right: .67em; 
+}
+
+    .svg-bestowal-button {
+        height: 180px;
+        width: 320px;
+        transform: scale(1.53);
+        top: 33px;
+        right: -93px;
+}
+
+    .top-02 {
+        display: flex;
+        flex-wrap: nowrap;
+        justify-content: space-between;
+        overflow: hidden;
+        background: #00454a;
+        height: 266px;
+        width:100%;
+    }
+    
+    .top-innards {
+        display: flex;
+        justify-content: center;
+        text-align: center;  
+        font-family: 'Concert One', cursive;
+        color: ghostwhite;
+        width: 33%;
+        height: 100%;
+        text-align: center;
+        font-size: 1em;
+        padding: 3em;
+        padding-top: 2.33em;
+        line-height: 1.96em;
+    }
+    
+    #t1 {
+        border-right: none;
+        border-top: 3px solid black;
+        border-left: 3px solid black;
+    }
+    
+    #t2 {
+        border-left: 3px solid black;
+        border-right: 3px solid black;
+        border-top: 3px solid black;
+    }
+    
+    #t3 {
+        border-left: none;
+        border-top: 3px solid black;
+        border-right: 3px solid black;
+    }
+
+    .bottom-02 {
+        display: flex;
+        flex-wrap: nowrap;
+        justify-content: space-between;
+        overflow: hidden;
+        background: #00454a;
+        height: 521px;
+        width:100%;
+    }
+    
+    .bottom-innards {
+        display: flex;
+        justify-content: center;
+        text-align: center;  
+        font-family: 'Concert One', cursive;
+        font-size: 3.33em;
+        color: ghostwhite;
+        width: 33%;
+        height: 100%;
+        text-align: center;
+        font-size: .9em;
+        padding: 3em;
+        padding-top: 2.33em;
+        line-height: 1.96em;
+    }
+    
+    #b1 {
+        border-right: none;
+        border-bottom: 3px solid black;
+        border-left: 3px solid black;
+    }
+    
+    #b2 {
+        border-left: 3px solid black;
+        border-right: 3px solid black;
+        border-bottom: 3px solid black;
+    }
+    
+    #b3 {
+        border-top: none;
+        border-left: none;
+        border-bottom: 3px solid black;
+        border-right: 3px solid black;
+    }
+
+    .middle-container {
+        border: 3px solid black;
+}
+}
 
 /*16:9   1280x720*/
+@media screen and (min-width: 1280px) and (min-height: 720px) {
 
+    .top {
+        display: none;
+    }
+
+    .bottom {
+        display: none;
+    }
+
+    .back-button-aligner {   
+        height: 66px;
+        width: 143px;
+        bottom: .63em;
+        left: .67em;            
+}
+    
+    .svg-back-button {
+        height: 180px;
+        width: 320px;
+        transform: scale(.43);
+        top: -57px;
+        right: -93px;
+}
+
+    .bestowal-aligner {   
+        height: 173px;
+        width: 133px;
+        bottom: .63em;
+        right: .67em; 
+}
+
+    .svg-bestowal-button {
+        height: 180px;
+        width: 320px;
+        transform: scale(1.53);
+        top: 33px;
+        right: -93px;
+}
+
+    .top-02 {
+        display: flex;
+        flex-wrap: nowrap;
+        justify-content: space-between;
+        overflow: hidden;
+        background: #00454a;
+        height: 266px;
+        width:100%;
+    }
+    
+    .top-innards {
+        display: flex;
+        justify-content: center;
+        text-align: center;  
+        font-family: 'Concert One', cursive;
+        color: ghostwhite;
+        width: 33%;
+        height: 100%;
+        text-align: center;
+        font-size: 1em;
+        padding: 3em;
+        padding-top: 2.33em;
+        line-height: 1.96em;;
+    }
+    
+    #t1 {
+        border-right: none;
+        border-top: 3px solid black;
+        border-left: 3px solid black;
+    }
+    
+    #t2 {
+        border-left: 3px solid black;
+        border-right: 3px solid black;
+        border-top: 3px solid black;
+    }
+    
+    #t3 {
+        border-left: none;
+        border-top: 3px solid black;
+        border-right: 3px solid black;
+    }
+
+    .bottom-02 {
+        display: flex;
+        flex-wrap: nowrap;
+        justify-content: space-between;
+        overflow: hidden;
+        background: #00454a;
+        height: 521px;
+        width:100%;
+    }
+    
+    .bottom-innards {
+        display: flex;
+        justify-content: center;
+        text-align: center;  
+        font-family: 'Concert One', cursive;
+        font-size: 3.33em;
+        color: ghostwhite;
+        width: 33%;
+        height: 100%;
+        text-align: center;
+        font-size: .9em;
+        padding: 3em;
+        padding-top: 2.33em;
+        line-height: 1.96em;
+    }
+    
+    #b1 {
+        border-right: none;
+        border-bottom: 3px solid black;
+        border-left: 3px solid black;
+    }
+    
+    #b2 {
+        border-left: 3px solid black;
+        border-right: 3px solid black;
+        border-bottom: 3px solid black;
+    }
+    
+    #b3 {
+        border-top: none;
+        border-left: none;
+        border-bottom: 3px solid black;
+        border-right: 3px solid black;
+    }
+
+    .middle-container {
+        border: 3px solid black;
+}
+}
 
 /*16:10  1280x800*/
+@media screen and (min-width: 1280px) and (min-height: 800px) {
 
+    .top {
+        display: none;
+    }
+
+    .bottom {
+        display: none;
+    }
+
+    .back-button-aligner {   
+        height: 66px;
+        width: 143px;
+        bottom: .63em;
+        left: .67em;            
+}
+    
+    .svg-back-button {
+        height: 180px;
+        width: 320px;
+        transform: scale(.43);
+        top: -57px;
+        right: -93px;
+}
+
+    .bestowal-aligner {   
+        height: 173px;
+        width: 133px;
+        bottom: .63em;
+        right: .67em; 
+}
+
+    .svg-bestowal-button {
+        height: 180px;
+        width: 320px;
+        transform: scale(1.53);
+        top: 33px;
+        right: -93px;
+}
+
+    .top-02 {
+        display: flex;
+        flex-wrap: nowrap;
+        justify-content: space-between;
+        overflow: hidden;
+        background: #00454a;
+        height: 266px;
+        width:100%;
+    }
+    
+    .top-innards {
+        display: flex;
+        justify-content: center;
+        text-align: center;  
+        font-family: 'Concert One', cursive;
+        font-size: 3.33em;
+        color: ghostwhite;
+        width: 33%;
+        height: 100%;
+        text-align: center;
+        font-size: 1em;
+        padding: 3em;
+        padding-top: 2.33em;
+        line-height: 1.96em;
+    }
+    
+    #t1 {
+        border-right: none;
+        border-top: 3px solid black;
+        border-left: 3px solid black;
+    }
+    
+    #t2 {
+        border-left: 3px solid black;
+        border-right: 3px solid black;
+        border-top: 3px solid black;
+    }
+    
+    #t3 {
+        border-left: none;
+        border-top: 3px solid black;
+        border-right: 3px solid black;
+    }
+
+    .bottom-02 {
+        display: flex;
+        flex-wrap: nowrap;
+        justify-content: space-between;
+        overflow: hidden;
+        background: #00454a;
+        height: 521px;
+        width:100%;
+    }
+    
+    .bottom-innards {
+        display: flex;
+        justify-content: center;
+        text-align: center;  
+        font-family: 'Concert One', cursive;
+        font-size: 3.33em;
+        color: ghostwhite;
+        width: 33%;
+        height: 100%;
+        text-align: center;
+        font-size: .9em;
+        padding: 3em;
+        padding-top: 2.33em;
+        line-height: 1.96em;
+    }
+    
+    #b1 {
+        border-right: none;
+        border-bottom: 3px solid black;
+        border-left: 3px solid black;
+    }
+    
+    #b2 {
+        border-left: 3px solid black;
+        border-right: 3px solid black;
+        border-bottom: 3px solid black;
+    }
+    
+    #b3 {
+        border-top: none;
+        border-left: none;
+        border-bottom: 3px solid black;
+        border-right: 3px solid black;
+    }
+
+    .middle-container {
+        border: 3px solid black;
+}
+}
 
 /*16:9   1366x768*/
+@media screen and (min-width: 1366px) and (min-height: 768px) {
 
+    .top {
+        display: none;
+    }
+
+    .bottom {
+        display: none;
+    }
+
+    .back-button-aligner {   
+        height: 66px;
+        width: 143px;
+        bottom: .63em;
+        left: .67em;            
+}
+    
+    .svg-back-button {
+        height: 180px;
+        width: 320px;
+        transform: scale(.43);
+        top: -57px;
+        right: -93px;
+}
+
+    .bestowal-aligner {   
+        height: 173px;
+        width: 133px;
+        bottom: .63em;
+        right: .67em; 
+}
+
+    .svg-bestowal-button {
+        height: 180px;
+        width: 320px;
+        transform: scale(1.53);
+        top: 33px;
+        right: -93px;
+}
+
+    .top-02 {
+        display: flex;
+        flex-wrap: nowrap;
+        justify-content: space-between;
+        overflow: hidden;
+        background: #00454a;
+        height: 266px;
+        width:100%;
+    }
+    
+    .top-innards {
+        display: flex;
+        justify-content: center;
+        text-align: center;  
+        font-family: 'Concert One', cursive;
+        font-size: 3.33em;
+        color: ghostwhite;
+        width: 33%;
+        height: 100%;
+        text-align: center;
+        font-size: 1em;
+        padding: 3em;
+        padding-top: 2.33em;
+        line-height: 1.96em;
+    }
+    
+    #t1 {
+        border-right: none;
+        border-top: 3px solid black;
+        border-left: 3px solid black;
+    }
+    
+    #t2 {
+        border-left: 3px solid black;
+        border-right: 3px solid black;
+        border-top: 3px solid black;
+    }
+    
+    #t3 {
+        border-left: none;
+        border-top: 3px solid black;
+        border-right: 3px solid black;
+    }
+
+    .bottom-02 {
+        display: flex;
+        flex-wrap: nowrap;
+        justify-content: space-between;
+        overflow: hidden;
+        background: #00454a;
+        height: 521px;
+        width:100%;
+    }
+    
+    .bottom-innards {
+        display: flex;
+        justify-content: center;
+        text-align: center;  
+        font-family: 'Concert One', cursive;
+        font-size: 3.33em;
+        color: ghostwhite;
+        width: 33%;
+        height: 100%;
+        text-align: center;
+        font-size: .9em;
+        padding: 3em;
+        padding-top: 2.33em;
+        line-height: 1.96em;
+    }
+    
+    #b1 {
+        border-right: none;
+        border-bottom: 3px solid black;
+        border-left: 3px solid black;
+    }
+    
+    #b2 {
+        border-left: 3px solid black;
+        border-right: 3px solid black;
+        border-bottom: 3px solid black;
+    }
+    
+    #b3 {
+        border-top: none;
+        border-left: none;
+        border-bottom: 3px solid black;
+        border-right: 3px solid black;
+    }
+
+    .middle-container {
+        border: 3px solid black;
+}
+}
 
 /*4:3   1366x1024*/
+@media screen and (min-width: 1366px) and (min-height: 1024px) {
 
+    .top {
+        display: none;
+    }
+
+    .bottom {
+        display: none;
+    }
+
+    .back-button-aligner {   
+        height: 66px;
+        width: 143px;
+        bottom: .63em;
+        left: .67em;           
+}
+    
+    .svg-back-button {
+        height: 180px;
+        width: 320px;
+        transform: scale(.43);
+        top: -57px;
+        right: -93px;
+}
+
+    .bestowal-aligner {   
+        height: 173px;
+        width: 133px;
+        bottom: .63em;
+        right: .67em; 
+}
+
+    .svg-bestowal-button {
+        height: 180px;
+        width: 320px;
+        transform: scale(1.53);
+        top: 33px;
+        right: -93px;
+}
+
+    .top-02 {
+        display: flex;
+        flex-wrap: nowrap;
+        justify-content: space-between;
+        overflow: hidden;
+        background: #00454a;
+        height: 266px;
+        width:100%;
+    }
+    
+    .top-innards {
+        display: flex;
+        justify-content: center;
+        text-align: center;  
+        font-family: 'Concert One', cursive;
+        font-size: 3.33em;
+        color: ghostwhite;
+        width: 33%;
+        height: 100%;
+        text-align: center;
+        font-size: 1em;
+        padding: 3em;
+        padding-top: 2.33em;
+        line-height: 1.96em;
+    }
+    
+    #t1 {
+        border-right: none;
+        border-top: 3px solid black;
+        border-left: 3px solid black;
+    }
+    
+    #t2 {
+        border-left: 3px solid black;
+        border-right: 3px solid black;
+        border-top: 3px solid black;
+    }
+    
+    #t3 {
+        border-left: none;
+        border-top: 3px solid black;
+        border-right: 3px solid black;
+    }
+
+    .bottom-02 {
+        display: flex;
+        flex-wrap: nowrap;
+        justify-content: space-between;
+        overflow: hidden;
+        background: #00454a;
+        height: 521px;
+        width:100%;
+    }
+    
+    .bottom-innards {
+        display: flex;
+        justify-content: center;
+        text-align: center;  
+        font-family: 'Concert One', cursive;
+        font-size: 3.33em;
+        color: ghostwhite;
+        width: 33%;
+        height: 100%;
+        text-align: center;
+        font-size: .9em;
+        padding: 3em;
+        padding-top: 2.33em;
+        line-height: 1.96em;
+    }
+    
+    #b1 {
+        border-right: none;
+        border-bottom: 3px solid black;
+        border-left: 3px solid black;
+    }
+    
+    #b2 {
+        border-left: 3px solid black;
+        border-right: 3px solid black;
+        border-bottom: 3px solid black;
+    }
+    
+    #b3 {
+        border-top: none;
+        border-left: none;
+        border-bottom: 3px solid black;
+        border-right: 3px solid black;
+    }
+
+    .middle-container {
+        border: 3px solid black;
+}
+}
 
 /*16:10   1440x900*/
+@media screen and (min-width: 1440px) {
 
+    .top {
+        display: none;
+    }
+
+    .bottom {
+        display: none;
+    }
+
+    .back-button-aligner {   
+        height: 66px;
+        width: 143px;
+        bottom: .79em;
+        left: .73em;           
+}
+    
+    .svg-back-button {
+        height: 180px;
+        width: 320px;
+        transform: scale(.47);
+        top: -57px;
+        right: -93px;
+}
+
+    .bestowal-aligner {   
+        height: 173px;
+        width: 133px;
+        bottom: .79em;
+        right: 1.06em; 
+}
+
+    .svg-bestowal-button {
+        height: 180px;
+        width: 320px;
+        transform: scale(1.53);
+        top: 33px;
+        right: -93px;
+}
+
+    .top-02 {
+        display: flex;
+        flex-wrap: nowrap;
+        justify-content: space-between;
+        overflow: hidden;
+        background: #00454a;
+        height: 266px;
+        width:100%;
+    }
+    
+    .top-innards {
+        display: flex;
+        justify-content: center;
+        text-align: center;  
+        font-family: 'Concert One', cursive;
+        color: ghostwhite;
+        width: 33%;
+        height: 100%;
+        text-align: center;
+        font-size: 1.13em;
+        padding: 3em;
+        padding-top: 1.39em;
+        line-height: 1.96em;
+    }
+    
+    #t1 {
+        border-right: none;
+        border-top: 3px solid black;
+        border-left: 3px solid black;
+    }
+    
+    #t2 {
+        border-left: 3px solid black;
+        border-right: 3px solid black;
+        border-top: 3px solid black;
+    }
+    
+    #t3 {
+        border-left: none;
+        border-top: 3px solid black;
+        border-right: 3px solid black;
+    }
+
+    .bottom-02 {
+        display: flex;
+        flex-wrap: nowrap;
+        justify-content: space-between;
+        overflow: hidden;
+        background: #00454a;
+        height: 521px;
+        width:100%;
+    }
+    
+    .bottom-innards {
+        display: flex;
+        justify-content: center;
+        text-align: center;  
+        font-family: 'Concert One', cursive;
+        font-size: 3.33em;
+        color: ghostwhite;
+        width: 33%;
+        height: 100%;
+        text-align: center;
+        font-size: .9em;
+        padding: 3em;
+        padding-top: 2.33em;
+        line-height: 1.96em;
+    }
+    
+    #b1 {
+        border-right: none;
+        border-bottom: 3px solid black;
+        border-left: 3px solid black;
+    }
+    
+    #b2 {
+        border-left: 3px solid black;
+        border-right: 3px solid black;
+        border-bottom: 3px solid black;
+    }
+    
+    #b3 {
+        border-top: none;
+        border-left: none;
+        border-bottom: 3px solid black;
+        border-right: 3px solid black;
+    }
+
+    .middle-container {
+        border: 3px solid black;
+}
+}
+
+/*IDK   galaxy-s10   1440x3040*/
+@media screen and (min-width: 1440px) and (min-height: 3040px) {
+
+    .top {
+        display: none;
+    }
+
+    .bottom {
+        display: none;
+    }
+
+    .back-button-aligner {   
+        height: 113px;
+        width: 266px;
+        bottom: .79em;
+        left: .73em;            
+}
+    
+    .svg-back-button {
+        height: 180px;
+        width: 320px;
+        transform: scale(.83);
+        top: -37px;
+        right: -37px;
+}
+
+    .bestowal-aligner {   
+        height: 296px;
+        width: 243px;
+        bottom: .79em;
+        right: 1.06em; 
+}
+
+    .svg-bestowal-button {
+        height: 180px;
+        width: 320px;
+        transform: scale(2.53);
+        top: 123px;
+        right: -43px;
+}
+
+    .top-02 {
+        display: flex;
+        flex-wrap: nowrap;
+        justify-content: space-between;
+        overflow: hidden;
+        background: #00454a;
+        height: 1233px;
+        width:100%;
+    }
+    
+    .top-innards {
+        display: flex;
+        justify-content: center;
+        text-align: center;  
+        font-family: 'Concert One', cursive;
+        color: ghostwhite;
+        width: 33%;
+        height: 100%;
+        text-align: center;
+        font-size: 2.79em;
+        padding: 1em;
+        padding-top: 2.93em;
+        line-height: 1.96em;
+    }
+    
+    #t1 {
+        border-right: none;
+        border-top: 3px solid black;
+        border-left: 3px solid black;
+    }
+    
+    #t2 {
+        border-left: 3px solid black;
+        border-right: 3px solid black;
+        border-top: 3px solid black;
+        width: 53vw;
+    }
+    
+    #t3 {
+        border-left: none;
+        border-top: 3px solid black;
+        border-right: 3px solid black;
+    }
+
+    .bottom-02 {
+        display: flex;
+        flex-wrap: nowrap;
+        justify-content: space-between;
+        overflow: hidden;
+        background: #00454a;
+        height: 991px;
+        width:100%;
+    }
+    
+    .bottom-innards {
+        display: flex;
+        justify-content: center;
+        text-align: center;  
+        font-family: 'Concert One', cursive;
+        font-size: 3.33em;
+        color: ghostwhite;
+        width: 33%;
+        height: 100%;
+        text-align: center;
+        font-size: .9em;
+        padding: 3em;
+        padding-top: 2.33em;
+        line-height: 1.96em;
+    }
+    
+    #b1 {
+        border-right: none;
+        border-bottom: 3px solid black;
+        border-left: 3px solid black;
+    }
+    
+    #b2 {
+        border-left: 3px solid black;
+        border-right: 3px solid black;
+        border-bottom: 3px solid black;
+    }
+    
+    #b3 {
+        border-top: none;
+        border-left: none;
+        border-bottom: 3px solid black;
+        border-right: 3px solid black;
+    }
+
+    .middle-container {
+        border: 3px solid black;
+}
+}
 
 /*16:9   1536x864*/
+@media screen and (min-width: 1536px) {
 
+    .top {
+        display: none;
+    }
+
+    .bottom {
+        display: none;
+    }
+
+    .back-button-aligner {   
+        height: 77px;
+        width: 159px;
+        bottom: .79em;
+        left: .73em;           
+}
+    
+    .svg-back-button {
+        height: 180px;
+        width: 320px;
+        transform: scale(.51);
+        top: -51px;
+        right: -85px;
+}
+
+    .bestowal-aligner {   
+        height: 213px;
+        width: 159px;
+        bottom: .79em;
+        right: .66em; 
+}
+
+    .svg-bestowal-button {
+        height: 180px;
+        width: 320px;
+        transform: scale(1.83);
+        top: 66px;
+        right: -80px;
+}
+
+    .top-02 {
+        display: flex;
+        flex-wrap: nowrap;
+        justify-content: space-between;
+        overflow: hidden;
+        background: #00454a;
+        height: 366px;
+        width:100%;
+    }
+    
+    .top-innards {
+        display: flex;
+        justify-content: center;
+        text-align: center;  
+        font-family: 'Concert One', cursive;
+        color: ghostwhite;
+        width: 33%;
+        height: 100%;
+        text-align: center;
+        font-size: 1.33em;
+        padding: 3em;
+        padding-top: 1.66em;
+        line-height: 1.96em;
+    }
+    
+    #t1 {
+        border-right: none;
+        border-top: 3px solid black;
+        border-left: 3px solid black;
+    }
+    
+    #t2 {
+        border-left: 3px solid black;
+        border-right: 3px solid black;
+        border-top: 3px solid black;
+    }
+    
+    #t3 {
+        border-left: none;
+        border-top: 3px solid black;
+        border-right: 3px solid black;
+    }
+
+    .bottom-02 {
+        display: flex;
+        flex-wrap: nowrap;
+        justify-content: space-between;
+        overflow: hidden;
+        background: #00454a;
+        height: 521px;
+        width:100%;
+    }
+    
+    .bottom-innards {
+        display: flex;
+        justify-content: center;
+        text-align: center;  
+        font-family: 'Concert One', cursive;
+        font-size: 3.33em;
+        color: ghostwhite;
+        width: 33%;
+        height: 100%;
+        text-align: center;
+        font-size: .9em;
+        padding: 3em;
+        padding-top: 2.33em;
+        line-height: 1.96em;
+    }
+    
+    #b1 {
+        border-right: none;
+        border-bottom: 3px solid black;
+        border-left: 3px solid black;
+    }
+    
+    #b2 {
+        border-left: 3px solid black;
+        border-right: 3px solid black;
+        border-bottom: 3px solid black;
+    }
+    
+    #b3 {
+        border-top: none;
+        border-left: none;
+        border-bottom: 3px solid black;
+        border-right: 3px solid black;
+    }
+
+    .middle-container {
+        border: 3px solid black;
+}
+}
 
 
 
 /*laptops/desktops, extra-large devices start here*/
 /*16:9   1600x900*/
+@media screen and (min-width: 1600px) {
 
+    .top {
+        display: none;
+    }
+
+    .bottom {
+        display: none;
+    }
+
+    .back-button-aligner {   
+        height: 77px;
+        width: 159px;
+        bottom: .79em;
+        left: .87em;           
+}
+    
+    .svg-back-button {
+        height: 180px;
+        width: 320px;
+        transform: scale(.51);
+        top: -51px;
+        right: -85px;
+}
+
+    .bestowal-aligner {   
+        height: 213px;
+        width: 159px;
+        bottom: .79em;
+        right: .83em; 
+}
+
+    .svg-bestowal-button {
+        height: 180px;
+        width: 320px;
+        transform: scale(1.83);
+        top: 66px;
+        right: -80px;
+}
+
+    .top-02 {
+        display: flex;
+        flex-wrap: nowrap;
+        justify-content: space-between;
+        overflow: hidden;
+        background: #00454a;
+        height: 366px;
+        width:100%;
+    }
+    
+    .top-innards {
+        display: flex;
+        justify-content: center;
+        text-align: center;  
+        font-family: 'Concert One', cursive;
+        color: ghostwhite;
+        width: 33%;
+        height: 100%;
+        text-align: center;
+        font-size: 1.43em;
+        padding: 3em;
+        padding-top: 1.06em;
+        line-height: 1.96em;
+    }
+    
+    #t1 {
+        border-right: none;
+        border-top: 3px solid black;
+        border-left: 3px solid black;
+    }
+    
+    #t2 {
+        border-left: 3px solid black;
+        border-right: 3px solid black;
+        border-top: 3px solid black;
+    }
+    
+    #t3 {
+        border-left: none;
+        border-top: 3px solid black;
+        border-right: 3px solid black;
+    }
+
+    .bottom-02 {
+        display: flex;
+        flex-wrap: nowrap;
+        justify-content: space-between;
+        overflow: hidden;
+        background: #00454a;
+        height: 521px;
+        width:100%;
+    }
+    
+    .bottom-innards {
+        display: flex;
+        justify-content: center;
+        text-align: center;  
+        font-family: 'Concert One', cursive;
+        font-size: 3.33em;
+        color: ghostwhite;
+        width: 33%;
+        height: 100%;
+        text-align: center;
+        font-size: .9em;
+        padding: 3em;
+        padding-top: 2.33em;
+        line-height: 1.96em;
+    }
+    
+    #b1 {
+        border-right: none;
+        border-bottom: 3px solid black;
+        border-left: 3px solid black;
+    }
+    
+    #b2 {
+        border-left: 3px solid black;
+        border-right: 3px solid black;
+        border-bottom: 3px solid black;
+    }
+    
+    #b3 {
+        border-top: none;
+        border-left: none;
+        border-bottom: 3px solid black;
+        border-right: 3px solid black;
+    }
+
+    .middle-container {
+        border: 3px solid black;
+}
+}
 
 /*16:9   1920x1080*/
+@media screen and (min-width: 1920px) {
 
+    .top {
+        display: none;
+    }
+
+    .bottom {
+        display: none;
+    }
+
+    .back-button-aligner {   
+        height: 93px;
+        width: 199px;
+        bottom: .79em;
+        left: .87em;         
+}
+    
+    .svg-back-button {
+        height: 180px;
+        width: 320px;
+        transform: scale(.66);
+        top: -43px;
+        right: -65px;
+}
+
+    .bestowal-aligner {   
+        height: 266px;
+        width: 199px;
+        bottom: .79em;
+        right: .83em; 
+}
+
+    .svg-bestowal-button {
+        height: 180px;
+        width: 320px;
+        transform: scale(2.33);
+        top: 103px;
+        right: -60px;
+}
+
+    .top-02 {
+        display: flex;
+        flex-wrap: nowrap;
+        justify-content: space-between;
+        overflow: hidden;
+        background: #00454a;
+        height: 393px;
+        width:100%;
+    }
+    
+    .top-innards {
+        display: flex;
+        justify-content: center;
+        text-align: center;  
+        font-family: 'Concert One', cursive;
+        color: ghostwhite;
+        width: 33%;
+        height: 100%;
+        text-align: center;
+        font-size: 1.66em;
+        padding: 1.66em;
+        padding-top: 1.41em;
+        line-height: 1.96em;
+    }
+    
+    #t1 {
+        border-right: none;
+        border-top: 4px solid black;
+        border-left: 4px solid black;
+    }
+    
+    #t2 {
+        border-left: 4px solid black;
+        border-right: 4px solid black;
+        border-top: 4px solid black;
+    }
+    
+    #t3 {
+        border-left: none;
+        border-top: 4px solid black;
+        border-right: 4px solid black;
+    }
+
+    .bottom-02 {
+        display: flex;
+        flex-wrap: nowrap;
+        justify-content: space-between;
+        overflow: hidden;
+        background: #00454a;
+        height: 521px;
+        width:100%;
+    }
+    
+    .bottom-innards {
+        display: flex;
+        justify-content: center;
+        text-align: center;  
+        font-family: 'Concert One', cursive;
+        font-size: 3.33em;
+        color: ghostwhite;
+        width: 33%;
+        height: 100%;
+        text-align: center;
+        font-size: 1.13em;
+        padding: 3em;
+        padding-top: 2.33em;
+        line-height: 1.96em;
+    }
+    
+    #b1 {
+        border-right: none;
+        border-bottom: 4px solid black;
+        border-left: 4px solid black;
+    }
+    
+    #b2 {
+        border-left: 4px solid black;
+        border-right: 4px solid black;
+        border-bottom: 4px solid black;
+    }
+    
+    #b3 {
+        border-top: none;
+        border-left: none;
+        border-bottom: 4px solid black;
+        border-right: 4px solid black;
+    }
+
+    .middle-container {
+        border: 4px solid black;
+}
+}
+
+/*19:9    galaxy-s10     2280x1080  */
+@media screen and (min-width: 2280px) {
+
+    .top {
+        display: none;
+    }
+
+    .bottom {
+        display: none;
+    }
+
+    .back-button-aligner {   
+        height: 103px;
+        width: 239px;
+        bottom: .79em;
+        left: .87em;         
+}
+    
+    .svg-back-button {
+        height: 180px;
+        width: 320px;
+        transform: scale(.76);
+        top: -39px;
+        right: -45px;
+}
+
+    .bestowal-aligner {   
+        height: 296px;
+        width: 239px;
+        bottom: .79em;
+        right: .83em; 
+}
+
+    .svg-bestowal-button {
+        height: 180px;
+        width: 320px;
+        transform: scale(2.63);
+        top: 123px;
+        right: -40px;
+}
+
+    .top-02 {
+        display: flex;
+        flex-wrap: nowrap;
+        justify-content: space-between;
+        overflow: hidden;
+        background: #00454a;
+        height: 433px;
+        width:100%;
+    }
+    
+    .top-innards {
+        display: flex;
+        justify-content: center;
+        text-align: center;  
+        font-family: 'Concert One', cursive;
+        color: ghostwhite;
+        width: 33%;
+        height: 100%;
+        text-align: center;
+        font-size: 1.89em;
+        padding: 3em;
+        padding-top: 1.28em;
+        line-height: 1.96em;
+    }
+    
+    #t1 {
+        border-right: none;
+        border-top: 4px solid black;
+        border-left: 4px solid black;
+    }
+    
+    #t2 {
+        border-left: 4px solid black;
+        border-right: 4px solid black;
+        border-top: 4px solid black;
+        width: 33vw;
+    }
+    
+    #t3 {
+        border-left: none;
+        border-top: 4px solid black;
+        border-right: 4px solid black;
+    }
+
+    .bottom-02 {
+        display: flex;
+        flex-wrap: nowrap;
+        justify-content: space-between;
+        overflow: hidden;
+        background: #00454a;
+        height: 521px;
+        width:100%;
+    }
+    
+    .bottom-innards {
+        display: flex;
+        justify-content: center;
+        text-align: center;  
+        font-family: 'Concert One', cursive;
+        font-size: 3.33em;
+        color: ghostwhite;
+        width: 33%;
+        height: 100%;
+        text-align: center;
+        font-size: 1.13em;
+        padding: 3em;
+        padding-top: 2.33em;
+        line-height: 1.96em;
+    }
+    
+    #b1 {
+        border-right: none;
+        border-bottom: 4px solid black;
+        border-left: 4px solid black;
+    }
+    
+    #b2 {
+        border-left: 4px solid black;
+        border-right: 4px solid black;
+        border-bottom: 4px solid black;
+    }
+    
+    #b3 {
+        border-top: none;
+        border-left: none;
+        border-bottom: 4px solid black;
+        border-right: 4px solid black;
+    }
+
+    .middle-container {
+        border: 4px solid black;
+}
+}
 
 /*16:9   2560x1440*/
+@media screen and (min-width: 2560px) {
 
+    .top {
+        display: none;
+    }
+
+    .bottom {
+        display: none;
+    }
+
+    .back-button-aligner {   
+        height: 119px;
+        width: 271px;
+        bottom: .79em;
+        left: .87em;           
+}
+    
+    .svg-back-button {
+        height: 180px;
+        width: 320px;
+        transform: scale(.89);
+        top: -33px;
+        right: -33px;
+}
+
+    .bestowal-aligner {   
+        height: 333px;
+        width: 271px;
+        bottom: .79em;
+        right: .83em; 
+}
+
+    .svg-bestowal-button {
+        height: 180px;
+        width: 320px;
+        transform: scale(2.93);
+        top: 149px;
+        right: -23px;
+}
+
+    .top-02 {
+        display: flex;
+        flex-wrap: nowrap;
+        justify-content: space-between;
+        overflow: hidden;
+        background: #00454a;
+        height: 366px;
+        width:100%;
+    }
+    
+    .top-innards {
+        display: flex;
+        justify-content: center;
+        text-align: center;  
+        font-family: 'Concert One', cursive;
+        color: ghostwhite;
+        width: 33%;
+        height: 100%;
+        text-align: center;
+        font-size: 1.83em;
+        padding: 3em;
+        padding-top: 1.27em;
+        line-height: 1.96em;
+    }
+    
+    #t1 {
+        border-right: none;
+        border-top: 4px solid black;
+        border-left: 4px solid black;
+    }
+    
+    #t2 {
+        border-left: 4px solid black;
+        border-right: 4px solid black;
+        border-top: 4px solid black;
+        width: 33vw;
+    }
+    
+    #t3 {
+        border-left: none;
+        border-top: 4px solid black;
+        border-right: 4px solid black;
+    }
+
+    .bottom-02 {
+        display: flex;
+        flex-wrap: nowrap;
+        justify-content: space-between;
+        overflow: hidden;
+        background: #00454a;
+        height: 521px;
+        width:100%;
+    }
+    
+    .bottom-innards {
+        display: flex;
+        justify-content: center;
+        text-align: center;  
+        font-family: 'Concert One', cursive;
+        font-size: 3.33em;
+        color: ghostwhite;
+        width: 33%;
+        height: 100%;
+        text-align: center;
+        font-size: 1.13em;
+        padding: 3em;
+        padding-top: 2.33em;
+        line-height: 1.96em;
+    }
+    
+    #b1 {
+        border-right: none;
+        border-bottom: 4px solid black;
+        border-left: 4px solid black;
+    }
+    
+    #b2 {
+        border-left: 4px solid black;
+        border-right: 4px solid black;
+        border-bottom: 4px solid black;
+    }
+    
+    #b3 {
+        border-top: none;
+        border-left: none;
+        border-bottom: 4px solid black;
+        border-right: 4px solid black;
+    }
+
+    .middle-container {
+        border: 4px solid black;
+}
+}
+
+/*19:9    galaxy-s10      3040x1440    */
+@media screen and (min-width: 3040px) {
+
+    .top {
+        display: none;
+    }
+
+    .bottom {
+        display: none;
+    }
+
+    .back-button-aligner {   
+        height: 133px;
+        width: 327px;
+        bottom: .79em;
+        left: .87em; 
+        border: 1px solid black;          
+}
+    
+    .svg-back-button {
+        height: 180px;
+        width: 320px;
+        transform: scale(1.07);
+        top: -23px;
+        right: -3px;
+}
+
+    .bestowal-aligner {   
+        height: 393px;
+        width: 327px;
+        bottom: .79em;
+        right: .83em; 
+        border: 1px solid black;
+}
+
+    .svg-bestowal-button {
+        height: 180px;
+        width: 320px;
+        transform: scale(3.63);
+        top: 199px;
+        right: 4px;
+}
+
+    .top-02 {
+        display: flex;
+        flex-wrap: nowrap;
+        justify-content: space-between;
+        overflow: hidden;
+        background: #00454a;
+        height: 493px;
+        width:100%;
+    }
+    
+    .top-innards {
+        display: flex;
+        justify-content: center;
+        text-align: center;  
+        font-family: 'Concert One', cursive;
+        color: ghostwhite;
+        width: 33%;
+        height: 100%;
+        text-align: center;
+        font-size: 2.4em;
+        padding: 1em;
+        padding-top: 1.53em;
+        line-height: 1.96em;
+    }
+    
+    #t1 {
+        border-right: none;
+        border-top: 4px solid black;
+        border-left: 4px solid black;
+    }
+    
+    #t2 {
+        border-left: 4px solid black;
+        border-right: 4px solid black;
+        border-top: 4px solid black;
+        width: 33vw;
+    }
+    
+    #t3 {
+        border-left: none;
+        border-top: 4px solid black;
+        border-right: 4px solid black;
+    }
+
+    .bottom-02 {
+        display: flex;
+        flex-wrap: nowrap;
+        justify-content: space-between;
+        overflow: hidden;
+        background: #00454a;
+        height: 521px;
+        width:100%;
+    }
+    
+    .bottom-innards {
+        display: flex;
+        justify-content: center;
+        text-align: center;  
+        font-family: 'Concert One', cursive;
+        font-size: 3.33em;
+        color: ghostwhite;
+        width: 33%;
+        height: 100%;
+        text-align: center;
+        font-size: 1.13em;
+        padding: 3em;
+        padding-top: 2.33em;
+        line-height: 1.96em;
+    }
+    
+    #b1 {
+        border-right: none;
+        border-bottom: 4px solid black;
+        border-left: 4px solid black;
+    }
+    
+    #b2 {
+        border-left: 4px solid black;
+        border-right: 4px solid black;
+        border-bottom: 4px solid black;
+    }
+    
+    #b3 {
+        border-top: none;
+        border-left: none;
+        border-bottom: 4px solid black;
+        border-right: 4px solid black;
+    }
+
+    .middle-container {
+        border: 4px solid black;
+}
+}
 
 /*16:9   3840x2160*/
+@media screen and (min-width: 3840px) {
+
+    .top {
+        display: none;
+    }
+
+    .bottom {
+        display: none;
+    }
+
+    .back-button-aligner {   
+        height: 193px;
+        width: 417px;
+        bottom: .79em;
+        left: .87em; 
+        border: 1px solid black;          
+}
+    
+    .svg-back-button {
+        height: 180px;
+        width: 320px;
+        transform: scale(1.37);
+        top: 7px;
+        right: 37px;
+}
+
+    .bestowal-aligner {   
+        height: 513px;
+        width: 417px;
+        bottom: .79em;
+        right: .83em; 
+        border: 1px solid black;
+}
+
+    .svg-bestowal-button {
+        height: 180px;
+        width: 320px;
+        transform: scale(4.66);
+        top: 283px;
+        right: 49px;
+}
+
+    .top-02 {
+        display: flex;
+        flex-wrap: nowrap;
+        justify-content: space-between;
+        overflow: hidden;
+        background: #00454a;
+        height: 566px;
+        width:100%;
+    }
+    
+    .top-innards {
+        display: flex;
+        justify-content: center;
+        text-align: center;  
+        font-family: 'Concert One', cursive;
+        color: ghostwhite;
+        width: 33%;
+        height: 100%;
+        text-align: center;
+        font-size: 3em;
+        padding: 1.13em;
+        padding-top: 1em;
+        line-height: 1.96em;
+    }
+    
+    #t1 {
+        border-right: none;
+        border-top: 4px solid black;
+        border-left: 4px solid black;
+    }
+    
+    #t2 {
+        border-left: 4px solid black;
+        border-right: 4px solid black;
+        border-top: 4px solid black;
+        width: 33vw;
+    }
+    
+    #t3 {
+        border-left: none;
+        border-top: 4px solid black;
+        border-right: 4px solid black;
+    }
+
+    .bottom-02 {
+        display: flex;
+        flex-wrap: nowrap;
+        justify-content: space-between;
+        overflow: hidden;
+        background: #00454a;
+        height: 521px;
+        width:100%;
+    }
+    
+    .bottom-innards {
+        display: flex;
+        justify-content: center;
+        text-align: center;  
+        font-family: 'Concert One', cursive;
+        font-size: 3.33em;
+        color: ghostwhite;
+        width: 33%;
+        height: 100%;
+        text-align: center;
+        font-size: 1.13em;
+        padding: 3em;
+        padding-top: 2.33em;
+        line-height: 1.96em;
+    }
+    
+    #b1 {
+        border-right: none;
+        border-bottom: 4px solid black;
+        border-left: 4px solid black;
+    }
+    
+    #b2 {
+        border-left: 4px solid black;
+        border-right: 4px solid black;
+        border-bottom: 4px solid black;
+    }
+    
+    #b3 {
+        border-top: none;
+        border-left: none;
+        border-bottom: 4px solid black;
+        border-right: 4px solid black;
+    }
+
+    .middle-container {
+        border: 4px solid black;
+}
+}
