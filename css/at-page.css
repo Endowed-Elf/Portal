@@ -53,11 +53,6 @@ body {
     /*border: 1px solid green;*/
 }
 
-
-
-
-
-
 .back-button-aligner {
     position: fixed;    
     margin: 0 auto;
@@ -65,7 +60,6 @@ body {
     transform: scale(1);
     overflow: hidden;
     z-index: 1;
-    border: 1px solid blue;
     /* bottom: ~.5em , this moves button up and down */
 }
 
@@ -539,6 +533,7 @@ svg .button:active {
 }
 }
 
+
 /*4:3   320x240*/
 @media screen and (min-width: 320px) and (min-height: 240px) {
     .container-top {
@@ -635,6 +630,7 @@ svg .button:active {
 }
 }
 
+
 /*9:16   320x568*/
 @media screen and (min-width: 320px) and (min-height: 568px) {
     
@@ -682,6 +678,7 @@ svg .button:active {
         font-size: 1.2em;
 }
 }
+
 
 /*9:16   337.5x600*/
 @media screen and (min-width: 337px) {
@@ -780,6 +777,7 @@ svg .button:active {
 }
 }
 
+
 /*3:4   360x480*/
 @media screen and (min-width: 360px) and (min-height: 480px) {
     
@@ -877,6 +875,20 @@ svg .button:active {
 }
 }
 
+
+
+
+
+
+
+
+
+
+
+
+/* FOUR BREAKPOINT THAT JUST WON'T WORK FOR SOME REASON */
+/*This part stops working for no reason*/
+
 /*16:9   375x211*/
 @media screen and (min-width: 375px) and (min-height: 211px) {
 
@@ -973,6 +985,7 @@ svg .button:active {
         font-size: 1.2em;
 }
 }
+
 
 /*2:3   400x600*/
 @media screen and (min-width: 400px) and (min-height: 600px) {
@@ -1072,6 +1085,21 @@ svg .button:active {
 }
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 /*16:9   425x239*/
 @media screen and (min-width: 375px) and (min-height: 211px) {
 
@@ -1164,6 +1192,7 @@ svg .button:active {
         font-size: 1.39em;
 }
 }
+
 
 /*9:16   432x768*/
 @media screen and (min-width: 432px) and (min-height: 768px) {
@@ -1311,6 +1340,7 @@ svg .button:active {
 }
 }
 
+
 /*3:2   480x320*/
 @media screen and (min-width: 480px) and (min-height: 320px) {
 
@@ -1408,7 +1438,8 @@ svg .button:active {
 }
 }
 
-/*3:4   480x600*/
+
+/*3:4   480x600   It's not though. I don't know wha it is.*/
 @media screen and (min-width: 480px) and (min-height: 600px) {
     
     body {
@@ -1456,6 +1487,53 @@ svg .button:active {
 }
 }
 
+/*3:4   480x640*/
+@media screen and (min-width: 480px) and (min-height: 640px) {
+    
+    body {
+        border: 7px solid black;
+    }
+
+    .container-top {
+        left: 6vw;
+        width: 51.4vw;
+    }
+    
+    .info-top {
+        font-size: 1.17em;
+    }
+    
+    .container-bottom {
+        left: 36vw;
+        bottom: 3vh;
+        width: 58vw;
+    }
+    
+    .info-bottom {
+        font-size: 1.17em;
+    }
+
+    .back-button-aligner {   
+        height: 50px;
+        width: 113px;
+        bottom: 3.33em;
+        left: 2.13em;     
+}
+    
+    .svg-back-button {
+        transform: scale(.37);
+        top: -66px;
+        right: -107px;
+}
+
+    #top-span {
+        font-size: 1.3em;
+}
+
+    #bottom-span {
+        font-size: 1.3em;
+}
+}
 
 /*3:2   512x342*/
 @media screen and (min-width: 512px) and (min-height: 342px) {
@@ -1604,6 +1682,7 @@ svg .button:active {
         top: .06em;
 }
 }
+
 
 /*3:4   576x768*/
 @media screen and (min-width: 576px) {
@@ -1805,6 +1884,7 @@ svg .button:active {
         top: .06em;
 }
 }
+
 
 /*16:9   640x360*/
 @media screen and (min-width: 640px) and (min-height: 360px) {
@@ -2205,6 +2285,57 @@ svg .button:active {
 }
 
 
+/*9:16    768x1366*/
+@media screen and (min-width: 768px) and (min-height: 1366px) {
+    
+    body {
+        border: 13px solid black;
+    }
+
+    .container-top {
+        left: 7vw;
+        width: 66vw;
+    }
+    
+    .info-top {
+        font-size: 2.33em;
+    }
+    
+    .container-bottom {
+        left: 29vw;
+        bottom: 3vh;
+        width: 66vw;
+    }
+    
+    .info-bottom {
+        font-size: 2.33em;
+    }
+
+    .back-button-aligner {   
+        height: 83px;
+        width: 193px;
+        bottom: 6em;
+        left: 1.53em;     
+}
+    
+    .svg-back-button {
+        transform: scale(.63);
+        top: -50px;
+        right: -71px;
+}
+
+    #top-span {
+        font-size: 1.33em;
+        top: .33em;
+}
+
+    #bottom-span {
+        font-size: 1.33em;
+        top: .33em;
+}
+}
+
+
 /*10:16   800×1280*/
 @media screen and (min-width: 800px) {
     
@@ -2360,6 +2491,7 @@ svg .button:active {
     }
 }
 
+
 /*16:9   1024x576*/
 @media screen and (min-width: 1024px) and (min-height: 576px) {
 
@@ -2407,6 +2539,7 @@ svg .button:active {
         top: .06em;
     }
 }
+
 
 /*3:4   1024×1366*/
 @media screen and (min-width: 1024px) and (min-height: 1366px) {
@@ -2459,6 +2592,59 @@ svg .button:active {
 }
 }
 
+
+/*IDK  galaxy-s10  1080x2280*/
+@media screen and (min-width: 1024px) and (min-height: 1366px) {
+    
+    body {
+        border: 14px solid black;
+    }
+
+    .container-top {
+        top: 3vh;
+        left: 11vw;
+        width: 66vw;
+    }
+    
+    .info-top {
+        font-size: 3.33em;
+    }
+    
+    .container-bottom {
+        left: 19vw;
+        bottom: 14vh;
+        width: 66vw;
+    }
+    
+    .info-bottom {
+        font-size: 3.33em;
+    }
+
+    .back-button-aligner {   
+        height: 133px;
+        width: 313px;
+        bottom: 6.6em;
+        left: 3em;     
+}
+    
+    .svg-back-button {
+        transform: scale(.93);
+        top: -23px;
+        right: -13px;
+}
+
+    #top-span {
+        font-size: 1.33em;
+        top: .33em;
+}
+
+    #bottom-span {
+        font-size: 1.33em;
+        top: .33em;
+}
+}
+
+
 /*16:9   1200x675*/
 @media screen and (min-width: 1200px) {
 
@@ -2507,12 +2693,62 @@ svg .button:active {
     }
 }
 
+
+/* idk  my desktop viewport  1280x587*/
+@media screen and (min-width: 1280px) and (min-height: 587px) {
+
+    .container-top {
+        left: 56vw;
+        width: 33vw;
+        padding: .1em;
+    }
+    
+    .info-top {
+        font-size: 1.43em;
+    }
+    
+    .container-bottom {
+        left: -40vw;
+        bottom: 3.3vh;
+        width: 37vw;
+        padding: .1em;
+    }
+    
+    .info-bottom {
+        font-size: 1.43em;
+    }
+
+    .back-button-aligner {   
+        height: 69px;
+        width: 166px;
+        bottom: 3em;
+        left: 66em; 
+    }
+    
+    .svg-back-button {
+        transform: scale(.53);
+        top: -56px;
+        right: -83px;
+    }
+
+    #top-span {
+        font-size: 1.66em;
+        top: .06em;
+    }
+
+    #bottom-span {
+        font-size: 1.66em;
+        top: .06em;
+    }
+}
+
+
 /*16:9   1280x720*/
 @media screen and (min-width: 1280px) and (min-height: 720px) {
 
     .container-top {
         left: 56vw;
-        width: 30vw;
+        width: 29vw;
         padding: .1em;
     }
     
@@ -2554,6 +2790,7 @@ svg .button:active {
         top: .06em;
     }
 }
+
 
 /*16:10  1280x800*/
 @media screen and (min-width: 1280px) and (min-height: 800px) {
@@ -2603,6 +2840,7 @@ svg .button:active {
         top: .06em;
     }
 }
+
 
 /*16:9   1366x768*/
 @media screen and (min-width: 1366px) and (min-height: 768px) {
@@ -2701,6 +2939,7 @@ svg .button:active {
         top: .06em;
     }
 }
+
 
 /*16:10   1440x900*/
 @media screen and (min-width: 1440px) {
@@ -2900,6 +3139,57 @@ svg .button:active {
     }
 }
 
+
+/*19:9  galaxy-s10  2280x1080*/
+@media screen and (min-width: 2280px) {
+
+    .container-top {
+        top: 6vh;
+        left: 62vw;
+        width: 27vw;
+        padding: .1em;
+    }
+    
+    .info-top {
+        font-size: 2.33em;
+    }
+    
+    .container-bottom {
+        left: -53vw;
+        bottom: 6.3vh;
+        width: 29vw;
+        padding: .1em;
+    }
+    
+    .info-bottom {
+        font-size: 2.33em;
+    }
+
+    .back-button-aligner {   
+        height: 166px;
+        width: 366px;
+        bottom: 3em;
+        left: 113em; 
+    }
+    
+    .svg-back-button {
+        transform: scale(1.13);
+        top: -9px;
+        right: 13px;
+    }
+
+    #top-span {
+        font-size: 1.66em;
+        top: .06em;
+    }
+
+    #bottom-span {
+        font-size: 1.66em;
+        top: .06em;
+    }
+}
+
+
 /*16:9   2560x1440*/
 @media screen and (min-width: 2560px) {
 
@@ -2909,24 +3199,24 @@ svg .button:active {
 
     .container-top {
         top: 11vh;
-        left: 57vw;
-        width: 18vw;
+        left: 66vw;
+        width: 23vw;
         padding: .1em;
     }
     
     .info-top {
-        font-size: 1.66em;
+        font-size: 2.13em;
     }
     
     .container-bottom {
-        left: -37vw;
+        left: -49vw;
         bottom: 9.3vh;
-        width: 18vw;
+        width: 23vw;
         padding: .1em;
     }
     
     .info-bottom {
-        font-size: 1.66em;
+        font-size: 2.13em;
     }
 
     .back-button-aligner {   
@@ -2952,6 +3242,62 @@ svg .button:active {
         top: .06em;
     }
 }
+
+
+/*19:9  galaxy-s10  3040x1440*/
+@media screen and (min-width: 2560px) {
+
+    body {
+        border: 17px solid black;
+    }
+
+    .container-top {
+        top: 6.66vh;
+        left: 63vw;
+        width: 24vw;
+        padding: .33em;
+    }
+    
+    .info-top {
+        font-size: 2.66em;
+    }
+    
+    .container-bottom {
+        left: -43vw;
+        bottom: 6.6vh;
+        width: 24vw;
+        padding: .1em;
+    }
+    
+    .info-bottom {
+        font-size: 2.66em;
+    }
+
+    .back-button-aligner {   
+        height: 183px;
+        width: 433px;
+        bottom: 6em;
+        left: 153em;
+        border: 1px solid blue; 
+    }
+    
+    .svg-back-button {
+        transform: scale(1.33);
+        top: -3px;
+        right: 43px;
+    }
+
+    #top-span {
+        font-size: 1.66em;
+        top: .06em;
+    }
+
+    #bottom-span {
+        font-size: 1.66em;
+        top: .06em;
+    }
+}
+
 
 /*16:9   3840x2160*/
 @media screen and (min-width: 3840px) {
