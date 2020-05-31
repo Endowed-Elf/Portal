@@ -1023,6 +1023,31 @@ a :active {
 }
 }
 
+/*9:19   640x1136*/
+@media screen and (min-width: 640px) and (min-height: 1136px) {
+    
+    .container {
+        padding-top: 5.66em;       
+    }
+    
+    img, a {
+        position: relative;
+        width: 196px;
+        height: 196px;
+        border-radius: 8px;  
+}
+    
+    #l-01, #l-03, #l-05 {
+        margin-right: auto;
+        margin-left: 2.13em;   
+}
+
+    #l-02, #l-04, #l-06 {
+        margin-left: auto;
+        margin-right: 2.13em;
+}
+}
+
 /*16:9*   667x375*/
 @media only screen and (min-width: 667px) {
     
@@ -1335,6 +1360,31 @@ a :active {
     #l-02, #l-04, #l-06 {
         margin-left: auto;
         margin-right: 1.66em;
+}
+}
+
+/*16:9   1136x640*/
+@media screen and (min-width: 1136px) {
+    
+    .container {
+        padding-top: 1.47em;       
+}
+    
+    img, a {
+        position: relative;
+        width: 166px;
+        height: 166px;
+        border-radius: 12px;  
+}
+    
+    #l-01, #l-03, #l-05 {
+        margin-right: auto;
+        margin-left: 2.13em;   
+}
+
+    #l-02, #l-04, #l-06 {
+        margin-left: auto;
+        margin-right: 2.13em;
 }
 }
 
