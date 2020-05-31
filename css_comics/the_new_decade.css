@@ -2605,6 +2605,74 @@ svg .bubbles:hover {
 }
 }
 
+/*9:16   640x1136*/
+@media screen and (min-width: 640px) and (min-height: 1136px) {
+    
+    .button-aligner {   
+        height: 30px;
+        width: 71px;
+        bottom: .6em;
+}
+
+    .svg-back-button {
+        height: 180px;
+        width: 320px;
+        transform: scale(.23);
+        top: -76px;
+        right: -127px;
+}
+    
+    .container_01 {
+        background-image: url("../css_comics/new_decade_images/01_1920x1080.jpg");
+        background-size: 640px 360px;
+        width: 640px;
+        height: 360px;
+        margin-bottom: 33px;   
+    }
+
+    .container_02 {
+        background-image: url("../css_comics/new_decade_images/02_1920x1080.jpg");
+        background-size: 640px 360px;
+        width: 640px;
+        height: 360px;
+        margin-bottom: 33px;
+    }
+    
+    .container_03 {
+        background-image: url("../css_comics/new_decade_images/03_1920x1080.jpg");
+        background-size: 640px 360px;
+        width: 640px;
+        height: 360px;
+        margin-bottom: 49px;
+    }
+
+    .border {           
+        width: 640px;
+        height: 360px;
+        border: 9px solid black;
+        box-shadow: 3px 3px 11px 6px forestgreen, 2px 2px 10px 2px lightgreen inset;
+    }
+
+    #transform-01a {
+        transform: translate(-0em, 1em);
+}
+
+    #transform-01b {
+        transform: translate(35em, 28em);
+}
+
+    #transform-02a {
+        transform: translate(0em, 1em);
+}
+
+    #transform-03a{
+        transform: translate(-1em, 2em);
+}
+
+    #transform-03b {
+        transform: translate(89em, 19em); 
+}
+}
 
 /*16:9*   667x375*/
 @media screen and (min-width: 667px) {
@@ -3459,6 +3527,74 @@ svg .bubbles:hover {
 }
 }
 
+/*16:9   1136x640*/
+@media screen and (min-width: 1136px) {
+    
+    .button-aligner {   
+        height: 35px;
+        width: 77px;
+        bottom: .59em;
+}
+
+    .svg-back-button {
+        height: 180px;
+        width: 320px;
+        transform: scale(.25);
+        top: -73px;
+        right: -123px;
+}
+
+    .container_01 {
+        background-image: url("../css_comics/new_decade_images/01_1920x1080.jpg");
+        background-size: 1136px 640px;
+        width: 1136px;
+        height: 640px;
+        margin-bottom: 36px;   
+    }
+
+    .container_02 {
+        background-image: url("../css_comics/new_decade_images/02_1920x1080.jpg");
+        background-size: 1136px 640px;
+        width: 1136px;
+        height: 640px;
+        margin-bottom: 36px;
+    }
+
+    .container_03 {
+        background-image: url("../css_comics/new_decade_images/03_1920x1080.jpg");
+        background-size: 1136px 640px;
+        width: 1136px;
+        height: 640px;
+        margin-bottom: 54px;
+    }
+
+    .border {           
+        width: 1136px;
+        height: 640px;
+        border: 8px solid black;
+        box-shadow: 3px 3px 11px 6px forestgreen, 2px 2px 10px 2px lightgreen inset;
+    }
+
+    #transform-01a {
+        transform: translate(-0em, 1em);
+}
+
+    #transform-01b {
+        transform: translate(35em, 28em);
+}
+
+    #transform-02a {
+        transform: translate(0, 0);
+}
+
+    #transform-03a{
+        transform: translate(0em, 1em);
+}
+
+    #transform-03b {
+        transform: translate(89em, 19em); 
+}
+}
 
 /*16:9   1200x675*/
 @media screen and (min-width: 1200px) {
