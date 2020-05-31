@@ -4050,6 +4050,87 @@ svg .button:active {
     }
 }
 
+/*9:16   640x1136*/
+@media only screen and (min-width: 640px) and (min-height: 1136px) {
+    
+    header {        
+        height: 21vh; 
+    }  
+    
+    .button-aligner {   
+        height: 50px;
+        width: 123px;
+        transform: translateX(0px);
+        bottom: .6em;
+        overflow: hidden;
+}
+
+    .svg-back-button {
+        height: 180px;
+        width: 320px;
+        transform: scale(.4);
+        top: -66px;
+        right: -101px;
+}
+    
+    .container {
+        transform: translateY(2vh);
+        margin-left: 0vw;
+        width: 84vw;
+        justify-content: center;
+        border: 5px solid black;
+        align-items: center;
+}
+    
+    .the-new-decade-thumbnail {
+        width:366px;
+        height:366px;
+        margin: auto;
+        margin-top: 44px;
+}
+    
+    .link_01_bw {
+        width: 366px;
+        height: 366px;
+        border: 21px solid black;
+        border-radius: 63px;
+        margin: auto;
+        margin-top: 23px;
+}
+    
+    .link_01_bw:hover {
+        width: 366px;
+        height: 366px;
+        border: 21px solid black;
+        border-radius: 23px;
+        margin: auto;
+        margin-top: 23px;
+}
+    
+    .side-border {
+        margin: auto;
+        width: 466px;
+        height: 366px;
+        border-left: 20px dashed white;
+        border-right: 20px dashed white;   
+        border-top: 1px;
+        border-bottom: 1px; 
+}
+
+    .green-bar {
+        min-height: 13px;
+        width: 313px;
+        transform: translateY(15px);
+}   
+    
+    .spacer {
+        padding-top: 0px;    
+}
+    
+    .sidebar, .ad-bar {
+        display: none;
+}
+}
 
 /*16:9   667x375*/
 @media only screen and (min-width: 667px) {
@@ -5347,6 +5428,138 @@ svg .button:active {
 }
 }
 
+/* 16:9   1136x640*/
+@media only screen and (min-width: 1136px) and (min-height: 640px) {
+    
+    header {
+        height: 70vh;        
+    }
+    
+    .button-aligner {   
+        height: 39px;
+        width: 93px;
+        transform: translateX(0px);
+        bottom: .13em;
+
+        overflow: hidden;
+}
+
+    .svg-back-button {
+        height: 180px;
+        width: 320px;
+        transform: scale(.3);
+        top: -72px;
+        right: -117px;
+}
+    
+    .container {
+        transform: translateY(2vh);
+        margin-left: 1vw;
+        width: 48vw;
+        justify-content: flex-start;
+        border: 5px solid black;
+        align-items: center;
+}
+
+    .the-new-decade-thumbnail {
+        width:256px;
+        height:256px;
+        background:black;
+        background-position: center;
+        background-repeat: no-repeat;
+        margin: auto;
+        margin-top: 27px;
+}
+
+    .link_01_bw {   
+        background-image: url("../Images/Thumbnails/the_new_decade_thumbnail_1080.png");
+        width: 253px;
+        height: 253px;
+        border: 13px solid black;
+        border-radius: 36px;
+    
+}
+    
+    .link_01_bw:hover {    
+        background-image: url("../Images/Thumbnails/the_new_decade_color_thumbnail.png");
+        width: 256px;
+        height: 256px;
+        border: 13px solid black;
+        border-radius: 26px;
+}
+
+    .side-border {    
+        width: 343px;
+        height: 256px;
+        border-left: 17px dashed white;
+        border-right: 17px dashed white;
+        border-top: 1px;
+        border-bottom: 1px; 
+}
+
+    .green-bar {
+        min-height: 8px;
+        width: 213px;
+        transform: translateY(9.3px);
+}
+    
+    .sidebar {
+        display:flex;
+        flex-direction: column;
+        justify-content:space-between;
+        border: 1px solid black;
+        border-bottom: none;
+        width: 48vw;
+        margin-right: 1vw;
+        margin-top: 7.5px;
+        transform: translateY(.66vh);   
+}
+    
+    .show {
+        height: 43px;
+        width: 43px;
+}
+
+    #show-id-01 {
+        margin-top: 17px;
+}
+    
+    #show-id-02, #show-id-03, #show-id-04 {
+        margin-top: 10px;
+}
+    
+    p { 
+        font-size: .5em;
+        padding-left: .13em;
+        padding-right: .13em;
+}
+
+    #description-01 {
+        padding-top: 40px;
+        height: 297px;
+}
+
+    #description-02 {
+        padding-top: 40px;
+        height: 283px;
+}
+
+    #description-03 {
+        padding-top: 40px;
+        height: 283px;
+}
+
+    #description-04 {
+        padding-top: 40px;
+        height: 260px;
+}
+
+    .ad-bar {
+        display: block;
+        min-height: 100%;
+        transform: translateY(2vh);
+    }
+}
 
 /*16:9   1200x675*/
 @media only screen and (min-width: 1200px) and (min-height: 675px) {
